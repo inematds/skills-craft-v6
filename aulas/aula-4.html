@@ -1,0 +1,149 @@
+<section class="view" id="v-aula-4" data-aula="4" data-tempo="15min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 4 de 8</p>
+  <h1>Por dentro, uma skill é <em>texto organizado</em></h1>
+  <figure class="cena"><img src="assets/img/aula-4.webp" width="1280" height="720" alt="Um advogado de óculos abre uma pasta de papelão na mesa e espalha três folhas lado a lado para examiná-las, com o notebook fechado ao lado."></figure>
+  <p class="promise">Você consegue ler uma skill e dizer o que fazem o cabeçalho, as instruções e o exemplo.</p>
+  <p class="why">A palavra skill parece coisa de programador. Por dentro, ela é um texto organizado, parecido com o procedimento que você escreveria para um estagiário. Ver uma de verdade tira o medo e mostra o que você vai precisar escrever.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Uma skill é uma pasta com um arquivo principal, o <b>SKILL.md</b>.</li>
+      <li>Ele tem um cabeçalho com nome e descrição, e embaixo as instruções.</li>
+      <li>Um exemplo de resposta boa ensina mais que dez ordens.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">1</span>Uma pasta com um arquivo de texto</h2>
+  <p>Toda <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.">skill</span> é uma pasta. Dentro dela mora um arquivo de texto comum chamado <span class="gterm" data-def="o arquivo principal de toda skill: um texto simples com o cabeçalho e as instruções. O nome é sempre esse, com SKILL em maiúsculas.">SKILL.md</span>. O ".md" no fim é só o tipo do arquivo, como o ".docx" do Word. Só ele é obrigatório.</p>
+  <p>O nome da pasta é o nome da skill, em minúsculas e com hífen no lugar do espaço. Se a tarefa precisa de um modelo ou de uma tabela grande, esses arquivos entram na mesma pasta.</p>
+  <p data-ex="advogado">A skill de parecer do Raul é uma pasta com dois arquivos: o SKILL.md e o modelo de parecer que o escritório usa há anos.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
+      <div class="janela-body">
+        <div class="item pasta"><span class="pin">1</span> parecer-trabalhista</div>
+        <div class="item doc dentro"><span class="pin">2</span> SKILL.md</div>
+        <div class="item doc dentro"><span class="pin">3</span> modelo-parecer.docx</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>A pasta tem o nome da skill: minúsculas, hífen no lugar do espaço.</span></li>
+      <li><span class="pin">2</span><span>O arquivo principal, sempre com este nome.</span></li>
+      <li><span class="pin">3</span><span>Um arquivo de apoio, opcional. O SKILL.md diz quando consultar.</span></li>
+    </ol>
+  </figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">2</span>Cabeçalho em cima, instruções embaixo</h2>
+  <p>O SKILL.md começa com um <span class="gterm" data-def="as linhas entre os dois traços triplos no topo do SKILL.md. Guardam o nome e a descrição da skill, que o Claude lê antes de tudo.">cabeçalho</span>, entre duas linhas de três traços. Ali ficam o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.">descrição</span> que você treinou na aula 2. Não fez a aula 2? A descrição é a frase que diz o que a skill faz e quando usar.</p>
+  <p>Abaixo do cabeçalho vêm as instruções, escritas como para uma pessoa nova na equipe. No fim, um exemplo de resposta boa.</p>
+  <p data-ex="dona de pet shop">Esta é a skill de orçamento da Débora, inteira. Leia de cima para baixo.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>orcamento-banho-tosa / SKILL.md</span></div>
+<pre>---
+name: orcamento-banho-tosa
+description: Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote.
+---
+
+# Orçamento de banho e tosa
+
+## Como responder
+1. Cumprimente pelo nome, se a mensagem trouxer.
+2. Dê o preço pela tabela. Se faltar o porte, pergunte antes: o preço muda com o tamanho.
+3. Ofereça agendar e termine com uma pergunta.
+4. Escreva curto: o cliente lê no celular.
+
+## Tabela
+Porte pequeno: banho R$ 60, banho e tosa R$ 80
+Porte médio: banho R$ 70, banho e tosa R$ 95
+Porte grande: banho R$ 90, banho e tosa R$ 130
+
+## Exemplo
+Cliente: "Quanto fica a tosa do meu shih-tzu?"
+Resposta: "Oi! Shih-tzu é porte pequeno: banho e tosa fica R$ 80. Quer agendar? Me diga o melhor dia."</pre>
+      <p class="tela-nota bom">Cabeçalho (nome e descrição), instruções em quatro passos, a tabela e um exemplo. É tudo.</p>
+    </div>
+    <figcaption>Os traços e o "name:" são só marcações. O resto é português comum.</figcaption>
+  </figure>
+  <div class="quiz" data-answer="b">
+    <p class="qk">Teste-se</p>
+    <p class="q">Um cliente pergunta o preço da tosa. Que parte da skill da Débora faz o Claude abri-la?</p>
+    <button class="opt" data-k="a" data-fb="A tabela só é lida depois que a skill já foi aberta.">A tabela de preços, no meio do texto</button>
+    <button class="opt" data-k="b" data-fb="Isso. A descrição é lida antes de tudo e diz quando usar.">A descrição, no cabeçalho do arquivo</button>
+    <button class="opt" data-k="c" data-fb="O exemplo ensina o jeito de responder, mas só depois de aberta.">O exemplo de resposta, no fim do texto</button>
+    <p class="qfb" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">3</span>Explique o porquê em vez de gritar ordens</h2>
+  <p>O Claude leva ao pé da letra o que está escrito na skill. Ordens em maiúsculas, com "nunca" e "sempre", fazem ele exagerar na regra. Uma frase com o motivo funciona melhor: ele entende quando a regra se aplica.</p>
+  <p data-ex="advogado">O Raul tinha escrito a regra das súmulas do jeito antigo. Veja o que mudou quando ele explicou o porquê.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="antes"><span class="rot">Ordem</span><p><b>Instrução:</b> "SEMPRE CITE SÚMULA. OBRIGATÓRIO."</p><p><b>Resultado:</b> citava súmula até em parecer sobre férias, onde nenhuma se aplicava.</p></div>
+      <div class="depois"><span class="rot">Com o porquê</span><p><b>Instrução:</b> "Cite súmula ou artigo quando houver um que se aplique ao caso: o cliente confia mais quando vê a base."</p><p><b>Resultado:</b> cita quando existe e não inventa quando não existe.</p></div>
+    </div>
+  </figure>
+  <details class="mais"><summary>Quer saber até onde a skill pode crescer?</summary><p>Mantenha o SKILL.md curto, bem abaixo de 500 linhas. O que for longo, como uma tabela de cem linhas, vai num arquivo separado na mesma pasta. No SKILL.md, uma linha avisa: "a tabela completa está em tabela-precos.docx".</p></details>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Os três traços e o "name:" parecem código. São só marcações, como o assunto de um e-mail. Na aula 5 o Claude escreve isso por você; aqui basta saber ler.</p></div>
+</section>
+
+<section class="practice" data-mode="analise">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Ache os três problemas desta skill</h3>
+  <p class="pgoal">Pronto quando você tiver respondido as três perguntas e conferido no gabarito. Cerca de 7 minutos. Anote no papel ou no bloco de notas.</p>
+  <p class="psafe">É só leitura: nada muda no seu Claude. Se errar uma, releia o passo correspondente da aula e tente de novo.</p>
+  <p>A estagiária do Raul criou a skill abaixo. O Claude quase nunca a abre, e quando abre os e-mails saem secos.</p>
+<p><b>Pasta:</b> email-andamento</p>
+<pre>---
+name: email
+description: E-mails.
+---
+
+ESCREVA SEMPRE DE FORMA PROFISSIONAL. NUNCA USE TERMOS DIFÍCEIS. SEJA BREVE.</pre>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>O que está errado no cabeçalho? Há dois problemas.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Como você reescreveria a linha das instruções?</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Que parte está faltando no fim? Confira tudo no gabarito.</span></label></li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito</summary>
+    <p><b>1.</b> O nome "email" não é o nome da pasta (email-andamento). E a descrição "E-mails." não diz o que faz nem quando usar, por isso a skill quase nunca abre.<br><b>2.</b> Algo como: "Escreva em linguagem simples, sem termos jurídicos, em até 8 linhas: o cliente lê no celular e quer saber o que muda para ele."<br><b>3.</b> Um exemplo de e-mail bom, com o pedido e a resposta, para o Claude ver o tom que o escritório usa.</p>
+  </details>
+  <p class="pdone">Você acabou de ler uma skill por dentro e apontar o que cada parte faz e o que faltava.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>As partes do SKILL.md</h3>
+    <ol>
+      <li><span><b>Cabeçalho</b>nome igual ao da pasta e a descrição.</span></li>
+      <li><span><b>Instruções</b>passos curtos, cada regra com o seu motivo.</span></li>
+      <li><span><b>Exemplo</b>um pedido real e a resposta que você aceitaria.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe ler uma skill e dizer para que serve cada parte.</p>
+    <p class="na-action">Separe hoje um exemplo real da sua tarefa: um pedido e a resposta que você considera boa. Guarde nas Notas, junto da descrição da aula 2.</p>
+    <p class="na-hook">Na próxima aula: o Claude escreve a sua skill com você, numa conversa, sem abrir editor de texto.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#aula-3">← aula anterior</a><a class="next" href="#aula-5">próxima aula →</a></nav>
+<p class="aula-pe">Aula 4 · Skills v6 · INEMA.CLUB</p>
+</div>
+<script type="application/json" id="cards-4">
+[
+  {"front":"Qual é o único arquivo obrigatório dentro da pasta de uma skill?","back":"O SKILL.md. Modelos e tabelas são opcionais e ficam na mesma pasta."},
+  {"front":"Sua skill tem \"NUNCA ESQUEÇA O PRAZO\" e o Claude passou a falar de prazo em tudo. O que você muda?","back":"Troca a ordem em maiúsculas por uma frase com o motivo, dizendo quando o prazo importa. Os modelos atuais exageram regras gritadas."},
+  {"front":"O que um exemplo de resposta boa ensina que as instruções não ensinam?","back":"O tom e o formato na prática: tamanho, jeito de cumprimentar, como fechar. O Claude imita o que vê."}
+]
+</script>
+</section>

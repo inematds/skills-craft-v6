@@ -1,0 +1,125 @@
+<section class="view" id="v-aula-8" data-aula="8" data-tempo="16min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 8 de 8</p>
+  <h1>Corrija, mantenha e <em>saiba quando parar</em></h1>
+  <figure class="cena"><img src="assets/img/aula-8.webp" width="1280" height="720" alt="Um advogado risca uma linha de uma folha impressa com caneta vermelha e escreve a correção acima dela, com o notebook aberto ao lado, no fim da tarde."></figure>
+  <p class="promise">Você consegue corrigir uma falha da sua skill, enviar a versão nova e decidir o que não vira skill.</p>
+  <p class="why">Toda skill falha em algum pedido. Quem desiste nessa hora perde o trabalho feito. A correção costuma ser uma frase, e saber onde mexer evita refazer tudo do zero.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Não abriu, ou abriu sem dever? Corrija a <b>descrição</b>.</li>
+      <li>Abriu e respondeu errado? Corrija as <b>instruções</b> ou o <b>exemplo</b>.</li>
+      <li>Regra de toda conversa, assunto de um cliente ou dado que muda não viram skill.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">1</span>Cada falha tem o seu lugar de correção</h2>
+  <p>As anotações da aula 7 dizem onde mexer. Se a <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.">skill</span> não abriu, ou abriu onde não devia, o problema está na <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.">descrição</span>. Se abriu e a resposta saiu errada, o problema está nas instruções ou no exemplo.</p>
+  <p>Mude uma coisa por vez e teste de novo. Assim você sabe o que resolveu.</p>
+  <p data-ex="dona de pet shop">Na aula 7, o pedido "qto fica pra dar um trato no bichinho?" não abriu a skill da Débora. Ela mexeu só na descrição.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="antes"><span class="rot">Antes</span><p><b>Descrição:</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."</p><p><b>Resultado:</b> o pedido abreviado não abria a skill.</p></div>
+      <div class="depois"><span class="rot">Depois</span><p><b>Descrição:</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço, valor ou quanto fica banho, tosa ou um trato no pet."</p><p><b>Resultado:</b> os dois jeitos de pedir abrem a skill.</p></div>
+      <p class="saldo"><b>Saldo:</b> uma linha mudada, 167 caracteres, dentro do limite de 200.</p>
+    </div>
+  </figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">2</span>Peça a correção e troque a versão</h2>
+  <p>Você não precisa reescrever a skill. Volte à conversa em que ela nasceu, na aula 5: ela está na lista de conversas recentes do menu lateral. Não achou? Abra uma conversa nova e anexe o ZIP da skill, que está em Documentos, pelo botão de clipe. Conte a falha e peça só a mudança necessária, com o ZIP novo no fim.</p>
+  <p>Para trocar a versão, guarde primeiro o ZIP novo em Documentos; o antigo continua lá. Só então abra a skill em Personalizar › Skills, clique nos três pontinhos (…), escolha Excluir e envie o ZIP novo pelo caminho da aula 6.</p>
+  <p data-ex="advogado">O teste do Raul mostrou que a skill de parecer abria num e-mail simples. Ele voltou à conversa da aula 5.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+      <div class="tela-body">
+        <p class="msg eu"><span class="quem">Você</span>No teste, a skill parecer-trabalhista abriu num pedido de e-mail simples à cliente. Ajuste só a descrição, para valer apenas para parecer e análise de caso. Mostre o que mudou e me entregue o ZIP novo.</p>
+        <p class="msg ia ok"><span class="quem">Claude</span>Mudei só a parte "quando usar": saiu "qualquer documento do escritório" e entrou "quando você pedir parecer ou análise de caso trabalhista". O restante ficou igual. Aqui está o parecer-trabalhista.zip atualizado.</p>
+      </div>
+      <p class="tela-nota bom">Pedido de uma falha só, com o lugar da correção dito. A resposta mostra o que mudou e mais nada.</p>
+    </div>
+      </figure>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Excluir a versão antiga parece arriscado. O ZIP novo já está no seu computador, e o antigo também, na pasta Documentos. Se a versão nova sair pior, exclua e envie o antigo de volta.</p></div>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">3</span>O que não vira skill</h2>
+  <p>Depois da primeira, dá vontade de transformar tudo em skill. Três coisas têm lugar melhor no app. A regra de toda conversa vai nas <span class="gterm" data-def="um campo do app do Claude onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado, sem precisar de skill.">preferências pessoais</span>. O assunto de um cliente, com documentos e histórico, vai num <span class="gterm" data-def="um espaço do app do Claude que junta conversas e documentos de um mesmo assunto, com instruções que valem só ali dentro.">projeto</span>. O dado que muda o tempo todo vem por um <span class="gterm" data-def="uma ligação do Claude com outro serviço, como a agenda ou o e-mail, para ele ler dados atualizados na hora.">conector</span>.</p>
+  <p>E uma skill por tarefa. Várias pequenas funcionam melhor que uma enorme que tenta fazer tudo.</p>
+  <p data-ex="advogado">O Raul organizou o que tinha no escritório nos dois cartões abaixo.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="bom"><span class="rot">Vira skill</span><p>Parecer trabalhista. E-mail de andamento ao cliente. Checagem de documentos da primeira consulta.</p></div>
+      <div class="neutro"><span class="rot">Vai para outro lugar</span><p><b>Preferências:</b> "escreva em português formal". <b>Projeto:</b> o caso da metalúrgica, com 40 documentos. <b>Conector:</b> a agenda de audiências.</p></div>
+    </div>
+    <figcaption>Nenhum cartão está errado: o <b>Vira skill</b> guarda tarefas que se repetem do mesmo jeito, e o outro aponta o lugar de cada coisa.</figcaption>
+  </figure>
+  <div class="quiz" data-answer="c">
+    <p class="qk">Teste-se</p>
+    <p class="q">A Débora quer que o Claude consulte os horários livres do dia ao responder clientes. O que resolve?</p>
+    <button class="opt" data-k="a" data-fb="Os horários mudam a cada agendamento; numa receita fixa, ficariam velhos no mesmo dia.">Uma skill com a lista de horários livres</button>
+    <button class="opt" data-k="b" data-fb="As preferências valem para toda conversa, mas também guardam texto fixo, não a agenda do dia.">Os horários escritos nas preferências</button>
+    <button class="opt" data-k="c" data-fb="Isso. Dado que muda o tempo todo vem por um conector, que lê a agenda na hora.">Um conector ligado à agenda da loja</button>
+    <p class="qfb" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="practice" data-mode="prompt">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Corrija uma falha e envie a versão nova</h3>
+  <p class="pgoal">Pronto quando o pedido que falhou na aula 7 passar com a versão nova: a skill aparece no <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali.">raciocínio</span> e a resposta segue as suas regras. Cerca de 12 minutos, no computador.</p>
+  <p class="psafe">Guarde o ZIP antigo até a versão nova passar no teste. Não fez a aula 7? Use qualquer pedido em que a skill não respondeu como você queria.</p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">No teste, a minha skill &lt;nome da skill&gt; falhou assim:
+Pedido: &lt;o pedido&gt;
+O que aconteceu: &lt;não abriu / abriu sem dever / abriu e respondeu errado&gt;
+
+Corrija só o necessário:
+- se não abriu ou abriu sem dever, ajuste a descrição (até 200 caracteres);
+- se abriu e respondeu errado, ajuste as instruções ou o exemplo, com o motivo.
+Mostre o que mudou e me entregue o ZIP novo.</pre></div>
+  <details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
+    <p>No teste, a minha skill <b>orcamento-banho-tosa</b> falhou assim: pedido "qto fica pra dar um trato no bichinho?"; o que aconteceu: não abriu. A correção veio só na descrição, como no cartão Depois do passo 1.</p>
+  </details>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Abra a conversa da aula 5, nas conversas recentes, ou uma nova com o ZIP da skill anexado. Cole o molde preenchido.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Confira que só mudou o necessário e baixe o ZIP novo.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Exclua a versão antiga, envie a nova e rode de novo o pedido que falhou.</span></label></li>
+  </ol>
+  <p class="pdone">Você acabou de consertar uma skill sua e colocar a versão nova para trabalhar.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>Manter a skill</h3>
+    <ol>
+      <li><span><b>Onde corrigir</b>abrir é descrição; responder é instrução ou exemplo.</span></li>
+      <li><span><b>Como trocar</b>ZIP novo, exclui a antiga, envia, testa de novo.</span></li>
+      <li><span><b>Quando parar</b>preferências, projeto e conector têm lugar próprio.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe criar, testar e manter uma skill sua, do começo ao fim.</p>
+    <p class="na-action">Abra a lista da aula 1 e escolha a segunda tarefa que se repete. Escreva a descrição dela hoje, em até 200 caracteres.</p>
+    <p class="na-hook">Fim do curso. A segunda skill sai mais rápido: você já sabe o caminho inteiro.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#aula-7">← aula anterior</a><a class="next" href="#trilha">voltar à trilha →</a></nav>
+<p class="aula-pe">Aula 8 · Skills v6 · INEMA.CLUB</p>
+</div>
+<script type="application/json" id="cards-8">
+[
+  {"front":"Sua skill abriu no pedido certo, mas errou o formato da resposta. Você mexe na descrição?","back":"Não. A descrição só decide se ela abre. Formato errado se corrige nas instruções ou no exemplo."},
+  {"front":"Qual a diferença entre um projeto e uma skill no app do Claude?","back":"O projeto junta conversas e documentos de um assunto, como um cliente. A skill guarda o jeito de fazer uma tarefa que se repete em qualquer assunto."},
+  {"front":"Você mudou a descrição e as instruções ao mesmo tempo, e a skill melhorou. O que ficou sem saber?","back":"Qual das duas mudanças resolveu. Mudando uma coisa por vez, cada teste mostra o efeito de cada correção."},
+  {"front":"A versão nova da sua skill saiu pior que a antiga. Como volta atrás?","back":"Exclui a nova na lista e envia de novo o ZIP antigo, que você guardou na pasta Documentos."}
+]
+</script>
+</section>

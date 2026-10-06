@@ -1,0 +1,141 @@
+<section class="view" id="v-aula-2" data-aula="2" data-tempo="14min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 2 de 8</p>
+  <h1>A descrição decide <em>quando a skill entra</em></h1>
+  <figure class="cena"><img src="assets/img/aula-2.webp" width="1280" height="720" alt="Um advogado no escritório escreve um rótulo curto numa ficha, diante de uma caixa de madeira cheia de fichas etiquetadas, com o notebook ao lado."></figure>
+  <p class="promise">Você consegue escrever a descrição da sua futura skill em até 200 caracteres, dizendo o que ela faz e quando usar.</p>
+  <p class="why">Uma skill com descrição vaga fica parada na lista: o Claude não percebe que ela serve. Uma descrição larga demais faz o contrário e aparece onde não devia. A frase certa resolve os dois problemas.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>O Claude decide abrir a skill lendo só a descrição dela.</li>
+      <li>Boa descrição diz <b>o que faz</b> e <b>quando usar</b>, com as palavras que você usa ao pedir.</li>
+      <li>No app do Claude, ela cabe em 200 caracteres.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">1</span>O Claude escolhe pela etiqueta</h2>
+  <p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.">skill</span> tem duas partes que importam aqui: o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.">descrição</span>. Quando você manda um pedido, o Claude ainda não leu nenhuma skill inteira. Ele tem à mão só essas duas linhas de cada uma.</p>
+  <p>O nome vem em minúsculas, com hífen no lugar do espaço. Não se preocupe com isso: na aula 5 o Claude escreve o nome por você.</p>
+  <p>Por isso a descrição é a parte mais importante. Instruções ótimas não servem de nada se a skill nunca for aberta.</p>
+  <p data-ex="advogado">A primeira skill do Raul tinha a descrição "Ajuda com documentos jurídicos". Ele pediu um parecer e o Claude não abriu a skill: a frase não falava em parecer.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Lista de skills</span></div>
+      <div class="janela-body">
+        <div class="item doc"><span class="pin">1</span> parecer-trabalhista — "Ajuda com documentos jurídicos."</div>
+        <div class="item doc"><span class="pin">2</span> email-andamento — "Escreve e-mail de andamento do processo ao cliente, em linguagem simples. Use quando eu pedir resumo, notícia ou atualização para o cliente."</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>Vaga: não diz que tipo de documento nem em que momento usar.</span></li>
+      <li><span class="pin">2</span><span>Clara: diz o que faz e lista as palavras que o Raul usa ao pedir.</span></li>
+    </ol>
+    <figcaption>É isto que o Claude enxerga antes de decidir: um nome e uma frase por skill.</figcaption>
+  </figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">2</span>Diga o que faz e quando usar</h2>
+  <p>Uma boa descrição tem duas metades. A primeira diz <b>o que a skill faz</b>, começando por um verbo: "Monta", "Responde", "Escreve". A segunda diz <b>quando usar</b>, com as situações em que ela deve entrar.</p>
+  <p>Escreva como quem apresenta a skill para outra pessoa. Evite "eu sou" ou "você deve": a descrição fala da skill, não com o Claude.</p>
+  <p data-ex="advogado">O Raul reescreveu a frase vaga. Veja os dois cartões.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="antes"><span class="rot">Antes</span><p><b>Descrição:</b> "Ajuda com documentos jurídicos."</p><p><b>Resultado:</b> não abria nos pedidos de parecer. A frase não dizia que documento nem quando usar.</p></div>
+      <div class="depois"><span class="rot">Depois</span><p><b>Descrição:</b> "Monta parecer trabalhista no formato do escritório: fatos, pedidos, prazos, riscos e recomendação. Use quando eu pedir parecer, análise de caso ou opinião sobre reclamação trabalhista."</p><p><b>Resultado:</b> abre nos pedidos de parecer e fica fechada no resto.</p></div>
+      <p class="saldo"><b>Saldo:</b> 184 caracteres, dentro do limite de 200 do app. Pedir 180 ao Claude deixa uma folga.</p>
+    </div>
+  </figure>
+  <details class="mais"><summary>Quer saber por que existe o limite?</summary><p>O Claude lê a descrição de todas as suas skills a cada pedido. Frases curtas deixam essa leitura rápida e evitam que uma skill "invada" o assunto da outra. Em outros programas que usam skills o limite é maior, mas a frase curta funciona em todos.</p></details>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">3</span>Use as palavras que você usa ao pedir</h2>
+  <p>O Claude compara o seu pedido com a descrição. Se você escreve "aviso de pet pronto" e a descrição fala em "notificação de conclusão de serviço", a ligação fica fraca. Copie para a descrição as palavras que saem da sua boca.</p>
+  <p data-ex="dona de pet shop">A Débora testou duas descrições para a mesma skill. O pedido foi igual nas duas vezes.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+      <div class="tela-caso" data-rotulo="Palavras técnicas">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Faz o aviso de que o Thor está pronto pra buscar.</p>
+          <p class="msg ia falha"><span class="quem">Claude</span>Prezado cliente, informamos que o serviço referente ao seu animal foi concluído. Atenciosamente.</p>
+        </div>
+        <p class="tela-nota ruim">Descrição usada: "Gera notificações de conclusão de serviço." A skill não abriu e o tom saiu de cartório.</p>
+      </div>
+      <div class="tela-caso" data-rotulo="Palavras dela">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Faz o aviso de que o Thor está pronto pra buscar.</p>
+          <p class="msg ia ok"><span class="quem">Claude</span>Oi! O Thor já está pronto e cheiroso esperando você. Pode buscar até as [horário]. Até já!</p>
+        </div>
+        <p class="tela-nota bom">Descrição usada: "Escreve o aviso de pet pronto para buscar, no tom da loja. Use quando eu pedir aviso, recado ou mensagem de pet pronto." A skill abriu.</p>
+      </div>
+    </div>
+    <figcaption><b>Toque nos dois botões</b>. O horário fica entre colchetes porque não estava no pedido: a Débora completa.</figcaption>
+  </figure>
+  <div class="quiz" data-answer="b">
+    <p class="qk">Teste-se</p>
+    <p class="q">A Débora costuma pedir "monta o post da promoção de sábado". Qual descrição tem mais chance de abrir?</p>
+    <button class="opt" data-k="a" data-fb="Larga demais: não fala em promoção nem em post, e serviria para qualquer empresa.">Cria conteúdo de marketing para redes sociais de empresas em geral.</button>
+    <button class="opt" data-k="b" data-fb="Isso. Diz o que faz e usa as palavras que ela fala: post e promoção.">Escreve o post da promoção da semana. Use quando eu pedir post ou promoção.</button>
+    <button class="opt" data-k="c" data-fb="Fala do estilo, mas não diz o que a skill faz nem quando entra.">Textos criativos e animados para a loja, com bastante emoji e energia.</button>
+    <p class="qfb" aria-live="polite"></p>
+  </div>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>200 caracteres parecem pouco. Escreva primeiro sem limite. Depois corte adjetivos e exemplos repetidos. O "use quando" fica; o resto pode sair.</p></div>
+</section>
+
+<section class="practice" data-mode="prompt">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Escreva a descrição da sua skill</h3>
+  <p class="pgoal">Pronto quando você tiver uma descrição de até 200 caracteres com o que a skill faz e quando usar. Cerca de 8 minutos.</p>
+  <p class="psafe">Nada é criado ainda: você só está escrevendo uma frase. Não fez a aula 1? Use qualquer tarefa que você pede ao Claude toda semana. Se as opções vierem genéricas, cole mais frases reais suas no pedido.</p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Vou criar uma skill para &lt;a tarefa que se repete&gt;.
+Eu costumo pedir isso com frases como:
+- "&lt;frase real 1&gt;"
+- "&lt;frase real 2&gt;"
+Escreva 3 opções de descrição para essa skill.
+Cada uma com até 180 caracteres e começando por um verbo.
+Cada uma diz o que a skill faz e quando usar, com as minhas palavras.</pre></div>
+  <details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
+    <p>Vou criar uma skill para <b>responder orçamento de banho e tosa</b>. Eu costumo pedir isso com frases como: "responde esse cliente do orçamento" e "quanto fica a tosa do shih-tzu dela?".<br><b>Opção que ela escolheu (139 caracteres):</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."</p>
+  </details>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Copie o molde, abra uma conversa nova no Claude e troque o que está entre &lt; &gt; pela sua tarefa e por duas frases que você realmente usa.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Escolha uma das três opções e ajuste o que não soar como você.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Confira: começa por verbo e tem "use quando". Para contar os caracteres, cole a frase no Word ou no Google Docs e use Contar palavras. Guarde a frase nas Notas, junto da tarefa da aula 1.</span></label></li>
+  </ol>
+  <p class="pdone">Você acabou de escrever a frase que vai fazer o Claude reconhecer a sua skill.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>A boa descrição</h3>
+    <ol>
+      <li><span><b>O que faz</b>comece por um verbo: monta, responde, escreve.</span></li>
+      <li><span><b>Quando usar</b>liste as situações e os pedidos em que ela entra.</span></li>
+      <li><span><b>Suas palavras, até 200</b>copie como você pede; corte adjetivos.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe escrever a frase que decide quando uma skill entra.</p>
+    <p class="na-action">Amanhã, ao fazer de novo a tarefa escolhida, anote as palavras exatas que você usou no pedido. Se alguma não está na descrição, acrescente.</p>
+    <p class="na-hook">Na próxima aula: antes de fazer a sua, você vai ligar as skills que já vêm prontas no Claude e ver uma delas trabalhar.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#aula-1">← aula anterior</a><a class="next" href="#aula-3">próxima aula →</a></nav>
+<p class="aula-pe">Aula 2 · Skills v6 · INEMA.CLUB</p>
+</div>
+<script type="application/json" id="cards-2">
+[
+  {"front":"Sua skill tem ótimas instruções, mas o Claude nunca a usa. Qual é a primeira coisa a revisar?","back":"A descrição. É a única parte que o Claude lê antes de decidir; se ela não fala do que você pede, a skill fica fechada."},
+  {"front":"Qual a diferença entre \"Ajuda com documentos jurídicos\" e uma descrição com \"use quando eu pedir parecer\"?","back":"A primeira não diz o que faz nem quando entra. A segunda nomeia a tarefa e as situações, então o Claude reconhece o pedido."},
+  {"front":"Sua descrição passou de 200 caracteres. O que você corta primeiro?","back":"Adjetivos e exemplos repetidos. O verbo do que a skill faz e o trecho \"use quando\" ficam."}
+]
+</script>
+</section>

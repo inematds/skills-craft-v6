@@ -1,0 +1,145 @@
+<section class="view" id="v-aula-7" data-aula="7" data-tempo="16min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 7 de 8</p>
+  <h1>Teste a skill <em>com e sem</em> ela</h1>
+  <figure class="cena"><img src="assets/img/aula-7.webp" width="1280" height="720" alt="A dona de um pet shop compara duas folhas impressas, uma em cada mão, na área de tosa, com um cachorro esperando na mesa e uma tabela desenhada à mão num bloco sobre o balcão."></figure>
+  <p class="promise">Você consegue testar a sua skill com 4 pedidos e anotar onde ela acerta e onde falha.</p>
+  <p class="why">Um teste que deu certo mostra que a skill abre. Não mostra se ela abre sempre, nem se o resultado é melhor do que sem ela. Quatro pedidos bem escolhidos respondem as duas perguntas.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Teste <b>dois pedidos que devem</b> abrir a skill, escritos de jeitos diferentes.</li>
+      <li>Teste <b>um que não deve</b>: parecido, mas de outro assunto.</li>
+      <li>Repita um pedido com a skill desligada e compare.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="tarefa">
+  <h2><span class="n">1</span>Peça do jeito que você pede de verdade</h2>
+  <p>Na pressa, ninguém escreve o pedido igual duas vezes. A sua <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.">skill</span> precisa abrir nos dois jeitos. Teste uma frase completa e uma abreviada, como sai no celular.</p>
+  <p>Como saber se abriu? Toque no <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali.">raciocínio</span>, logo acima da resposta, e procure o nome da skill. Ou veja se a resposta usa algo que só a skill tem, como o preço da tabela. Se o bloco não aparecer, pergunte: "você usou alguma skill nesta resposta? Qual?".</p>
+  <p>Se um dos jeitos falha, o problema quase sempre está na <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.">descrição</span>: faltam as palavras daquele jeito de pedir.</p>
+  <p data-ex="dona de pet shop">A Débora testou duas mensagens reais de clientes. A segunda veio do jeito que muita gente escreve no WhatsApp.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+      <div class="tela-caso" data-rotulo="Frase completa">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Responde esse cliente: "Bom dia, qual o valor do banho e tosa para um poodle médio?"</p>
+          <p class="msg ia ok"><span class="quem">Claude</span>Bom dia! Para poodle médio, banho e tosa fica R$ 95. Quer agendar? Me diga o melhor dia.</p>
+        </div>
+        <p class="tela-nota bom">A skill abriu: preço da tabela e pergunta no fim.</p>
+      </div>
+      <div class="tela-caso" data-rotulo="Frase abreviada">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Responde: "qto fica pra dar um trato no bichinho?"</p>
+          <p class="msg ia falha"><span class="quem">Claude</span>Oi! O valor depende do porte e do tipo de pelo do seu pet. Pode me contar a raça?</p>
+        </div>
+        <p class="tela-nota ruim">A skill não abriu: a resposta não usa o tom nem a tabela da loja. "Dar um trato" não aparece na descrição dela.</p>
+      </div>
+    </div>
+    <figcaption><b>Toque nos dois botões</b>. A falha vira uma anotação: acrescentar "trato" à descrição.</figcaption>
+  </figure>
+</section>
+
+<section class="step" data-kind="tarefa">
+  <h2><span class="n">2</span>Um pedido parecido que não é dela</h2>
+  <p>O teste ao contrário também importa. Faça um pedido do mesmo mundo, mas de outra tarefa. A skill deve ficar fechada.</p>
+  <p>Se ela abrir sem dever, a descrição está larga demais e vai atrapalhar pedidos que não são dela.</p>
+  <p data-ex="advogado">O Raul pediu um e-mail curto ao cliente. A skill de parecer não deveria entrar. Veja o que aconteceu, e como ficou depois da correção que a aula 8 ensina.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+      <div class="tela-caso" data-rotulo="Abriu sem dever">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Escreva um e-mail curto à cliente avisando que a audiência mudou para [nova data].</p>
+          <p class="msg ia falha"><span class="quem">Claude</span>1. Fatos: a audiência foi redesignada. 2. Pedidos: … 3. Prazos: …</p>
+        </div>
+        <p class="tela-nota ruim">A descrição dizia "Use para qualquer documento do escritório". O aviso virou um parecer em partes.</p>
+      </div>
+      <div class="tela-caso" data-rotulo="Ficou fechada">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Escreva um e-mail curto à cliente avisando que a audiência mudou para [nova data].</p>
+          <p class="msg ia ok"><span class="quem">Claude</span>Olá, Marta. A sua audiência mudou para [nova data]. Nada muda no seu processo; confirmo o horário assim que o fórum publicar.</p>
+        </div>
+        <p class="tela-nota bom">Depois da correção da aula 8, a descrição passou a dizer "use quando eu pedir parecer ou análise de caso". A skill ficou de fora, como devia.</p>
+      </div>
+    </div>
+    <figcaption>A data fica entre colchetes porque não estava no pedido: o Raul completa.</figcaption>
+  </figure>
+</section>
+
+<section class="step" data-kind="tarefa">
+  <h2><span class="n">3</span>Compare com a skill desligada</h2>
+  <p>Falta saber se a skill melhora o resultado. Desligue a chave dela em Personalizar › Skills, abra uma conversa nova e repita um dos pedidos. Depois, ligue de novo.</p>
+  <p data-ex="dona de pet shop">A Débora repetiu o pedido do poodle médio com a skill desligada.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="antes"><span class="rot">Sem a skill</span><p><b>Resposta:</b> "O valor varia conforme a região e o porte. Recomendo consultar o pet shop."</p><p>Ela teria de reescrever o preço e o tom.</p></div>
+      <div class="depois"><span class="rot">Com a skill</span><p><b>Resposta:</b> "Para poodle médio, banho e tosa fica R$ 95. Quer agendar?"</p><p>Pronta para mandar ao cliente.</p></div>
+      <p class="saldo"><b>Saldo:</b> de uma resposta inteira reescrita para nenhuma correção.</p>
+    </div>
+  </figure>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Desligar a skill dá medo de perder o trabalho. Desligar não apaga nada: é a mesma chave que você ligou na aula 6. Terminado o teste, ligue de novo e confira se ela voltou para a lista com a chave acesa.</p></div>
+</section>
+
+<section class="practice" data-mode="tarefa">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Rode os quatro testes e anote</h3>
+  <p class="pgoal">Pronto quando as suas anotações dos quatro pedidos estiverem preenchidas. Cerca de 12 minutos, no computador. Anote no papel ou no bloco de notas.</p>
+  <p class="psafe">Os testes não mudam a skill. Use uma conversa nova para cada pedido, para um não influenciar o outro. Não fez a aula 6? Faça os testes com a skill pronta de Word, como no exemplo do Word logo abaixo.</p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Pedido 1, do jeito completo: &lt;escreva aqui&gt;
+Devia abrir: sim. Abriu? ___ Resposta boa? ___
+
+Pedido 2, o mesmo abreviado: &lt;escreva aqui&gt;
+Devia abrir: sim. Abriu? ___ Resposta boa? ___
+
+Pedido 3, parecido, de outra tarefa: &lt;escreva aqui&gt;
+Devia abrir: não. Abriu? ___
+
+Pedido 4, o pedido 1 com a skill desligada.
+Ficou melhor ou pior que o pedido 1? ___</pre></div>
+  <details class="mais"><summary>Veja a tabela preenchida pelo Raul</summary>
+    <p><b>Pedido 1</b> "Preciso do parecer do caso da Marta…": abriu, resposta boa.<br><b>Pedido 2</b> "parecer marta férias": abriu, resposta boa.<br><b>Pedido 3</b> "e-mail avisando a audiência": abriu sem dever, virou parecer.<br><b>Pedido 4</b> pedido 1 sem a skill: pior, fora do formato do escritório.<br>Anotação dele: a descrição está larga; corrigir na aula 8.</p>
+  </details>
+  <details class="mais"><summary>Veja os quatro pedidos para quem usa a skill de Word</summary>
+    <p><b>Pedido 1:</b> "Monte um documento Word com a lista de tarefas da semana: [suas tarefas]."<br><b>Pedido 2:</b> "faz um doc com minhas tarefas da semana".<br><b>Pedido 3:</b> "Resuma este parágrafo em duas linhas: [texto]". Não pede arquivo, então a skill não deve abrir.<br><b>Pedido 4:</b> o pedido 1 com a skill de Word desligada. Veja se o arquivo veio pior ou se nem veio arquivo.</p>
+  </details>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Copie o molde e escreva os quatro pedidos com casos do seu trabalho.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Rode os pedidos 1, 2 e 3, cada um numa conversa nova, e confira o raciocínio.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Desligue a skill, rode o pedido 4, ligue de novo e preencha as colunas.</span></label></li>
+  </ol>
+  <p class="pdone">Você acabou de medir a sua skill: sabe onde ela acerta, onde falha e quanto ajuda.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>Quatro testes</h3>
+    <ol>
+      <li><span><b>Dois jeitos de pedir</b>completo e abreviado; os dois devem abrir.</span></li>
+      <li><span><b>Um vizinho</b>pedido parecido de outra tarefa; deve ficar fechada.</span></li>
+      <li><span><b>Sem a skill</b>desligue, repita, compare e ligue de novo.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe testar uma skill e dizer, com anotação, se ela vale a pena.</p>
+    <p class="na-action">Guarde a tabela de hoje. Nos próximos dias, cada vez que a skill falhar num pedido real, acrescente uma linha.</p>
+    <p class="na-hook">Na próxima aula: com as falhas anotadas, você vai corrigir a skill e enviar a versão nova.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#aula-6">← aula anterior</a><a class="next" href="#aula-8">próxima aula →</a></nav>
+<p class="aula-pe">Aula 7 · Skills v6 · INEMA.CLUB</p>
+</div>
+<script type="application/json" id="cards-7">
+[
+  {"front":"A skill abre quando você escreve a frase completa, mas não na versão abreviada. O que você ajusta?","back":"A descrição: acrescenta as palavras que você usa no jeito abreviado, para o Claude reconhecer os dois."},
+  {"front":"Sua skill de parecer abriu num pedido de e-mail simples. O que isso diz sobre a descrição?","back":"Que está larga demais. Ela precisa dizer com mais precisão quando usar, para ficar fechada nas outras tarefas."},
+  {"front":"Para que serve repetir um pedido com a skill desligada?","back":"Para comparar e saber se a skill melhora mesmo o resultado. Se a resposta sem ela já sai boa, a skill não está ajudando."}
+]
+</script>
+</section>

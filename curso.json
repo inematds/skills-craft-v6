@@ -1,0 +1,18 @@
+{
+  "id": "skillsv6",
+  "titulo": "Skills v6 — Ensine uma vez, o Claude repete do seu jeito",
+  "titulo_html": "Ensine uma vez, o Claude <em>repete do seu jeito</em>",
+  "curso_curto": "Skills v6",
+  "kicker": "Skills v6 · 3 módulos · 8 aulas de uns 15 minutos",
+  "lead": "Você para de colar as mesmas instruções toda vez e cria uma skill: uma receita que o Claude guarda e usa sozinho quando o pedido combina. Sem programar, no app do Claude, com o Raul, advogado trabalhista, e a Débora, dona de pet shop.",
+  "imagem_trilha": "assets/img/trilha.webp",
+  "alt_trilha": "Um advogado e uma dona de pet shop, sentados lado a lado diante de um notebook numa mesa de madeira, olhando juntos uma ficha de receita na mão dela, com um cachorro deitado no chão.",
+  "rodape": "Skills v6 · INEMA.CLUB · <a href=\"landing.html\">sobre o curso</a>",
+  "landing": "landing.html",
+  "glossario": true,
+  "modulos": [
+    {"titulo": "Módulo 1 · O que é uma skill", "resumo": "A receita que o Claude guarda, a descrição que decide quando ela entra e as skills que já vêm prontas.", "aulas": [1, 2, 3]},
+    {"titulo": "Módulo 2 · Sua primeira skill", "resumo": "Por dentro de uma skill, criar a sua conversando com o Claude e ligar no app.", "aulas": [4, 5, 6]},
+    {"titulo": "Módulo 3 · Deixar a skill boa", "resumo": "Testar com e sem a skill, corrigir o que falhou e saber o que não vira skill.", "aulas": [7, 8]}
+  ]
+}

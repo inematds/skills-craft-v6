@@ -1,0 +1,134 @@
+<section class="view" id="v-aula-1" data-aula="1" data-tempo="13min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 1 de 8</p>
+  <h1>Uma receita que o Claude <em>guarda</em></h1>
+  <figure class="cena"><img src="assets/img/aula-1.webp" width="1280" height="720" alt="A dona de um pet shop, no balcão da loja, digita no celular a mesma mensagem longa de novo, com vários bilhetes iguais colados ao lado do caixa e um cachorro recém-tosado ao fundo."></figure>
+  <p class="promise">Você consegue apontar uma tarefa do seu trabalho que vale virar skill e outra que não vale.</p>
+  <p class="why">Toda semana você cola as mesmas instruções no Claude: o tom, o formato, o que nunca pode faltar. Basta esquecer uma linha e a resposta volta fora do padrão. Esta aula mostra o que é uma skill e em que tarefa ela compensa.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Uma skill é uma receita que você escreve uma vez e o Claude guarda.</li>
+      <li>Ele abre a receita sozinho quando o pedido <b>combina</b> com ela.</li>
+      <li>Vale para tarefa que se repete do mesmo jeito. Tarefa única não precisa.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">1</span>Você repete as mesmas instruções toda vez</h2>
+  <p>Numa conversa nova, o Claude não lembra do seu jeito de trabalhar. Por isso você cola tudo de novo: o tom, o tamanho, os preços. Quando a lista é longa, sempre falta alguma coisa.</p>
+  <p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.">skill</span> resolve isso. Você escreve as instruções uma vez. O Claude passa a segui-las sempre que o pedido for daquele tipo.</p>
+  <p data-ex="dona de pet shop">A Débora responde uns quinze pedidos de orçamento de banho e tosa por dia. Antes, colava no Claude oito linhas com a tabela de preços e o tom da loja. Com a skill, ela cola só a mensagem do cliente.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+      <div class="tela-caso" data-rotulo="Sem skill">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Responda este cliente: "Quanto fica banho e tosa de um poodle médio?"</p>
+          <p class="msg ia falha"><span class="quem">Claude</span>Olá! O valor de banho e tosa varia conforme a região, o porte e o tipo de pelo. Recomendo consultar diretamente o pet shop…</p>
+        </div>
+        <p class="tela-nota ruim">Sem as instruções dela, o Claude não sabe os preços nem que está falando pela loja.</p>
+      </div>
+      <div class="tela-caso" data-rotulo="Com a skill">
+        <div class="tela-body">
+          <p class="msg eu"><span class="quem">Você</span>Responda este cliente: "Quanto fica banho e tosa de um poodle médio?"</p>
+          <p class="msg ia ok"><span class="quem">Claude</span>Oi, tudo bem? Banho e tosa para poodle médio fica R$ 95, com corte de unhas incluso. Quer que eu reserve um horário? Me diga o melhor dia.</p>
+        </div>
+        <p class="tela-nota bom">O preço e o tom vieram da skill da Débora, que traz a tabela da loja (poodle médio: R$ 95).</p>
+      </div>
+    </div>
+    <figcaption><b>Toque nos dois botões</b>: o pedido é o mesmo, só muda o que o Claude tem guardado.</figcaption>
+  </figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">2</span>A skill entra sozinha quando o pedido combina</h2>
+  <p>Você não precisa chamar a skill pelo nome. O Claude olha a lista das suas skills e lê uma frase curta de cada uma, a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.">descrição</span>. Se o pedido combina, ele abre aquela skill e segue o que está escrito.</p>
+  <p>As outras ficam fechadas e não atrapalham. Por isso dá para ter várias skills, uma para cada tarefa.</p>
+  <p data-ex="advogado">O Raul tem duas skills: uma para parecer trabalhista e outra para e-mail de andamento ao cliente. Quando ele pede "resuma a audiência de hoje para o cliente", o Claude abre só a do e-mail.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>O que o Claude faz com o pedido</span></div>
+      <div class="janela-body">
+        <div class="item doc"><span class="pin">1</span> Pedido: "resuma a audiência de hoje para o cliente"</div>
+        <div class="item doc dentro"><span class="pin">2</span> parecer-trabalhista — leu a descrição, ficou fechada</div>
+        <div class="item doc dentro"><span class="pin">3</span> email-andamento — leu a descrição, abriu e seguiu</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>O pedido chega, escrito do jeito de sempre.</span></li>
+      <li><span class="pin">2</span><span>A skill de parecer não combina com resumo ao cliente. Fica fechada.</span></li>
+      <li><span class="pin">3</span><span>A de e-mail combina. O Claude abre e segue as instruções dela.</span></li>
+    </ol>
+  </figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">3</span>Vale para o que se repete do mesmo jeito</h2>
+  <p>Escrever uma skill leva uns vinte minutos. Compensa quando a tarefa volta toda semana e você quer o mesmo resultado sempre.</p>
+  <p>Três casos não pedem skill. A tarefa que acontece uma vez só se resolve na própria conversa. O dado que muda todo dia, como a agenda de hoje, não cabe numa receita fixa. E a regra que vale para qualquer conversa vai nas <span class="gterm" data-def="um campo nas Configurações do app do Claude, no seu perfil, onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado.">preferências pessoais</span>, que ficam nas Configurações do app.</p>
+  <p data-ex="dona de pet shop">A Débora separou as tarefas dela em dois cartões antes de criar a primeira skill.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="bom"><span class="rot">Vale skill</span><p><b>Orçamento de banho e tosa:</b> todo dia, mesma tabela, mesmo tom.</p><p><b>Aviso "seu pet está pronto":</b> várias vezes por dia, mesmo formato.</p></div>
+      <div class="neutro"><span class="rot">Não vale skill</span><p><b>Carta para o dono do imóvel:</b> acontece uma vez. Basta conversar.</p><p><b>Horários livres de hoje:</b> mudam toda hora. Ela cola a agenda no pedido.</p></div>
+    </div>
+    <figcaption>Nenhum cartão está errado: o <b>Vale skill</b> guarda o que repete, e o outro resolve na conversa.</figcaption>
+  </figure>
+  <div class="quiz" data-answer="b">
+    <p class="qk">Teste-se</p>
+    <p class="q">O Raul quer que o Claude escreva sempre em português formal, em qualquer conversa. Qual é o caminho?</p>
+    <button class="opt" data-k="a" data-fb="Funciona, mas a skill só entra quando o pedido combina com ela. Uma regra de toda conversa ficaria de fora muitas vezes.">Criar uma skill de português formal</button>
+    <button class="opt" data-k="b" data-fb="Isso. O que vale para toda conversa fica nas preferências pessoais, sempre ligado.">Escrever nas preferências pessoais</button>
+    <button class="opt" data-k="c" data-fb="Dá certo, mas é justamente a repetição que dá para evitar.">Colar a regra em cada conversa</button>
+    <p class="qfb" aria-live="polite"></p>
+  </div>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>A fronteira entre skill e conversa comum confunde no começo. Use uma pergunta só: "vou pedir isso de novo, do mesmo jeito, na semana que vem?". Se a resposta for sim, a tarefa é candidata.</p></div>
+</section>
+
+<section class="practice" data-mode="tarefa">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Encontre a sua primeira skill</h3>
+  <p class="pgoal">Pronto quando você tiver anotado uma tarefa que vale virar skill e uma que não vale, cada uma com o motivo. Cerca de 8 minutos. Dá para fazer no celular, nas Notas, ou no papel.</p>
+  <p class="psafe">Nada muda no seu Claude: é só uma lista. Se nenhuma tarefa aparecer, abra suas últimas dez conversas e procure instruções que você colou mais de uma vez.</p>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Anote cinco tarefas que você pediu ao Claude, ou a qualquer IA, no último mês.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Marque as que voltam pelo menos uma vez por semana, do mesmo jeito.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Escolha uma marcada para ser a sua skill e uma não marcada. Escreva ao lado de cada uma o motivo em uma linha.</span></label></li>
+  </ol>
+  <details class="mais"><summary>Veja a lista do Raul</summary>
+    <p><b>Vale skill:</b> parecer trabalhista com a mesma estrutura de cinco partes. Motivo: faço dois por semana e sempre corrijo a ordem.<br><b>Não vale:</b> a petição do caso da metalúrgica. Motivo: é um caso único, resolvo na conversa.</p>
+  </details>
+  <p class="pdone">Você acabou de escolher, com motivo, a tarefa que vai virar a sua primeira skill.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>O que é uma skill</h3>
+    <ol>
+      <li><span><b>Receita guardada</b>instruções que você escreve uma vez e o Claude segue sempre.</span></li>
+      <li><span><b>Entra sozinha</b>o Claude lê a descrição e abre a skill quando o pedido combina.</span></li>
+      <li><span><b>Só para o que repete</b>caso único fica na conversa; regra geral fica nas preferências.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe reconhecer uma tarefa que vale virar skill.</p>
+    <p class="na-action">Hoje, quando colar uma instrução repetida no Claude, salve esse texto nas Notas com o nome da tarefa. Ele vira matéria-prima na aula 5.</p>
+    <p class="na-hook">Na próxima aula: o Claude escolhe a skill lendo uma frase só. Você vai escrever essa frase.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-2">próxima aula →</a></nav>
+<p class="aula-pe">Aula 1 · Skills v6 · INEMA.CLUB</p>
+</div>
+<script type="application/json" id="cards-1">
+[
+  {"front":"Você cola o mesmo bloco de instruções no Claude três vezes por semana. O que isso indica?","back":"Que a tarefa é candidata a skill: ela se repete do mesmo jeito, e a receita guardada evita esquecer uma linha."},
+  {"front":"Qual a diferença entre uma skill e as preferências pessoais?","back":"A skill só entra quando o pedido combina com a descrição dela. As preferências valem para todas as conversas, sempre."},
+  {"front":"Você precisa escrever uma carta única para um fornecedor. Vale criar uma skill?","back":"Não. Tarefa que acontece uma vez se resolve na própria conversa; a skill compensa no que volta toda semana."}
+]
+</script>
+</section>

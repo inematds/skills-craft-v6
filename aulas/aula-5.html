@@ -1,0 +1,127 @@
+<section class="view" id="v-aula-5" data-aula="5" data-tempo="16min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Aula 5 de 8</p>
+  <h1>Crie a sua <em>conversando</em> com o Claude</h1>
+  <figure class="cena"><img src="assets/img/aula-5.webp" width="1280" height="720" alt="Um advogado recostado na cadeira do escritório conversa com o notebook, gesticulando com calma, enquanto a estagiária anota ao fundo, entre estantes de livros jurídicos."></figure>
+  <p class="promise">Você consegue sair de uma conversa com o arquivo ZIP da sua primeira skill, pronto para enviar.</p>
+  <p class="why">Escrever o SKILL.md à mão exige editor de texto, nome de arquivo certo e cuidado com os traços do cabeçalho. Você não precisa disso. O Claude entrevista você, escreve a skill e entrega a pasta compactada.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Peça ao Claude para usar a skill <b>skill-creator</b> e conte a sua tarefa.</li>
+      <li>Responda às perguntas dele com casos reais, não com "o normal".</li>
+      <li>Revise o texto e peça a pasta num arquivo <b>ZIP</b>.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="tarefa">
+  <h2><span class="n">1</span>Comece pelo pedido certo</h2>
+  <p>A Anthropic deixa pronta uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.">skill</span> que ensina o Claude a criar skills: a <span class="gterm" data-def="uma skill pronta da Anthropic que conduz a criação de uma skill nova com você: faz perguntas, escreve o SKILL.md e sugere testes.">skill-creator</span>. Você pede para usá-la, conta a tarefa e entrega o que já tem.</p>
+  <p>Antes de escrever, ela pergunta. É uma entrevista curta sobre o seu jeito de fazer a tarefa.</p>
+  <p data-ex="advogado">O Raul abriu uma conversa nova e colou o pedido abaixo. Recebeu três perguntas antes de qualquer texto.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+      <div class="tela-body">
+        <p class="msg eu"><span class="quem">Você</span>Use a skill skill-creator para criar comigo uma skill.
+Tarefa: montar parecer trabalhista no formato do escritório.
+Descrição que eu já escrevi: "Monta parecer trabalhista no formato do escritório…"
+Exemplo de parecer bom: [parecer colado aqui]</p>
+        <p class="msg ia ok"><span class="quem">Claude</span>Vamos lá. Antes de escrever, três perguntas:
+1. Quais são as partes do parecer, nesta ordem?
+2. Ele vai para o cliente ou para outro advogado?
+3. O que nunca pode aparecer no texto?</p>
+      </div>
+      <p class="tela-nota bom">Ele não inventou o formato: perguntou. As respostas viram as instruções da skill.</p>
+    </div>
+  </figure>
+</section>
+
+<section class="step" data-kind="tarefa">
+  <h2><span class="n">2</span>Responda com casos reais</h2>
+  <p>A qualidade da skill depende das suas respostas. "O normal" vira uma instrução vaga, e o Claude preenche o resto com o jeito mais comum. Um caso real vira uma regra que ele consegue seguir.</p>
+  <p data-ex="dona de pet shop">A Débora criou a skill de orçamento. O Claude perguntou: "e quando o cliente não diz o porte do pet?". Veja as duas respostas possíveis.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="antes"><span class="rot">Resposta vaga</span><p><b>Ela responde:</b> "Aí você vê."</p><p><b>Na skill:</b> "Use o bom senso quanto ao porte." O Claude chuta o porte e erra o preço.</p></div>
+      <div class="depois"><span class="rot">Caso real</span><p><b>Ela responde:</b> "Pergunte antes de dar o preço. Pequeno vai até 10 kg, médio até 25, grande acima disso."</p><p><b>Na skill:</b> uma regra clara, que vale para qualquer cliente.</p></div>
+    </div>
+  </figure>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>A lista de perguntas às vezes vem longa. Responda o que sabe e escreva: "no resto, escolha o mais simples e me diga o que escolheu". Você revisa depois.</p></div>
+</section>
+
+<section class="step" data-kind="tarefa">
+  <h2><span class="n">3</span>Revise o texto e peça o ZIP</h2>
+  <p>Quando termina, o Claude mostra os arquivos da skill ao lado da conversa. Leia o SKILL.md e confira três coisas: o nome no topo é igual ao nome da pasta da skill, a sua <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.">descrição</span> no cabeçalho e um exemplo no fim.</p>
+  <p>Quer mudar um trecho? Peça na conversa, como faria com uma pessoa. Depois, peça a pasta inteira num <span class="gterm" data-def="um arquivo que guarda uma pasta inteira compactada, com tudo o que tem dentro. É assim que a skill viaja até o app do Claude.">arquivo ZIP</span>.</p>
+  <p data-ex="advogado">O Raul pediu uma troca de palavra e, em seguida, o arquivo para baixar.</p>
+  <figure class="largo">
+    <div class="tela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+      <div class="tela-body">
+        <p class="msg eu"><span class="quem">Você</span>Na parte de prazos, troque "prazo" por "data-limite", que é como o escritório fala.</p>
+        <p class="msg ia ok"><span class="quem">Claude</span>Feito. Troquei nas três ocorrências do SKILL.md.</p>
+        <p class="msg eu"><span class="quem">Você</span>Está bom. Junte a pasta da skill num arquivo ZIP para eu baixar.</p>
+        <p class="msg ia ok"><span class="quem">Claude</span>Pronto: parecer-trabalhista.zip, com o SKILL.md e o modelo de parecer dentro. Clique no arquivo para baixar.</p>
+      </div>
+      <p class="tela-nota bom">Ajuste pedido em uma linha, e a pasta saiu compactada sem ele abrir nenhum programa.</p>
+    </div>
+      </figure>
+  <details class="mais"><summary>E se a skill-creator não aparecer na sua lista?</summary><p>Procure em Personalizar › Skills e ligue a chave dela. Se não estiver lá, faça o pedido mesmo assim, sem citar o nome: "me ajude a criar uma skill, fazendo perguntas antes de escrever". O Claude conduz a entrevista do mesmo jeito.</p></details>
+</section>
+
+<section class="practice" data-mode="prompt">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Saia da conversa com o ZIP da sua skill</h3>
+  <p class="pgoal">Pronto quando o arquivo ZIP da sua skill estiver salvo no seu computador. Cerca de 12 minutos, no computador.</p>
+  <p class="psafe">Criar a skill não liga nada: ela só passa a valer quando você enviar, na aula 6. Não fez as aulas anteriores? Deixe os campos em branco; o Claude pergunta a descrição e o exemplo. Se o resultado sair estranho, peça para refazer a parte que incomodou.</p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Use a skill skill-creator para criar comigo uma skill.
+Tarefa: &lt;a tarefa que se repete, da aula 1&gt;
+Descrição que já escrevi: &lt;a frase da aula 2&gt;
+Um exemplo real de pedido e de resposta boa:
+&lt;cole aqui&gt;
+
+Faça suas perguntas antes de escrever.
+Instruções curtas, cada regra com o motivo.
+No fim, junte a pasta da skill num arquivo ZIP para eu baixar.</pre></div>
+  <details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
+    <p>Tarefa: <b>responder orçamento de banho e tosa</b>.<br>Descrição: "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."<br>Exemplo: cliente pergunta "quanto fica a tosa do meu shih-tzu?" e a resposta boa é "Oi! Shih-tzu é porte pequeno: banho e tosa fica R$ 80. Quer agendar?". Ela colou também a tabela de preços da loja.</p>
+  </details>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Numa conversa nova, cole o molde com a sua tarefa, a descrição e um exemplo real.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Responda às perguntas com casos do seu trabalho. Leia o SKILL.md: nome, descrição sua, exemplo no fim.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Baixe o ZIP. O navegador guarda na pasta de arquivos baixados: arraste o arquivo de lá para a pasta Documentos e anote o nome dele para a aula 6.</span></label></li>
+  </ol>
+  <p class="pdone">Você acabou de criar a sua primeira skill, sem abrir editor de texto, e tem o arquivo pronto para enviar.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>Criar conversando</h3>
+    <ol>
+      <li><span><b>Peça a skill-creator</b>com a tarefa, a descrição e um exemplo real.</span></li>
+      <li><span><b>Responda com casos</b>regra clara no lugar de "o normal".</span></li>
+      <li><span><b>Revise e compacte</b>confira as três partes e baixe o ZIP.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe criar uma skill numa conversa com o Claude.</p>
+    <p class="na-action">Hoje, releia o SKILL.md da sua skill e procure uma regra sem o porquê. Peça ao Claude, na mesma conversa, para reescrever só ela.</p>
+    <p class="na-hook">Na próxima aula: o ZIP está no seu computador. Você vai entregá-lo ao app e ver o Claude usar a sua skill.</p>
+  </div>
+</div>
+<nav class="lnav"><a href="#aula-4">← aula anterior</a><a class="next" href="#aula-6">próxima aula →</a></nav>
+<p class="aula-pe">Aula 5 · Skills v6 · INEMA.CLUB</p>
+</div>
+<script type="application/json" id="cards-5">
+[
+  {"front":"O Claude perguntou como você trata um cliente atrasado e você respondeu \"do jeito normal\". O que provavelmente vai aparecer na skill?","back":"Uma instrução vaga, que o Claude completa com o jeito mais comum. Um caso real vira uma regra que ele consegue seguir."},
+  {"front":"A skill-creator não aparece na sua lista. Você ainda consegue criar a skill conversando?","back":"Sim. Peça para criar uma skill fazendo perguntas antes de escrever; o Claude conduz a entrevista do mesmo jeito."},
+  {"front":"Por que pedir a pasta num arquivo ZIP no fim da conversa?","back":"Porque é assim que a skill viaja até o app: o envio na lista de skills aceita a pasta compactada."}
+]
+</script>
+</section>
