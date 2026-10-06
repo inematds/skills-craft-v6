@@ -1,241 +1,234 @@
-<!doctype html>
-<html lang="pt-BR" data-theme="papel">
+<!DOCTYPE html>
+
+<html data-theme="papel" lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="curso" content="skillsv6">
-<meta name="formato" content="formato-curso-v6">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="skillsv6" name="curso"/>
+<meta content="formato-curso-v6" name="formato"/>
 <title>Skills v6 — Ensine uma vez, o Claude repete do seu jeito · INEMA.CLUB PRO</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/aula.css">
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="assets/aula.css" rel="stylesheet"/>
 <script>(function(){try{var s=JSON.parse(localStorage.getItem("skillsv6"));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute("data-theme",s.prefs.theme);}catch(e){}})();</script>
-</head>
+<link data-nome="Português" href="curso.html" hreflang="pt-BR" rel="alternate"/><link data-nome="English" href="en/curso.html" hreflang="en" rel="alternate"/><link data-nome="Español" href="es/curso.html" hreflang="es" rel="alternate"/></head>
 <body>
 <header class="bar"><div class="bar-inner">
-  <span class="brand"><a class="mark" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a><a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a><a class="course" href="landing.html">Skills v6</a></span>
-  <a class="btn back" href="#trilha" hidden>← <span class="t">trilha</span></a>
-  <button class="btn" id="revbtn" hidden>revisar</button>
-  <button class="btn" id="prefsbtn" aria-label="Tamanho da letra e tema">Aa</button>
-  <button class="btn" id="menubtn" aria-label="Menu">☰</button>
+<span class="brand"><a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="landing.html">Skills v6</a></span>
+<a class="btn back" hidden="" href="#trilha">← <span class="t">trilha</span></a>
+<button class="btn" hidden="" id="revbtn">revisar</button>
+<button aria-label="Tamanho da letra e tema" class="btn" id="prefsbtn">Aa</button>
+<button aria-label="Menu" class="btn" id="menubtn">☰</button>
 </div></header>
-
 <section class="view" id="v-trilha">
-  <div class="wrap">
-    <header class="t-hero">
-      <p class="kicker">Skills v6 · 3 módulos · 8 aulas de uns 15 minutos</p>
-      <h1>Ensine uma vez, o Claude <em>repete do seu jeito</em></h1>
-      <p class="lead">Você para de colar as mesmas instruções toda vez e cria uma skill: uma receita que o Claude guarda e usa sozinho quando o pedido combina. Sem programar, no app do Claude, com o Raul, advogado trabalhista, e a Débora, dona de pet shop.</p>
-      <figure class="cena"><img src="assets/img/trilha.webp" alt="Um advogado e uma dona de pet shop, sentados lado a lado diante de um notebook numa mesa de madeira, olhando juntos uma ficha de receita na mão dela, com um cachorro deitado no chão." width="1280" height="720"></figure>
-    </header>
-    <div class="statcards"></div>
-    <a class="continuar" href="#aula-1"></a>
-    <section class="modulo" id="modulo-1" data-modulo="1">
-      <h2 class="sec-title">Módulo 1 · O que é uma skill</h2>
-      <p class="mod-resumo">A receita que o Claude guarda, a descrição que decide quando ela entra e as skills que já vêm prontas.</p>
-      <div class="aulas">
-    <a class="au" data-aula="1" href="#aula-1">
-      <img class="thumb" src="assets/img/aula-1.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 1</span><h3>Uma receita que o Claude guarda</h3><p class="meta">13 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="2" href="#aula-2">
-      <img class="thumb" src="assets/img/aula-2.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 2</span><h3>A descrição decide quando a skill entra</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="3" href="#aula-3">
-      <img class="thumb" src="assets/img/aula-3.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 3</span><h3>Ligue as skills que já vêm prontas</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
-    </a>
-      </div>
-    </section>
-    <section class="modulo" id="modulo-2" data-modulo="2">
-      <h2 class="sec-title">Módulo 2 · Sua primeira skill</h2>
-      <p class="mod-resumo">Por dentro de uma skill, criar a sua conversando com o Claude e ligar no app.</p>
-      <div class="aulas">
-    <a class="au" data-aula="4" href="#aula-4">
-      <img class="thumb" src="assets/img/aula-4.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 4</span><h3>Por dentro, uma skill é texto organizado</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="5" href="#aula-5">
-      <img class="thumb" src="assets/img/aula-5.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 5</span><h3>Crie a sua conversando com o Claude</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="6" href="#aula-6">
-      <img class="thumb" src="assets/img/aula-6.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 6</span><h3>Envie e ligue a sua skill</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
-    </a>
-      </div>
-    </section>
-    <section class="modulo" id="modulo-3" data-modulo="3">
-      <h2 class="sec-title">Módulo 3 · Deixar a skill boa</h2>
-      <p class="mod-resumo">Testar com e sem a skill, corrigir o que falhou e saber o que não vira skill.</p>
-      <div class="aulas">
-    <a class="au" data-aula="7" href="#aula-7">
-      <img class="thumb" src="assets/img/aula-7.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 7</span><h3>Teste a skill com e sem ela</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="8" href="#aula-8">
-      <img class="thumb" src="assets/img/aula-8.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 8</span><h3>Corrija, mantenha e saiba quando parar</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
-    </a>
-      </div>
-    </section>
-    <a class="gl-link" href="#glossario">Glossário · 11 termos <span aria-hidden="true">→</span></a>
-  </div>
-  <footer class="pe">Skills v6 · INEMA.CLUB · <a href="landing.html">sobre o curso</a></footer>
+<div class="wrap">
+<header class="t-hero">
+<p class="kicker">Skills v6 · 3 módulos · 8 aulas de uns 15 minutos</p>
+<h1>Ensine uma vez, o Claude <em>repete do seu jeito</em></h1>
+<p class="lead">Você para de colar as mesmas instruções toda vez e cria uma skill: uma receita que o Claude guarda e usa sozinho quando o pedido combina. Sem programar, no app do Claude, com o Raul, advogado trabalhista, e a Débora, dona de pet shop.</p>
+<figure class="cena"><img alt="Um advogado e uma dona de pet shop, sentados lado a lado diante de um notebook numa mesa de madeira, olhando juntos uma ficha de receita na mão dela, com um cachorro deitado no chão." height="720" src="assets/img/trilha.webp" width="1280"/></figure>
+</header>
+<div class="statcards"></div>
+<a class="continuar" href="#aula-1"></a>
+<section class="modulo" data-modulo="1" id="modulo-1">
+<h2 class="sec-title">Módulo 1 · O que é uma skill</h2>
+<p class="mod-resumo">A receita que o Claude guarda, a descrição que decide quando ela entra e as skills que já vêm prontas.</p>
+<div class="aulas">
+<a class="au" data-aula="1" href="#aula-1">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-1.webp" width="96"/>
+<div><span class="n">Aula 1</span><h3>Uma receita que o Claude guarda</h3><p class="meta">13 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="2" href="#aula-2">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-2.webp" width="96"/>
+<div><span class="n">Aula 2</span><h3>A descrição decide quando a skill entra</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="3" href="#aula-3">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-3.webp" width="96"/>
+<div><span class="n">Aula 3</span><h3>Ligue as skills que já vêm prontas</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
+</a>
+</div>
 </section>
-
+<section class="modulo" data-modulo="2" id="modulo-2">
+<h2 class="sec-title">Módulo 2 · Sua primeira skill</h2>
+<p class="mod-resumo">Por dentro de uma skill, criar a sua conversando com o Claude e ligar no app.</p>
+<div class="aulas">
+<a class="au" data-aula="4" href="#aula-4">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-4.webp" width="96"/>
+<div><span class="n">Aula 4</span><h3>Por dentro, uma skill é texto organizado</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="5" href="#aula-5">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-5.webp" width="96"/>
+<div><span class="n">Aula 5</span><h3>Crie a sua conversando com o Claude</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="6" href="#aula-6">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-6.webp" width="96"/>
+<div><span class="n">Aula 6</span><h3>Envie e ligue a sua skill</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
+</a>
+</div>
+</section>
+<section class="modulo" data-modulo="3" id="modulo-3">
+<h2 class="sec-title">Módulo 3 · Deixar a skill boa</h2>
+<p class="mod-resumo">Testar com e sem a skill, corrigir o que falhou e saber o que não vira skill.</p>
+<div class="aulas">
+<a class="au" data-aula="7" href="#aula-7">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-7.webp" width="96"/>
+<div><span class="n">Aula 7</span><h3>Teste a skill com e sem ela</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="8" href="#aula-8">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-8.webp" width="96"/>
+<div><span class="n">Aula 8</span><h3>Corrija, mantenha e saiba quando parar</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
+</a>
+</div>
+</section>
+<a class="gl-link" href="#glossario">Glossário · 11 termos <span aria-hidden="true">→</span></a>
+</div>
+<footer class="pe">Skills v6 · INEMA.CLUB · <a href="landing.html">sobre o curso</a></footer>
+</section>
 <section class="view" id="v-glossario">
-  <div class="wrap">
-    <header class="t-hero">
-      <p class="kicker">Skills v6</p>
-      <h1>Glossário</h1>
-      <p class="lead">Os termos técnicos do curso em palavras simples. Cada termo leva às aulas em que aparece.</p>
-    </header>
-    <dl class="glossario">
-      <div class="gl-item" id="g-arquivo-zip"><dt>arquivo ZIP</dt><dd><p>um arquivo que guarda uma pasta inteira compactada, com tudo o que tem dentro. É assim que a skill viaja até o app do Claude.</p><p class="gl-aulas">Aparece em: <a href="#aula-5">Aula 5</a> <a href="#aula-6">Aula 6</a></p></dd></div>
-      <div class="gl-item" id="g-cabecalho"><dt>cabeçalho</dt><dd><p>as linhas entre os dois traços triplos no topo do SKILL.md. Guardam o nome e a descrição da skill, que o Claude lê antes de tudo.</p><p class="gl-aulas">Aparece em: <a href="#aula-4">Aula 4</a></p></dd></div>
-      <div class="gl-item" id="g-conector"><dt>conector</dt><dd><p>uma ligação do Claude com outro serviço, como a agenda ou o e-mail, para ele ler dados atualizados na hora.</p><p class="gl-aulas">Aparece em: <a href="#aula-8">Aula 8</a></p></dd></div>
-      <div class="gl-item" id="g-descricao"><dt>descrição</dt><dd><p>a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.</p><p class="gl-aulas">Aparece em: <a href="#aula-1">Aula 1</a> <a href="#aula-2">Aula 2</a> <a href="#aula-4">Aula 4</a> <a href="#aula-5">Aula 5</a> <a href="#aula-6">Aula 6</a> <a href="#aula-7">Aula 7</a> <a href="#aula-8">Aula 8</a></p></dd></div>
-      <div class="gl-item" id="g-execucao-de-codigo-e-criacao-de-arquivos"><dt>execução de código e criação de arquivos</dt><dd><p>a permissão para o Claude criar e editar arquivos num espaço protegido da própria conversa. Nada sai do seu computador sem você baixar. As skills dependem dela.</p><p class="gl-aulas">Aparece em: <a href="#aula-3">Aula 3</a></p></dd></div>
-      <div class="gl-item" id="g-preferencias-pessoais"><dt>preferências pessoais</dt><dd><p>um campo nas Configurações do app do Claude, no seu perfil, onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado.</p><p class="gl-aulas">Aparece em: <a href="#aula-1">Aula 1</a> <a href="#aula-8">Aula 8</a></p></dd></div>
-      <div class="gl-item" id="g-projeto"><dt>projeto</dt><dd><p>um espaço do app do Claude que junta conversas e documentos de um mesmo assunto, com instruções que valem só ali dentro.</p><p class="gl-aulas">Aparece em: <a href="#aula-8">Aula 8</a></p></dd></div>
-      <div class="gl-item" id="g-raciocinio"><dt>raciocínio</dt><dd><p>o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali.</p><p class="gl-aulas">Aparece em: <a href="#aula-3">Aula 3</a> <a href="#aula-6">Aula 6</a> <a href="#aula-7">Aula 7</a> <a href="#aula-8">Aula 8</a></p></dd></div>
-      <div class="gl-item" id="g-skill"><dt>skill</dt><dd><p>uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.</p><p class="gl-aulas">Aparece em: <a href="#aula-1">Aula 1</a> <a href="#aula-2">Aula 2</a> <a href="#aula-3">Aula 3</a> <a href="#aula-4">Aula 4</a> <a href="#aula-5">Aula 5</a> <a href="#aula-6">Aula 6</a> <a href="#aula-7">Aula 7</a> <a href="#aula-8">Aula 8</a></p></dd></div>
-      <div class="gl-item" id="g-skill-creator"><dt>skill-creator</dt><dd><p>uma skill pronta da Anthropic que conduz a criação de uma skill nova com você: faz perguntas, escreve o SKILL.md e sugere testes.</p><p class="gl-aulas">Aparece em: <a href="#aula-5">Aula 5</a></p></dd></div>
-      <div class="gl-item" id="g-skill-md"><dt>SKILL.md</dt><dd><p>o arquivo principal de toda skill: um texto simples com o cabeçalho e as instruções. O nome é sempre esse, com SKILL em maiúsculas.</p><p class="gl-aulas">Aparece em: <a href="#aula-4">Aula 4</a></p></dd></div>
-    </dl>
-  </div>
-  <footer class="pe">Skills v6 · INEMA.CLUB · <a href="landing.html">sobre o curso</a></footer>
+<div class="wrap">
+<header class="t-hero">
+<p class="kicker">Skills v6</p>
+<h1>Glossário</h1>
+<p class="lead">Os termos técnicos do curso em palavras simples. Cada termo leva às aulas em que aparece.</p>
+</header>
+<dl class="glossario">
+<div class="gl-item" id="g-arquivo-zip"><dt>arquivo ZIP</dt><dd><p>um arquivo que guarda uma pasta inteira compactada, com tudo o que tem dentro. É assim que a skill viaja até o app do Claude.</p><p class="gl-aulas">Aparece em: <a href="#aula-5">Aula 5</a> <a href="#aula-6">Aula 6</a></p></dd></div>
+<div class="gl-item" id="g-cabecalho"><dt>cabeçalho</dt><dd><p>as linhas entre os dois traços triplos no topo do SKILL.md. Guardam o nome e a descrição da skill, que o Claude lê antes de tudo.</p><p class="gl-aulas">Aparece em: <a href="#aula-4">Aula 4</a></p></dd></div>
+<div class="gl-item" id="g-conector"><dt>conector</dt><dd><p>uma ligação do Claude com outro serviço, como a agenda ou o e-mail, para ele ler dados atualizados na hora.</p><p class="gl-aulas">Aparece em: <a href="#aula-8">Aula 8</a></p></dd></div>
+<div class="gl-item" id="g-descricao"><dt>descrição</dt><dd><p>a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill.</p><p class="gl-aulas">Aparece em: <a href="#aula-1">Aula 1</a> <a href="#aula-2">Aula 2</a> <a href="#aula-4">Aula 4</a> <a href="#aula-5">Aula 5</a> <a href="#aula-6">Aula 6</a> <a href="#aula-7">Aula 7</a> <a href="#aula-8">Aula 8</a></p></dd></div>
+<div class="gl-item" id="g-execucao-de-codigo-e-criacao-de-arquivos"><dt>execução de código e criação de arquivos</dt><dd><p>a permissão para o Claude criar e editar arquivos num espaço protegido da própria conversa. Nada sai do seu computador sem você baixar. As skills dependem dela.</p><p class="gl-aulas">Aparece em: <a href="#aula-3">Aula 3</a></p></dd></div>
+<div class="gl-item" id="g-preferencias-pessoais"><dt>preferências pessoais</dt><dd><p>um campo nas Configurações do app do Claude, no seu perfil, onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado.</p><p class="gl-aulas">Aparece em: <a href="#aula-1">Aula 1</a> <a href="#aula-8">Aula 8</a></p></dd></div>
+<div class="gl-item" id="g-projeto"><dt>projeto</dt><dd><p>um espaço do app do Claude que junta conversas e documentos de um mesmo assunto, com instruções que valem só ali dentro.</p><p class="gl-aulas">Aparece em: <a href="#aula-8">Aula 8</a></p></dd></div>
+<div class="gl-item" id="g-raciocinio"><dt>raciocínio</dt><dd><p>o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali.</p><p class="gl-aulas">Aparece em: <a href="#aula-3">Aula 3</a> <a href="#aula-6">Aula 6</a> <a href="#aula-7">Aula 7</a> <a href="#aula-8">Aula 8</a></p></dd></div>
+<div class="gl-item" id="g-skill"><dt>skill</dt><dd><p>uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre.</p><p class="gl-aulas">Aparece em: <a href="#aula-1">Aula 1</a> <a href="#aula-2">Aula 2</a> <a href="#aula-3">Aula 3</a> <a href="#aula-4">Aula 4</a> <a href="#aula-5">Aula 5</a> <a href="#aula-6">Aula 6</a> <a href="#aula-7">Aula 7</a> <a href="#aula-8">Aula 8</a></p></dd></div>
+<div class="gl-item" id="g-skill-creator"><dt>skill-creator</dt><dd><p>uma skill pronta da Anthropic que conduz a criação de uma skill nova com você: faz perguntas, escreve o SKILL.md e sugere testes.</p><p class="gl-aulas">Aparece em: <a href="#aula-5">Aula 5</a></p></dd></div>
+<div class="gl-item" id="g-skill-md"><dt>SKILL.md</dt><dd><p>o arquivo principal de toda skill: um texto simples com o cabeçalho e as instruções. O nome é sempre esse, com SKILL em maiúsculas.</p><p class="gl-aulas">Aparece em: <a href="#aula-4">Aula 4</a></p></dd></div>
+</dl>
+</div>
+<footer class="pe">Skills v6 · INEMA.CLUB · <a href="landing.html">sobre o curso</a></footer>
 </section>
-
-<section class="view" id="v-aula-1" data-aula="1" data-tempo="13min">
+<section class="view" data-aula="1" data-tempo="13min" id="v-aula-1">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 1 de 8</p>
-  <h1>Uma receita que o Claude <em>guarda</em></h1>
-  <figure class="cena"><img src="assets/img/aula-1.webp" width="1280" height="720" alt="A dona de um pet shop, no balcão da loja, digita no celular a mesma mensagem longa de novo, com vários bilhetes iguais colados ao lado do caixa e um cachorro recém-tosado ao fundo."></figure>
-  <p class="promise">Você consegue apontar uma tarefa do seu trabalho que vale virar skill e outra que não vale.</p>
-  <p class="why">Toda semana você cola as mesmas instruções no Claude: o tom, o formato, o que nunca pode faltar. Basta esquecer uma linha e a resposta volta fora do padrão. Esta aula mostra o que é uma skill e em que tarefa ela compensa.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Uma skill é uma receita que você escreve uma vez e o Claude guarda.</li>
-      <li>Ele abre a receita sozinho quando o pedido <b>combina</b> com ela.</li>
-      <li>Vale para tarefa que se repete do mesmo jeito. Tarefa única não precisa.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 1 de 8</p>
+<h1>Uma receita que o Claude <em>guarda</em></h1>
+<figure class="cena"><img alt="A dona de um pet shop, no balcão da loja, digita no celular a mesma mensagem longa de novo, com vários bilhetes iguais colados ao lado do caixa e um cachorro recém-tosado ao fundo." height="720" src="assets/img/aula-1.webp" width="1280"/></figure>
+<p class="promise">Você consegue apontar uma tarefa do seu trabalho que vale virar skill e outra que não vale.</p>
+<p class="why">Toda semana você cola as mesmas instruções no Claude: o tom, o formato, o que nunca pode faltar. Basta esquecer uma linha e a resposta volta fora do padrão. Esta aula mostra o que é uma skill e em que tarefa ela compensa.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Uma skill é uma receita que você escreve uma vez e o Claude guarda.</li>
+<li>Ele abre a receita sozinho quando o pedido <b>combina</b> com ela.</li>
+<li>Vale para tarefa que se repete do mesmo jeito. Tarefa única não precisa.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">1</span>Você repete as mesmas instruções toda vez</h2>
-  <p>Numa conversa nova, o Claude não lembra do seu jeito de trabalhar. Por isso você cola tudo de novo: o tom, o tamanho, os preços. Quando a lista é longa, sempre falta alguma coisa.</p>
-  <p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> resolve isso. Você escreve as instruções uma vez. O Claude passa a segui-las sempre que o pedido for daquele tipo.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora responde uns quinze pedidos de orçamento de banho e tosa por dia. Antes, colava no Claude oito linhas com a tabela de preços e o tom da loja. Com a skill, ela cola só a mensagem do cliente.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-caso" data-rotulo="Sem skill">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Responda este cliente: "Quanto fica banho e tosa de um poodle médio?"</p>
-          <p class="msg ia falha"><span class="quem">Claude</span>Olá! O valor de banho e tosa varia conforme a região, o porte e o tipo de pelo. Recomendo consultar diretamente o pet shop…</p>
-        </div>
-        <p class="tela-nota ruim">Sem as instruções dela, o Claude não sabe os preços nem que está falando pela loja.</p>
-      </div>
-      <div class="tela-caso" data-rotulo="Com a skill">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Responda este cliente: "Quanto fica banho e tosa de um poodle médio?"</p>
-          <p class="msg ia ok"><span class="quem">Claude</span>Oi, tudo bem? Banho e tosa para poodle médio fica R$ 95, com corte de unhas incluso. Quer que eu reserve um horário? Me diga o melhor dia.</p>
-        </div>
-        <p class="tela-nota bom">O preço e o tom vieram da skill da Débora, que traz a tabela da loja (poodle médio: R$ 95).</p>
-      </div>
-    </div>
-    <figcaption><b>Toque nos dois botões</b>: o pedido é o mesmo, só muda o que o Claude tem guardado.</figcaption>
-  </figure>
+<h2><span class="n">1</span>Você repete as mesmas instruções toda vez</h2>
+<p>Numa conversa nova, o Claude não lembra do seu jeito de trabalhar. Por isso você cola tudo de novo: o tom, o tamanho, os preços. Quando a lista é longa, sempre falta alguma coisa.</p>
+<p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> resolve isso. Você escreve as instruções uma vez. O Claude passa a segui-las sempre que o pedido for daquele tipo.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora responde uns quinze pedidos de orçamento de banho e tosa por dia. Antes, colava no Claude oito linhas com a tabela de preços e o tom da loja. Com a skill, ela cola só a mensagem do cliente.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-caso" data-rotulo="Sem skill">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Responda este cliente: "Quanto fica banho e tosa de um poodle médio?"</p>
+<p class="msg ia falha"><span class="quem">Claude</span>Olá! O valor de banho e tosa varia conforme a região, o porte e o tipo de pelo. Recomendo consultar diretamente o pet shop…</p>
+</div>
+<p class="tela-nota ruim">Sem as instruções dela, o Claude não sabe os preços nem que está falando pela loja.</p>
+</div>
+<div class="tela-caso" data-rotulo="Com a skill">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Responda este cliente: "Quanto fica banho e tosa de um poodle médio?"</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Oi, tudo bem? Banho e tosa para poodle médio fica R$ 95, com corte de unhas incluso. Quer que eu reserve um horário? Me diga o melhor dia.</p>
+</div>
+<p class="tela-nota bom">O preço e o tom vieram da skill da Débora, que traz a tabela da loja (poodle médio: R$ 95).</p>
+</div>
+</div>
+<figcaption><b>Toque nos dois botões</b>: o pedido é o mesmo, só muda o que o Claude tem guardado.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">2</span>A skill entra sozinha quando o pedido combina</h2>
-  <p>Você não precisa chamar a skill pelo nome. O Claude olha a lista das suas skills e lê uma frase curta de cada uma, a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>. Se o pedido combina, ele abre aquela skill e segue o que está escrito.</p>
-  <p>As outras ficam fechadas e não atrapalham. Por isso dá para ter várias skills, uma para cada tarefa.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul tem duas skills: uma para parecer trabalhista e outra para e-mail de andamento ao cliente. Quando ele pede "resuma a audiência de hoje para o cliente", o Claude abre só a do e-mail.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>O que o Claude faz com o pedido</span></div>
-      <div class="janela-body">
-        <div class="item doc"><span class="pin">1</span> Pedido: "resuma a audiência de hoje para o cliente"</div>
-        <div class="item doc dentro"><span class="pin">2</span> parecer-trabalhista — leu a descrição, ficou fechada</div>
-        <div class="item doc dentro"><span class="pin">3</span> email-andamento — leu a descrição, abriu e seguiu</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>O pedido chega, escrito do jeito de sempre.</span></li>
-      <li><span class="pin">2</span><span>A skill de parecer não combina com resumo ao cliente. Fica fechada.</span></li>
-      <li><span class="pin">3</span><span>A de e-mail combina. O Claude abre e segue as instruções dela.</span></li>
-    </ol>
-  </figure>
+<h2><span class="n">2</span>A skill entra sozinha quando o pedido combina</h2>
+<p>Você não precisa chamar a skill pelo nome. O Claude olha a lista das suas skills e lê uma frase curta de cada uma, a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>. Se o pedido combina, ele abre aquela skill e segue o que está escrito.</p>
+<p>As outras ficam fechadas e não atrapalham. Por isso dá para ter várias skills, uma para cada tarefa.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul tem duas skills: uma para parecer trabalhista e outra para e-mail de andamento ao cliente. Quando ele pede "resuma a audiência de hoje para o cliente", o Claude abre só a do e-mail.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>O que o Claude faz com o pedido</span></div>
+<div class="janela-body">
+<div class="item doc"><span class="pin">1</span> Pedido: "resuma a audiência de hoje para o cliente"</div>
+<div class="item doc dentro"><span class="pin">2</span> parecer-trabalhista — leu a descrição, ficou fechada</div>
+<div class="item doc dentro"><span class="pin">3</span> email-andamento — leu a descrição, abriu e seguiu</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>O pedido chega, escrito do jeito de sempre.</span></li>
+<li><span class="pin">2</span><span>A skill de parecer não combina com resumo ao cliente. Fica fechada.</span></li>
+<li><span class="pin">3</span><span>A de e-mail combina. O Claude abre e segue as instruções dela.</span></li>
+</ol>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">3</span>Vale para o que se repete do mesmo jeito</h2>
-  <p>Escrever uma skill leva uns vinte minutos. Compensa quando a tarefa volta toda semana e você quer o mesmo resultado sempre.</p>
-  <p>Três casos não pedem skill. A tarefa que acontece uma vez só se resolve na própria conversa. O dado que muda todo dia, como a agenda de hoje, não cabe numa receita fixa. E a regra que vale para qualquer conversa vai nas <span class="gterm" data-def="um campo nas Configurações do app do Claude, no seu perfil, onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado." data-gl="preferencias-pessoais">preferências pessoais</span>, que ficam nas Configurações do app.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora separou as tarefas dela em dois cartões antes de criar a primeira skill.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="bom"><span class="rot">Vale skill</span><p><b>Orçamento de banho e tosa:</b> todo dia, mesma tabela, mesmo tom.</p><p><b>Aviso "seu pet está pronto":</b> várias vezes por dia, mesmo formato.</p></div>
-      <div class="neutro"><span class="rot">Não vale skill</span><p><b>Carta para o dono do imóvel:</b> acontece uma vez. Basta conversar.</p><p><b>Horários livres de hoje:</b> mudam toda hora. Ela cola a agenda no pedido.</p></div>
-    </div>
-    <figcaption>Nenhum cartão está errado: o <b>Vale skill</b> guarda o que repete, e o outro resolve na conversa.</figcaption>
-  </figure>
-  <div class="quiz" data-answer="b">
-    <p class="qk">Teste-se</p>
-    <p class="q">O Raul quer que o Claude escreva sempre em português formal, em qualquer conversa. Qual é o caminho?</p>
-    <button class="opt" data-k="a" data-fb="Funciona, mas a skill só entra quando o pedido combina com ela. Uma regra de toda conversa ficaria de fora muitas vezes.">Criar uma skill de português formal</button>
-    <button class="opt" data-k="b" data-fb="Isso. O que vale para toda conversa fica nas preferências pessoais, sempre ligado.">Escrever nas preferências pessoais</button>
-    <button class="opt" data-k="c" data-fb="Dá certo, mas é justamente a repetição que dá para evitar.">Colar a regra em cada conversa</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>A fronteira entre skill e conversa comum confunde no começo. Use uma pergunta só: "vou pedir isso de novo, do mesmo jeito, na semana que vem?". Se a resposta for sim, a tarefa é candidata.</p></div>
+<h2><span class="n">3</span>Vale para o que se repete do mesmo jeito</h2>
+<p>Escrever uma skill leva uns vinte minutos. Compensa quando a tarefa volta toda semana e você quer o mesmo resultado sempre.</p>
+<p>Três casos não pedem skill. A tarefa que acontece uma vez só se resolve na própria conversa. O dado que muda todo dia, como a agenda de hoje, não cabe numa receita fixa. E a regra que vale para qualquer conversa vai nas <span class="gterm" data-def="um campo nas Configurações do app do Claude, no seu perfil, onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado." data-gl="preferencias-pessoais">preferências pessoais</span>, que ficam nas Configurações do app.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora separou as tarefas dela em dois cartões antes de criar a primeira skill.</p>
+<figure class="largo">
+<div class="lado">
+<div class="bom"><span class="rot">Vale skill</span><p><b>Orçamento de banho e tosa:</b> todo dia, mesma tabela, mesmo tom.</p><p><b>Aviso "seu pet está pronto":</b> várias vezes por dia, mesmo formato.</p></div>
+<div class="neutro"><span class="rot">Não vale skill</span><p><b>Carta para o dono do imóvel:</b> acontece uma vez. Basta conversar.</p><p><b>Horários livres de hoje:</b> mudam toda hora. Ela cola a agenda no pedido.</p></div>
+</div>
+<figcaption>Nenhum cartão está errado: o <b>Vale skill</b> guarda o que repete, e o outro resolve na conversa.</figcaption>
+</figure>
+<div class="quiz" data-answer="b">
+<p class="qk">Teste-se</p>
+<p class="q">O Raul quer que o Claude escreva sempre em português formal, em qualquer conversa. Qual é o caminho?</p>
+<button class="opt" data-fb="Funciona, mas a skill só entra quando o pedido combina com ela. Uma regra de toda conversa ficaria de fora muitas vezes." data-k="a">Criar uma skill de português formal</button>
+<button class="opt" data-fb="Isso. O que vale para toda conversa fica nas preferências pessoais, sempre ligado." data-k="b">Escrever nas preferências pessoais</button>
+<button class="opt" data-fb="Dá certo, mas é justamente a repetição que dá para evitar." data-k="c">Colar a regra em cada conversa</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>A fronteira entre skill e conversa comum confunde no começo. Use uma pergunta só: "vou pedir isso de novo, do mesmo jeito, na semana que vem?". Se a resposta for sim, a tarefa é candidata.</p></div>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Encontre a sua primeira skill</h3>
-  <p class="pgoal">Pronto quando você tiver anotado uma tarefa que vale virar skill e uma que não vale, cada uma com o motivo. Cerca de 8 minutos. Dá para fazer no celular, nas Notas, ou no papel.</p>
-  <p class="psafe">Nada muda no seu Claude: é só uma lista. Se nenhuma tarefa aparecer, abra suas últimas dez conversas e procure instruções que você colou mais de uma vez.</p>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Anote cinco tarefas que você pediu ao Claude, ou a qualquer IA, no último mês.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Marque as que voltam pelo menos uma vez por semana, do mesmo jeito.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Escolha uma marcada para ser a sua skill e uma não marcada. Escreva ao lado de cada uma o motivo em uma linha.</span></label></li>
-  </ol>
-  <details class="mais"><summary>Veja a lista do Raul</summary>
-    <p><b>Vale skill:</b> parecer trabalhista com a mesma estrutura de cinco partes. Motivo: faço dois por semana e sempre corrijo a ordem.<br><b>Não vale:</b> a petição do caso da metalúrgica. Motivo: é um caso único, resolvo na conversa.</p>
-  </details>
-  <p class="pdone">Você acabou de escolher, com motivo, a tarefa que vai virar a sua primeira skill.</p>
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Encontre a sua primeira skill</h3>
+<p class="pgoal">Pronto quando você tiver anotado uma tarefa que vale virar skill e uma que não vale, cada uma com o motivo. Cerca de 8 minutos. Dá para fazer no celular, nas Notas, ou no papel.</p>
+<p class="psafe">Nada muda no seu Claude: é só uma lista. Se nenhuma tarefa aparecer, abra suas últimas dez conversas e procure instruções que você colou mais de uma vez.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Anote cinco tarefas que você pediu ao Claude, ou a qualquer IA, no último mês.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Marque as que voltam pelo menos uma vez por semana, do mesmo jeito.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Escolha uma marcada para ser a sua skill e uma não marcada. Escreva ao lado de cada uma o motivo em uma linha.</span></label></li>
+</ol>
+<details class="mais"><summary>Veja a lista do Raul</summary>
+<p><b>Vale skill:</b> parecer trabalhista com a mesma estrutura de cinco partes. Motivo: faço dois por semana e sempre corrijo a ordem.<br/><b>Não vale:</b> a petição do caso da metalúrgica. Motivo: é um caso único, resolvo na conversa.</p>
+</details>
+<p class="pdone">Você acabou de escolher, com motivo, a tarefa que vai virar a sua primeira skill.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>O que é uma skill</h3>
-    <ol>
-      <li><span><b>Receita guardada</b>instruções que você escreve uma vez e o Claude segue sempre.</span></li>
-      <li><span><b>Entra sozinha</b>o Claude lê a descrição e abre a skill quando o pedido combina.</span></li>
-      <li><span><b>Só para o que repete</b>caso único fica na conversa; regra geral fica nas preferências.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe reconhecer uma tarefa que vale virar skill.</p>
-    <p class="na-action">Hoje, quando colar uma instrução repetida no Claude, salve esse texto nas Notas com o nome da tarefa. Ele vira matéria-prima na aula 5.</p>
-    <p class="na-hook">Na próxima aula: o Claude escolhe a skill lendo uma frase só. Você vai escrever essa frase.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>O que é uma skill</h3>
+<ol>
+<li><span><b>Receita guardada</b>instruções que você escreve uma vez e o Claude segue sempre.</span></li>
+<li><span><b>Entra sozinha</b>o Claude lê a descrição e abre a skill quando o pedido combina.</span></li>
+<li><span><b>Só para o que repete</b>caso único fica na conversa; regra geral fica nas preferências.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe reconhecer uma tarefa que vale virar skill.</p>
+<p class="na-action">Hoje, quando colar uma instrução repetida no Claude, salve esse texto nas Notas com o nome da tarefa. Ele vira matéria-prima na aula 5.</p>
+<p class="na-hook">Na próxima aula: o Claude escolhe a skill lendo uma frase só. Você vai escrever essa frase.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-2">próxima aula →</a></nav>
 <p class="aula-pe">Aula 1 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-1">
+<script id="cards-1" type="application/json">
 [
   {"front":"Você cola o mesmo bloco de instruções no Claude três vezes por semana. O que isso indica?","back":"Que a tarefa é candidata a skill: ela se repete do mesmo jeito, e a receita guardada evita esquecer uma linha."},
   {"front":"Qual a diferença entre uma skill e as preferências pessoais?","back":"A skill só entra quando o pedido combina com a descrição dela. As preferências valem para todas as conversas, sempre."},
@@ -243,140 +236,135 @@
 ]
 </script>
 </section>
-<section class="view" id="v-aula-2" data-aula="2" data-tempo="14min">
+<section class="view" data-aula="2" data-tempo="14min" id="v-aula-2">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 2 de 8</p>
-  <h1>A descrição decide <em>quando a skill entra</em></h1>
-  <figure class="cena"><img src="assets/img/aula-2.webp" width="1280" height="720" alt="Um advogado no escritório escreve um rótulo curto numa ficha, diante de uma caixa de madeira cheia de fichas etiquetadas, com o notebook ao lado."></figure>
-  <p class="promise">Você consegue escrever a descrição da sua futura skill em até 200 caracteres, dizendo o que ela faz e quando usar.</p>
-  <p class="why">Uma skill com descrição vaga fica parada na lista: o Claude não percebe que ela serve. Uma descrição larga demais faz o contrário e aparece onde não devia. A frase certa resolve os dois problemas.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>O Claude decide abrir a skill lendo só a descrição dela.</li>
-      <li>Boa descrição diz <b>o que faz</b> e <b>quando usar</b>, com as palavras que você usa ao pedir.</li>
-      <li>No app do Claude, ela cabe em 200 caracteres.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 2 de 8</p>
+<h1>A descrição decide <em>quando a skill entra</em></h1>
+<figure class="cena"><img alt="Um advogado no escritório escreve um rótulo curto numa ficha, diante de uma caixa de madeira cheia de fichas etiquetadas, com o notebook ao lado." height="720" src="assets/img/aula-2.webp" width="1280"/></figure>
+<p class="promise">Você consegue escrever a descrição da sua futura skill em até 200 caracteres, dizendo o que ela faz e quando usar.</p>
+<p class="why">Uma skill com descrição vaga fica parada na lista: o Claude não percebe que ela serve. Uma descrição larga demais faz o contrário e aparece onde não devia. A frase certa resolve os dois problemas.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>O Claude decide abrir a skill lendo só a descrição dela.</li>
+<li>Boa descrição diz <b>o que faz</b> e <b>quando usar</b>, com as palavras que você usa ao pedir.</li>
+<li>No app do Claude, ela cabe em 200 caracteres.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">1</span>O Claude escolhe pela etiqueta</h2>
-  <p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> tem duas partes que importam aqui: o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>. Quando você manda um pedido, o Claude ainda não leu nenhuma skill inteira. Ele tem à mão só essas duas linhas de cada uma.</p>
-  <p>O nome vem em minúsculas, com hífen no lugar do espaço. Não se preocupe com isso: na aula 5 o Claude escreve o nome por você.</p>
-  <p>Por isso a descrição é a parte mais importante. Instruções ótimas não servem de nada se a skill nunca for aberta.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">A primeira skill do Raul tinha a descrição "Ajuda com documentos jurídicos". Ele pediu um parecer e o Claude não abriu a skill: a frase não falava em parecer.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Lista de skills</span></div>
-      <div class="janela-body">
-        <div class="item doc"><span class="pin">1</span> parecer-trabalhista — "Ajuda com documentos jurídicos."</div>
-        <div class="item doc"><span class="pin">2</span> email-andamento — "Escreve e-mail de andamento do processo ao cliente, em linguagem simples. Use quando eu pedir resumo, notícia ou atualização para o cliente."</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>Vaga: não diz que tipo de documento nem em que momento usar.</span></li>
-      <li><span class="pin">2</span><span>Clara: diz o que faz e lista as palavras que o Raul usa ao pedir.</span></li>
-    </ol>
-    <figcaption>É isto que o Claude enxerga antes de decidir: um nome e uma frase por skill.</figcaption>
-  </figure>
+<h2><span class="n">1</span>O Claude escolhe pela etiqueta</h2>
+<p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> tem duas partes que importam aqui: o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>. Quando você manda um pedido, o Claude ainda não leu nenhuma skill inteira. Ele tem à mão só essas duas linhas de cada uma.</p>
+<p>O nome vem em minúsculas, com hífen no lugar do espaço. Não se preocupe com isso: na aula 5 o Claude escreve o nome por você.</p>
+<p>Por isso a descrição é a parte mais importante. Instruções ótimas não servem de nada se a skill nunca for aberta.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">A primeira skill do Raul tinha a descrição "Ajuda com documentos jurídicos". Ele pediu um parecer e o Claude não abriu a skill: a frase não falava em parecer.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Lista de skills</span></div>
+<div class="janela-body">
+<div class="item doc"><span class="pin">1</span> parecer-trabalhista — "Ajuda com documentos jurídicos."</div>
+<div class="item doc"><span class="pin">2</span> email-andamento — "Escreve e-mail de andamento do processo ao cliente, em linguagem simples. Use quando eu pedir resumo, notícia ou atualização para o cliente."</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>Vaga: não diz que tipo de documento nem em que momento usar.</span></li>
+<li><span class="pin">2</span><span>Clara: diz o que faz e lista as palavras que o Raul usa ao pedir.</span></li>
+</ol>
+<figcaption>É isto que o Claude enxerga antes de decidir: um nome e uma frase por skill.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">2</span>Diga o que faz e quando usar</h2>
-  <p>Uma boa descrição tem duas metades. A primeira diz <b>o que a skill faz</b>, começando por um verbo: "Monta", "Responde", "Escreve". A segunda diz <b>quando usar</b>, com as situações em que ela deve entrar.</p>
-  <p>Escreva como quem apresenta a skill para outra pessoa. Evite "eu sou" ou "você deve": a descrição fala da skill, não com o Claude.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul reescreveu a frase vaga. Veja os dois cartões.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Antes</span><p><b>Descrição:</b> "Ajuda com documentos jurídicos."</p><p><b>Resultado:</b> não abria nos pedidos de parecer. A frase não dizia que documento nem quando usar.</p></div>
-      <div class="depois"><span class="rot">Depois</span><p><b>Descrição:</b> "Monta parecer trabalhista no formato do escritório: fatos, pedidos, prazos, riscos e recomendação. Use quando eu pedir parecer, análise de caso ou opinião sobre reclamação trabalhista."</p><p><b>Resultado:</b> abre nos pedidos de parecer e fica fechada no resto.</p></div>
-      <p class="saldo"><b>Saldo:</b> 184 caracteres, dentro do limite de 200 do app. Pedir 180 ao Claude deixa uma folga.</p>
-    </div>
-  </figure>
-  <details class="mais"><summary>Quer saber por que existe o limite?</summary><p>O Claude lê a descrição de todas as suas skills a cada pedido. Frases curtas deixam essa leitura rápida e evitam que uma skill "invada" o assunto da outra. Em outros programas que usam skills o limite é maior, mas a frase curta funciona em todos.</p></details>
+<h2><span class="n">2</span>Diga o que faz e quando usar</h2>
+<p>Uma boa descrição tem duas metades. A primeira diz <b>o que a skill faz</b>, começando por um verbo: "Monta", "Responde", "Escreve". A segunda diz <b>quando usar</b>, com as situações em que ela deve entrar.</p>
+<p>Escreva como quem apresenta a skill para outra pessoa. Evite "eu sou" ou "você deve": a descrição fala da skill, não com o Claude.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul reescreveu a frase vaga. Veja os dois cartões.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Antes</span><p><b>Descrição:</b> "Ajuda com documentos jurídicos."</p><p><b>Resultado:</b> não abria nos pedidos de parecer. A frase não dizia que documento nem quando usar.</p></div>
+<div class="depois"><span class="rot">Depois</span><p><b>Descrição:</b> "Monta parecer trabalhista no formato do escritório: fatos, pedidos, prazos, riscos e recomendação. Use quando eu pedir parecer, análise de caso ou opinião sobre reclamação trabalhista."</p><p><b>Resultado:</b> abre nos pedidos de parecer e fica fechada no resto.</p></div>
+<p class="saldo"><b>Saldo:</b> 184 caracteres, dentro do limite de 200 do app. Pedir 180 ao Claude deixa uma folga.</p>
+</div>
+</figure>
+<details class="mais"><summary>Quer saber por que existe o limite?</summary><p>O Claude lê a descrição de todas as suas skills a cada pedido. Frases curtas deixam essa leitura rápida e evitam que uma skill "invada" o assunto da outra. Em outros programas que usam skills o limite é maior, mas a frase curta funciona em todos.</p></details>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">3</span>Use as palavras que você usa ao pedir</h2>
-  <p>O Claude compara o seu pedido com a descrição. Se você escreve "aviso de pet pronto" e a descrição fala em "notificação de conclusão de serviço", a ligação fica fraca. Copie para a descrição as palavras que saem da sua boca.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora testou duas descrições para a mesma skill. O pedido foi igual nas duas vezes.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-caso" data-rotulo="Palavras técnicas">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Faz o aviso de que o Thor está pronto pra buscar.</p>
-          <p class="msg ia falha"><span class="quem">Claude</span>Prezado cliente, informamos que o serviço referente ao seu animal foi concluído. Atenciosamente.</p>
-        </div>
-        <p class="tela-nota ruim">Descrição usada: "Gera notificações de conclusão de serviço." A skill não abriu e o tom saiu de cartório.</p>
-      </div>
-      <div class="tela-caso" data-rotulo="Palavras dela">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Faz o aviso de que o Thor está pronto pra buscar.</p>
-          <p class="msg ia ok"><span class="quem">Claude</span>Oi! O Thor já está pronto e cheiroso esperando você. Pode buscar até as [horário]. Até já!</p>
-        </div>
-        <p class="tela-nota bom">Descrição usada: "Escreve o aviso de pet pronto para buscar, no tom da loja. Use quando eu pedir aviso, recado ou mensagem de pet pronto." A skill abriu.</p>
-      </div>
-    </div>
-    <figcaption><b>Toque nos dois botões</b>. O horário fica entre colchetes porque não estava no pedido: a Débora completa.</figcaption>
-  </figure>
-  <div class="quiz" data-answer="b">
-    <p class="qk">Teste-se</p>
-    <p class="q">A Débora costuma pedir "monta o post da promoção de sábado". Qual descrição tem mais chance de abrir?</p>
-    <button class="opt" data-k="a" data-fb="Larga demais: não fala em promoção nem em post, e serviria para qualquer empresa.">Cria conteúdo de marketing para redes sociais de empresas em geral.</button>
-    <button class="opt" data-k="b" data-fb="Isso. Diz o que faz e usa as palavras que ela fala: post e promoção.">Escreve o post da promoção da semana. Use quando eu pedir post ou promoção.</button>
-    <button class="opt" data-k="c" data-fb="Fala do estilo, mas não diz o que a skill faz nem quando entra.">Textos criativos e animados para a loja, com bastante emoji e energia.</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>200 caracteres parecem pouco. Escreva primeiro sem limite. Depois corte adjetivos e exemplos repetidos. O "use quando" fica; o resto pode sair.</p></div>
+<h2><span class="n">3</span>Use as palavras que você usa ao pedir</h2>
+<p>O Claude compara o seu pedido com a descrição. Se você escreve "aviso de pet pronto" e a descrição fala em "notificação de conclusão de serviço", a ligação fica fraca. Copie para a descrição as palavras que saem da sua boca.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora testou duas descrições para a mesma skill. O pedido foi igual nas duas vezes.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-caso" data-rotulo="Palavras técnicas">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Faz o aviso de que o Thor está pronto pra buscar.</p>
+<p class="msg ia falha"><span class="quem">Claude</span>Prezado cliente, informamos que o serviço referente ao seu animal foi concluído. Atenciosamente.</p>
+</div>
+<p class="tela-nota ruim">Descrição usada: "Gera notificações de conclusão de serviço." A skill não abriu e o tom saiu de cartório.</p>
+</div>
+<div class="tela-caso" data-rotulo="Palavras dela">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Faz o aviso de que o Thor está pronto pra buscar.</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Oi! O Thor já está pronto e cheiroso esperando você. Pode buscar até as [horário]. Até já!</p>
+</div>
+<p class="tela-nota bom">Descrição usada: "Escreve o aviso de pet pronto para buscar, no tom da loja. Use quando eu pedir aviso, recado ou mensagem de pet pronto." A skill abriu.</p>
+</div>
+</div>
+<figcaption><b>Toque nos dois botões</b>. O horário fica entre colchetes porque não estava no pedido: a Débora completa.</figcaption>
+</figure>
+<div class="quiz" data-answer="b">
+<p class="qk">Teste-se</p>
+<p class="q">A Débora costuma pedir "monta o post da promoção de sábado". Qual descrição tem mais chance de abrir?</p>
+<button class="opt" data-fb="Larga demais: não fala em promoção nem em post, e serviria para qualquer empresa." data-k="a">Cria conteúdo de marketing para redes sociais de empresas em geral.</button>
+<button class="opt" data-fb="Isso. Diz o que faz e usa as palavras que ela fala: post e promoção." data-k="b">Escreve o post da promoção da semana. Use quando eu pedir post ou promoção.</button>
+<button class="opt" data-fb="Fala do estilo, mas não diz o que a skill faz nem quando entra." data-k="c">Textos criativos e animados para a loja, com bastante emoji e energia.</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>200 caracteres parecem pouco. Escreva primeiro sem limite. Depois corte adjetivos e exemplos repetidos. O "use quando" fica; o resto pode sair.</p></div>
 </section>
-
 <section class="practice" data-mode="prompt">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Escreva a descrição da sua skill</h3>
-  <p class="pgoal">Pronto quando você tiver uma descrição de até 200 caracteres com o que a skill faz e quando usar. Cerca de 8 minutos.</p>
-  <p class="psafe">Nada é criado ainda: você só está escrevendo uma frase. Não fez a aula 1? Use qualquer tarefa que você pede ao Claude toda semana. Se as opções vierem genéricas, cole mais frases reais suas no pedido.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Vou criar uma skill para &lt;a tarefa que se repete&gt;.
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Escreva a descrição da sua skill</h3>
+<p class="pgoal">Pronto quando você tiver uma descrição de até 200 caracteres com o que a skill faz e quando usar. Cerca de 8 minutos.</p>
+<p class="psafe">Nada é criado ainda: você só está escrevendo uma frase. Não fez a aula 1? Use qualquer tarefa que você pede ao Claude toda semana. Se as opções vierem genéricas, cole mais frases reais suas no pedido.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Vou criar uma skill para &lt;a tarefa que se repete&gt;.
 Eu costumo pedir isso com frases como:
 - "&lt;frase real 1&gt;"
 - "&lt;frase real 2&gt;"
 Escreva 3 opções de descrição para essa skill.
 Cada uma com até 180 caracteres e começando por um verbo.
 Cada uma diz o que a skill faz e quando usar, com as minhas palavras.</pre></div>
-  <details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
-    <p>Vou criar uma skill para <b>responder orçamento de banho e tosa</b>. Eu costumo pedir isso com frases como: "responde esse cliente do orçamento" e "quanto fica a tosa do shih-tzu dela?".<br><b>Opção que ela escolheu (139 caracteres):</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."</p>
-  </details>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Copie o molde, abra uma conversa nova no Claude e troque o que está entre &lt; &gt; pela sua tarefa e por duas frases que você realmente usa.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Escolha uma das três opções e ajuste o que não soar como você.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Confira: começa por verbo e tem "use quando". Para contar os caracteres, cole a frase no Word ou no Google Docs e use Contar palavras. Guarde a frase nas Notas, junto da tarefa da aula 1.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de escrever a frase que vai fazer o Claude reconhecer a sua skill.</p>
+<details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
+<p>Vou criar uma skill para <b>responder orçamento de banho e tosa</b>. Eu costumo pedir isso com frases como: "responde esse cliente do orçamento" e "quanto fica a tosa do shih-tzu dela?".<br/><b>Opção que ela escolheu (139 caracteres):</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Copie o molde, abra uma conversa nova no Claude e troque o que está entre &lt; &gt; pela sua tarefa e por duas frases que você realmente usa.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Escolha uma das três opções e ajuste o que não soar como você.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Confira: começa por verbo e tem "use quando". Para contar os caracteres, cole a frase no Word ou no Google Docs e use Contar palavras. Guarde a frase nas Notas, junto da tarefa da aula 1.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de escrever a frase que vai fazer o Claude reconhecer a sua skill.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>A boa descrição</h3>
-    <ol>
-      <li><span><b>O que faz</b>comece por um verbo: monta, responde, escreve.</span></li>
-      <li><span><b>Quando usar</b>liste as situações e os pedidos em que ela entra.</span></li>
-      <li><span><b>Suas palavras, até 200</b>copie como você pede; corte adjetivos.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe escrever a frase que decide quando uma skill entra.</p>
-    <p class="na-action">Amanhã, ao fazer de novo a tarefa escolhida, anote as palavras exatas que você usou no pedido. Se alguma não está na descrição, acrescente.</p>
-    <p class="na-hook">Na próxima aula: antes de fazer a sua, você vai ligar as skills que já vêm prontas no Claude e ver uma delas trabalhar.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>A boa descrição</h3>
+<ol>
+<li><span><b>O que faz</b>comece por um verbo: monta, responde, escreve.</span></li>
+<li><span><b>Quando usar</b>liste as situações e os pedidos em que ela entra.</span></li>
+<li><span><b>Suas palavras, até 200</b>copie como você pede; corte adjetivos.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe escrever a frase que decide quando uma skill entra.</p>
+<p class="na-action">Amanhã, ao fazer de novo a tarefa escolhida, anote as palavras exatas que você usou no pedido. Se alguma não está na descrição, acrescente.</p>
+<p class="na-hook">Na próxima aula: antes de fazer a sua, você vai ligar as skills que já vêm prontas no Claude e ver uma delas trabalhar.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#aula-1">← aula anterior</a><a class="next" href="#aula-3">próxima aula →</a></nav>
 <p class="aula-pe">Aula 2 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-2">
+<script id="cards-2" type="application/json">
 [
   {"front":"Sua skill tem ótimas instruções, mas o Claude nunca a usa. Qual é a primeira coisa a revisar?","back":"A descrição. É a única parte que o Claude lê antes de decidir; se ela não fala do que você pede, a skill fica fechada."},
   {"front":"Qual a diferença entre \"Ajuda com documentos jurídicos\" e uma descrição com \"use quando eu pedir parecer\"?","back":"A primeira não diz o que faz nem quando entra. A segunda nomeia a tarefa e as situações, então o Claude reconhece o pedido."},
@@ -384,133 +372,128 @@ Cada uma diz o que a skill faz e quando usar, com as minhas palavras.</pre></div
 ]
 </script>
 </section>
-<section class="view" id="v-aula-3" data-aula="3" data-tempo="14min">
+<section class="view" data-aula="3" data-tempo="14min" id="v-aula-3">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 3 de 8</p>
-  <h1>Ligue as skills que <em>já vêm prontas</em></h1>
-  <figure class="cena"><img src="assets/img/aula-3.webp" width="1280" height="720" alt="A dona de um pet shop, na salinha dos fundos da loja, aciona um interruptor na parede enquanto olha o notebook, com sacos de ração nas prateleiras."></figure>
-  <p class="promise">Você consegue ligar as skills no app do Claude e ver uma delas montar um documento Word para você.</p>
-  <p class="why">Muita gente nunca viu uma skill funcionando e nem sabe se o app tem isso ligado. Em poucos minutos dá para ligar, conferir e ver o Claude usar uma receita pronta. Depois, a sua skill entra no mesmo lugar.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>As skills dependem de uma chave: <b>execução de código e criação de arquivos</b>.</li>
-      <li>A lista de skills fica em <b>Personalizar › Skills</b>.</li>
-      <li>As prontas cuidam de Word, Excel, PowerPoint e PDF, sem você chamar.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 3 de 8</p>
+<h1>Ligue as skills que <em>já vêm prontas</em></h1>
+<figure class="cena"><img alt="A dona de um pet shop, na salinha dos fundos da loja, aciona um interruptor na parede enquanto olha o notebook, com sacos de ração nas prateleiras." height="720" src="assets/img/aula-3.webp" width="1280"/></figure>
+<p class="promise">Você consegue ligar as skills no app do Claude e ver uma delas montar um documento Word para você.</p>
+<p class="why">Muita gente nunca viu uma skill funcionando e nem sabe se o app tem isso ligado. Em poucos minutos dá para ligar, conferir e ver o Claude usar uma receita pronta. Depois, a sua skill entra no mesmo lugar.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>As skills dependem de uma chave: <b>execução de código e criação de arquivos</b>.</li>
+<li>A lista de skills fica em <b>Personalizar › Skills</b>.</li>
+<li>As prontas cuidam de Word, Excel, PowerPoint e PDF, sem você chamar.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">1</span>Primeiro, ligue a criação de arquivos</h2>
-  <p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> só funciona se o Claude puder abrir e criar arquivos dentro da conversa. Essa permissão tem um nome comprido: <span class="gterm" data-def="a permissão para o Claude criar e editar arquivos num espaço protegido da própria conversa. Nada sai do seu computador sem você baixar. As skills dependem dela." data-gl="execucao-de-codigo-e-criacao-de-arquivos">execução de código e criação de arquivos</span>. Ela só deixa o Claude criar arquivos dentro da própria conversa: nada sai do seu computador.</p>
-  <p>Nos planos individuais, inclusive o gratuito, você mesmo liga. Em conta de empresa, quem administra a conta libera para todos.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora abriu o Claude no computador da loja e achou a chave desligada. Bastou um clique.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude · Configurações</span></div>
-      <div class="janela-body">
-        <div class="item pasta"><span class="pin">1</span> Configurações</div>
-        <div class="item pasta dentro"><span class="pin">2</span> Capacidades</div>
-        <div class="item botao dentro"><span class="pin">3</span> Execução de código e criação de arquivos — ligado</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>No computador, clique no seu nome ou na sua inicial, no rodapé do menu lateral, e depois em Configurações.</span></li>
-      <li><span class="pin">2</span><span>Abra Capacidades. Com o menu em inglês, procure Settings e Capabilities.</span></li>
-      <li><span class="pin">3</span><span>Deixe esta chave ligada.</span></li>
-    </ol>
-    <figcaption>Os nomes podem mudar um pouco entre versões do app. Procure pelas palavras "capacidades" e "arquivos".</figcaption>
-  </figure>
+<h2><span class="n">1</span>Primeiro, ligue a criação de arquivos</h2>
+<p>Uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> só funciona se o Claude puder abrir e criar arquivos dentro da conversa. Essa permissão tem um nome comprido: <span class="gterm" data-def="a permissão para o Claude criar e editar arquivos num espaço protegido da própria conversa. Nada sai do seu computador sem você baixar. As skills dependem dela." data-gl="execucao-de-codigo-e-criacao-de-arquivos">execução de código e criação de arquivos</span>. Ela só deixa o Claude criar arquivos dentro da própria conversa: nada sai do seu computador.</p>
+<p>Nos planos individuais, inclusive o gratuito, você mesmo liga. Em conta de empresa, quem administra a conta libera para todos.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora abriu o Claude no computador da loja e achou a chave desligada. Bastou um clique.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude · Configurações</span></div>
+<div class="janela-body">
+<div class="item pasta"><span class="pin">1</span> Configurações</div>
+<div class="item pasta dentro"><span class="pin">2</span> Capacidades</div>
+<div class="item botao dentro"><span class="pin">3</span> Execução de código e criação de arquivos — ligado</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>No computador, clique no seu nome ou na sua inicial, no rodapé do menu lateral, e depois em Configurações.</span></li>
+<li><span class="pin">2</span><span>Abra Capacidades. Com o menu em inglês, procure Settings e Capabilities.</span></li>
+<li><span class="pin">3</span><span>Deixe esta chave ligada.</span></li>
+</ol>
+<figcaption>Os nomes podem mudar um pouco entre versões do app. Procure pelas palavras "capacidades" e "arquivos".</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">2</span>A lista fica em Personalizar › Skills</h2>
-  <p>Com a chave ligada, o app mostra a lista de skills. Lá aparecem as skills prontas da Anthropic, a empresa que faz o Claude, e depois as suas. Cada uma tem uma chave própria de ligar e desligar. Atenção: são dois lugares diferentes. A chave geral fica em Configurações; a lista, em Personalizar.</p>
-  <p>As prontas cuidam de arquivos de escritório: Word, Excel, PowerPoint e PDF. Você não precisa chamar nenhuma pelo nome.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul conferiu a lista antes de criar qualquer coisa. As quatro estavam ligadas, e ele viu onde a skill dele vai aparecer.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude · Personalizar</span></div>
-      <div class="janela-body">
-        <div class="item pasta"><span class="pin">1</span> Personalizar</div>
-        <div class="item pasta dentro"><span class="pin">2</span> Skills</div>
-        <div class="item doc dentro">Word — ligada</div>
-        <div class="item doc dentro">Excel — ligada</div>
-        <div class="item doc dentro">PowerPoint — ligada</div>
-        <div class="item doc dentro">PDF — ligada</div>
-        <div class="item botao dentro"><span class="pin">3</span> +</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>No menu lateral do app, abra Personalizar (em inglês, Customize).</span></li>
-      <li><span class="pin">2</span><span>Entre em Skills e confira as chaves ligadas.</span></li>
-      <li><span class="pin">3</span><span>O botão + é por onde a sua skill vai entrar, na aula 6.</span></li>
-    </ol>
-    <figcaption>Os nomes das prontas podem aparecer em inglês. O que importa é a chave ligada.</figcaption>
-  </figure>
+<h2><span class="n">2</span>A lista fica em Personalizar › Skills</h2>
+<p>Com a chave ligada, o app mostra a lista de skills. Lá aparecem as skills prontas da Anthropic, a empresa que faz o Claude, e depois as suas. Cada uma tem uma chave própria de ligar e desligar. Atenção: são dois lugares diferentes. A chave geral fica em Configurações; a lista, em Personalizar.</p>
+<p>As prontas cuidam de arquivos de escritório: Word, Excel, PowerPoint e PDF. Você não precisa chamar nenhuma pelo nome.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul conferiu a lista antes de criar qualquer coisa. As quatro estavam ligadas, e ele viu onde a skill dele vai aparecer.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude · Personalizar</span></div>
+<div class="janela-body">
+<div class="item pasta"><span class="pin">1</span> Personalizar</div>
+<div class="item pasta dentro"><span class="pin">2</span> Skills</div>
+<div class="item doc dentro">Word — ligada</div>
+<div class="item doc dentro">Excel — ligada</div>
+<div class="item doc dentro">PowerPoint — ligada</div>
+<div class="item doc dentro">PDF — ligada</div>
+<div class="item botao dentro"><span class="pin">3</span> +</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>No menu lateral do app, abra Personalizar (em inglês, Customize).</span></li>
+<li><span class="pin">2</span><span>Entre em Skills e confira as chaves ligadas.</span></li>
+<li><span class="pin">3</span><span>O botão + é por onde a sua skill vai entrar, na aula 6.</span></li>
+</ol>
+<figcaption>Os nomes das prontas podem aparecer em inglês. O que importa é a chave ligada.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">3</span>Peça e veja a skill trabalhar</h2>
-  <p>Agora faça um pedido que pede um arquivo. O Claude percebe que a tarefa combina com a skill de Word, lê as instruções dela e monta o documento.</p>
-  <p>Para ter certeza, abra o <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span> do Claude. Ele fica logo acima da resposta, recolhido numa linha. Toque nele e procure o nome da skill. As prontas aparecem com o nome do tipo de arquivo, em inglês: a de Word é "docx".</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul pediu a lista de documentos que o cliente traz na primeira consulta. Recebeu um arquivo Word pronto para imprimir.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Monte um documento Word com a lista do que o cliente traz na primeira consulta: carteira de trabalho, holerites dos últimos 12 meses, termo de rescisão e extrato do FGTS. Título em negrito e uma linha de orientação no fim.</p>
-        <p class="msg ia"><span class="quem">Raciocínio (aberto)</span>A tarefa pede um arquivo Word. Lendo a skill docx (SKILL.md) antes de montar…</p>
-        <p class="msg ia ok"><span class="quem">Claude</span>Pronto: o documento tem o título, os 4 itens em lista e a orientação no fim. Clique no arquivo para abrir ou baixar.</p>
-      </div>
-      <p class="tela-nota bom">O texto exato varia de uma vez para outra, mas o nome da skill aparece. É assim que você confere que ela entrou.</p>
-    </div>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>O menu pode estar em inglês ou com outro nome. Procure "Capabilities" e "Customize". Se a seção Skills aparecer apagada, volte ao passo 1: sem aquela chave ela fica desativada. E se o bloco de raciocínio não aparecer na sua tela, pergunte na conversa: "você usou alguma skill nesta resposta? Qual?".</p></div>
+<h2><span class="n">3</span>Peça e veja a skill trabalhar</h2>
+<p>Agora faça um pedido que pede um arquivo. O Claude percebe que a tarefa combina com a skill de Word, lê as instruções dela e monta o documento.</p>
+<p>Para ter certeza, abra o <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span> do Claude. Ele fica logo acima da resposta, recolhido numa linha. Toque nele e procure o nome da skill. As prontas aparecem com o nome do tipo de arquivo, em inglês: a de Word é "docx".</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul pediu a lista de documentos que o cliente traz na primeira consulta. Recebeu um arquivo Word pronto para imprimir.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Monte um documento Word com a lista do que o cliente traz na primeira consulta: carteira de trabalho, holerites dos últimos 12 meses, termo de rescisão e extrato do FGTS. Título em negrito e uma linha de orientação no fim.</p>
+<p class="msg ia"><span class="quem">Raciocínio (aberto)</span>A tarefa pede um arquivo Word. Lendo a skill docx (SKILL.md) antes de montar…</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Pronto: o documento tem o título, os 4 itens em lista e a orientação no fim. Clique no arquivo para abrir ou baixar.</p>
+</div>
+<p class="tela-nota bom">O texto exato varia de uma vez para outra, mas o nome da skill aparece. É assim que você confere que ela entrou.</p>
+</div>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>O menu pode estar em inglês ou com outro nome. Procure "Capabilities" e "Customize". Se a seção Skills aparecer apagada, volte ao passo 1: sem aquela chave ela fica desativada. E se o bloco de raciocínio não aparecer na sua tela, pergunte na conversa: "você usou alguma skill nesta resposta? Qual?".</p></div>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Ligue e teste uma skill pronta</h3>
-  <p class="pgoal">Pronto quando o Claude entregar um arquivo Word e você achar a skill citada no raciocínio. Cerca de 8 minutos, no computador.</p>
-  <p class="psafe">A chave só deixa o Claude criar arquivos dentro da conversa; nada é enviado a ninguém. Se a seção Skills não aparecer, veja o quadro "Se travou aqui". Em conta de empresa, peça a liberação a quem administra.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Monte um documento Word com &lt;o que você precisa, ex.: a lista do que o cliente deve trazer&gt;:
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Ligue e teste uma skill pronta</h3>
+<p class="pgoal">Pronto quando o Claude entregar um arquivo Word e você achar a skill citada no raciocínio. Cerca de 8 minutos, no computador.</p>
+<p class="psafe">A chave só deixa o Claude criar arquivos dentro da conversa; nada é enviado a ninguém. Se a seção Skills não aparecer, veja o quadro "Se travou aqui". Em conta de empresa, peça a liberação a quem administra.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Monte um documento Word com &lt;o que você precisa, ex.: a lista do que o cliente deve trazer&gt;:
 &lt;item 1&gt;, &lt;item 2&gt;, &lt;item 3&gt;.
 Título em negrito e uma linha de orientação no fim.</pre></div>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Em Configurações › Capacidades, ligue "Execução de código e criação de arquivos".</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Em Personalizar › Skills, confira que a skill de Word está ligada.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Numa conversa nova, cole o molde com uma lista do seu trabalho. Abra o raciocínio e procure "docx" ou "SKILL.md".</span></label></li>
-  </ol>
-  <details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
-    <p>Monte um documento Word com <b>os cuidados depois da tosa</b>: escovar o pelo dia sim, dia não; evitar banho por sete dias; observar vermelhidão na pele. Título em negrito e uma linha de orientação no fim.</p>
-  </details>
-  <p class="pdone">Você acabou de ligar as skills e ver uma delas trabalhar no seu pedido.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Em Configurações › Capacidades, ligue "Execução de código e criação de arquivos".</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Em Personalizar › Skills, confira que a skill de Word está ligada.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Numa conversa nova, cole o molde com uma lista do seu trabalho. Abra o raciocínio e procure "docx" ou "SKILL.md".</span></label></li>
+</ol>
+<details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
+<p>Monte um documento Word com <b>os cuidados depois da tosa</b>: escovar o pelo dia sim, dia não; evitar banho por sete dias; observar vermelhidão na pele. Título em negrito e uma linha de orientação no fim.</p>
+</details>
+<p class="pdone">Você acabou de ligar as skills e ver uma delas trabalhar no seu pedido.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Onde ficam as skills</h3>
-    <ol>
-      <li><span><b>A chave</b>Configurações › Capacidades › criação de arquivos ligada.</span></li>
-      <li><span><b>A lista</b>Personalizar › Skills, uma chave por skill.</span></li>
-      <li><span><b>A prova</b>o raciocínio do Claude cita a skill que ele leu.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe ligar as skills e conferir quando uma delas entrou.</p>
-    <p class="na-action">Nesta semana, peça ao Claude uma planilha ou um PDF de algo real do trabalho e confira de novo o raciocínio.</p>
-    <p class="na-hook">Na próxima aula: você vai abrir uma skill por dentro e ver que ela é só texto organizado.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Onde ficam as skills</h3>
+<ol>
+<li><span><b>A chave</b>Configurações › Capacidades › criação de arquivos ligada.</span></li>
+<li><span><b>A lista</b>Personalizar › Skills, uma chave por skill.</span></li>
+<li><span><b>A prova</b>o raciocínio do Claude cita a skill que ele leu.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe ligar as skills e conferir quando uma delas entrou.</p>
+<p class="na-action">Nesta semana, peça ao Claude uma planilha ou um PDF de algo real do trabalho e confira de novo o raciocínio.</p>
+<p class="na-hook">Na próxima aula: você vai abrir uma skill por dentro e ver que ela é só texto organizado.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#aula-2">← aula anterior</a><a class="next" href="#aula-4">próxima aula →</a></nav>
 <p class="aula-pe">Aula 3 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-3">
+<script id="cards-3" type="application/json">
 [
   {"front":"A seção Skills aparece apagada no seu app. O que você confere primeiro?","back":"A chave de execução de código e criação de arquivos, em Configurações › Capacidades. Sem ela as skills ficam desativadas."},
   {"front":"Como saber se o Claude usou mesmo uma skill num pedido?","back":"Abrindo o raciocínio dele: quando a skill entra, ela aparece citada ali."},
@@ -518,54 +501,52 @@ Título em negrito e uma linha de orientação no fim.</pre></div>
 ]
 </script>
 </section>
-<section class="view" id="v-aula-4" data-aula="4" data-tempo="15min">
+<section class="view" data-aula="4" data-tempo="15min" id="v-aula-4">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 4 de 8</p>
-  <h1>Por dentro, uma skill é <em>texto organizado</em></h1>
-  <figure class="cena"><img src="assets/img/aula-4.webp" width="1280" height="720" alt="Um advogado de óculos abre uma pasta de papelão na mesa e espalha três folhas lado a lado para examiná-las, com o notebook fechado ao lado."></figure>
-  <p class="promise">Você consegue ler uma skill e dizer o que fazem o cabeçalho, as instruções e o exemplo.</p>
-  <p class="why">A palavra skill parece coisa de programador. Por dentro, ela é um texto organizado, parecido com o procedimento que você escreveria para um estagiário. Ver uma de verdade tira o medo e mostra o que você vai precisar escrever.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Uma skill é uma pasta com um arquivo principal, o <b>SKILL.md</b>.</li>
-      <li>Ele tem um cabeçalho com nome e descrição, e embaixo as instruções.</li>
-      <li>Um exemplo de resposta boa ensina mais que dez ordens.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 4 de 8</p>
+<h1>Por dentro, uma skill é <em>texto organizado</em></h1>
+<figure class="cena"><img alt="Um advogado de óculos abre uma pasta de papelão na mesa e espalha três folhas lado a lado para examiná-las, com o notebook fechado ao lado." height="720" src="assets/img/aula-4.webp" width="1280"/></figure>
+<p class="promise">Você consegue ler uma skill e dizer o que fazem o cabeçalho, as instruções e o exemplo.</p>
+<p class="why">A palavra skill parece coisa de programador. Por dentro, ela é um texto organizado, parecido com o procedimento que você escreveria para um estagiário. Ver uma de verdade tira o medo e mostra o que você vai precisar escrever.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Uma skill é uma pasta com um arquivo principal, o <b>SKILL.md</b>.</li>
+<li>Ele tem um cabeçalho com nome e descrição, e embaixo as instruções.</li>
+<li>Um exemplo de resposta boa ensina mais que dez ordens.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">1</span>Uma pasta com um arquivo de texto</h2>
-  <p>Toda <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> é uma pasta. Dentro dela mora um arquivo de texto comum chamado <span class="gterm" data-def="o arquivo principal de toda skill: um texto simples com o cabeçalho e as instruções. O nome é sempre esse, com SKILL em maiúsculas." data-gl="skill-md">SKILL.md</span>. O ".md" no fim é só o tipo do arquivo, como o ".docx" do Word. Só ele é obrigatório.</p>
-  <p>O nome da pasta é o nome da skill, em minúsculas e com hífen no lugar do espaço. Se a tarefa precisa de um modelo ou de uma tabela grande, esses arquivos entram na mesma pasta.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">A skill de parecer do Raul é uma pasta com dois arquivos: o SKILL.md e o modelo de parecer que o escritório usa há anos.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
-      <div class="janela-body">
-        <div class="item pasta"><span class="pin">1</span> parecer-trabalhista</div>
-        <div class="item doc dentro"><span class="pin">2</span> SKILL.md</div>
-        <div class="item doc dentro"><span class="pin">3</span> modelo-parecer.docx</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>A pasta tem o nome da skill: minúsculas, hífen no lugar do espaço.</span></li>
-      <li><span class="pin">2</span><span>O arquivo principal, sempre com este nome.</span></li>
-      <li><span class="pin">3</span><span>Um arquivo de apoio, opcional. O SKILL.md diz quando consultar.</span></li>
-    </ol>
-  </figure>
+<h2><span class="n">1</span>Uma pasta com um arquivo de texto</h2>
+<p>Toda <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> é uma pasta. Dentro dela mora um arquivo de texto comum chamado <span class="gterm" data-def="o arquivo principal de toda skill: um texto simples com o cabeçalho e as instruções. O nome é sempre esse, com SKILL em maiúsculas." data-gl="skill-md">SKILL.md</span>. O ".md" no fim é só o tipo do arquivo, como o ".docx" do Word. Só ele é obrigatório.</p>
+<p>O nome da pasta é o nome da skill, em minúsculas e com hífen no lugar do espaço. Se a tarefa precisa de um modelo ou de uma tabela grande, esses arquivos entram na mesma pasta.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">A skill de parecer do Raul é uma pasta com dois arquivos: o SKILL.md e o modelo de parecer que o escritório usa há anos.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
+<div class="janela-body">
+<div class="item pasta"><span class="pin">1</span> parecer-trabalhista</div>
+<div class="item doc dentro"><span class="pin">2</span> SKILL.md</div>
+<div class="item doc dentro"><span class="pin">3</span> modelo-parecer.docx</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>A pasta tem o nome da skill: minúsculas, hífen no lugar do espaço.</span></li>
+<li><span class="pin">2</span><span>O arquivo principal, sempre com este nome.</span></li>
+<li><span class="pin">3</span><span>Um arquivo de apoio, opcional. O SKILL.md diz quando consultar.</span></li>
+</ol>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">2</span>Cabeçalho em cima, instruções embaixo</h2>
-  <p>O SKILL.md começa com um <span class="gterm" data-def="as linhas entre os dois traços triplos no topo do SKILL.md. Guardam o nome e a descrição da skill, que o Claude lê antes de tudo." data-gl="cabecalho">cabeçalho</span>, entre duas linhas de três traços. Ali ficam o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span> que você treinou na aula 2. Não fez a aula 2? A descrição é a frase que diz o que a skill faz e quando usar.</p>
-  <p>Abaixo do cabeçalho vêm as instruções, escritas como para uma pessoa nova na equipe. No fim, um exemplo de resposta boa.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">Esta é a skill de orçamento da Débora, inteira. Leia de cima para baixo.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>orcamento-banho-tosa / SKILL.md</span></div>
+<h2><span class="n">2</span>Cabeçalho em cima, instruções embaixo</h2>
+<p>O SKILL.md começa com um <span class="gterm" data-def="as linhas entre os dois traços triplos no topo do SKILL.md. Guardam o nome e a descrição da skill, que o Claude lê antes de tudo." data-gl="cabecalho">cabeçalho</span>, entre duas linhas de três traços. Ali ficam o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span> que você treinou na aula 2. Não fez a aula 2? A descrição é a frase que diz o que a skill faz e quando usar.</p>
+<p>Abaixo do cabeçalho vêm as instruções, escritas como para uma pessoa nova na equipe. No fim, um exemplo de resposta boa.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">Esta é a skill de orçamento da Débora, inteira. Leia de cima para baixo.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>orcamento-banho-tosa / SKILL.md</span></div>
 <pre>---
 name: orcamento-banho-tosa
 description: Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote.
@@ -587,40 +568,38 @@ Porte grande: banho R$ 90, banho e tosa R$ 130
 ## Exemplo
 Cliente: "Quanto fica a tosa do meu shih-tzu?"
 Resposta: "Oi! Shih-tzu é porte pequeno: banho e tosa fica R$ 80. Quer agendar? Me diga o melhor dia."</pre>
-      <p class="tela-nota bom">Cabeçalho (nome e descrição), instruções em quatro passos, a tabela e um exemplo. É tudo.</p>
-    </div>
-    <figcaption>Os traços e o "name:" são só marcações. O resto é português comum.</figcaption>
-  </figure>
-  <div class="quiz" data-answer="b">
-    <p class="qk">Teste-se</p>
-    <p class="q">Um cliente pergunta o preço da tosa. Que parte da skill da Débora faz o Claude abri-la?</p>
-    <button class="opt" data-k="a" data-fb="A tabela só é lida depois que a skill já foi aberta.">A tabela de preços, no meio do texto</button>
-    <button class="opt" data-k="b" data-fb="Isso. A descrição é lida antes de tudo e diz quando usar.">A descrição, no cabeçalho do arquivo</button>
-    <button class="opt" data-k="c" data-fb="O exemplo ensina o jeito de responder, mas só depois de aberta.">O exemplo de resposta, no fim do texto</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<p class="tela-nota bom">Cabeçalho (nome e descrição), instruções em quatro passos, a tabela e um exemplo. É tudo.</p>
+</div>
+<figcaption>Os traços e o "name:" são só marcações. O resto é português comum.</figcaption>
+</figure>
+<div class="quiz" data-answer="b">
+<p class="qk">Teste-se</p>
+<p class="q">Um cliente pergunta o preço da tosa. Que parte da skill da Débora faz o Claude abri-la?</p>
+<button class="opt" data-fb="A tabela só é lida depois que a skill já foi aberta." data-k="a">A tabela de preços, no meio do texto</button>
+<button class="opt" data-fb="Isso. A descrição é lida antes de tudo e diz quando usar." data-k="b">A descrição, no cabeçalho do arquivo</button>
+<button class="opt" data-fb="O exemplo ensina o jeito de responder, mas só depois de aberta." data-k="c">O exemplo de resposta, no fim do texto</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">3</span>Explique o porquê em vez de gritar ordens</h2>
-  <p>O Claude leva ao pé da letra o que está escrito na skill. Ordens em maiúsculas, com "nunca" e "sempre", fazem ele exagerar na regra. Uma frase com o motivo funciona melhor: ele entende quando a regra se aplica.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul tinha escrito a regra das súmulas do jeito antigo. Veja o que mudou quando ele explicou o porquê.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Ordem</span><p><b>Instrução:</b> "SEMPRE CITE SÚMULA. OBRIGATÓRIO."</p><p><b>Resultado:</b> citava súmula até em parecer sobre férias, onde nenhuma se aplicava.</p></div>
-      <div class="depois"><span class="rot">Com o porquê</span><p><b>Instrução:</b> "Cite súmula ou artigo quando houver um que se aplique ao caso: o cliente confia mais quando vê a base."</p><p><b>Resultado:</b> cita quando existe e não inventa quando não existe.</p></div>
-    </div>
-  </figure>
-  <details class="mais"><summary>Quer saber até onde a skill pode crescer?</summary><p>Mantenha o SKILL.md curto, bem abaixo de 500 linhas. O que for longo, como uma tabela de cem linhas, vai num arquivo separado na mesma pasta. No SKILL.md, uma linha avisa: "a tabela completa está em tabela-precos.docx".</p></details>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Os três traços e o "name:" parecem código. São só marcações, como o assunto de um e-mail. Na aula 5 o Claude escreve isso por você; aqui basta saber ler.</p></div>
+<h2><span class="n">3</span>Explique o porquê em vez de gritar ordens</h2>
+<p>O Claude leva ao pé da letra o que está escrito na skill. Ordens em maiúsculas, com "nunca" e "sempre", fazem ele exagerar na regra. Uma frase com o motivo funciona melhor: ele entende quando a regra se aplica.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul tinha escrito a regra das súmulas do jeito antigo. Veja o que mudou quando ele explicou o porquê.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Ordem</span><p><b>Instrução:</b> "SEMPRE CITE SÚMULA. OBRIGATÓRIO."</p><p><b>Resultado:</b> citava súmula até em parecer sobre férias, onde nenhuma se aplicava.</p></div>
+<div class="depois"><span class="rot">Com o porquê</span><p><b>Instrução:</b> "Cite súmula ou artigo quando houver um que se aplique ao caso: o cliente confia mais quando vê a base."</p><p><b>Resultado:</b> cita quando existe e não inventa quando não existe.</p></div>
+</div>
+</figure>
+<details class="mais"><summary>Quer saber até onde a skill pode crescer?</summary><p>Mantenha o SKILL.md curto, bem abaixo de 500 linhas. O que for longo, como uma tabela de cem linhas, vai num arquivo separado na mesma pasta. No SKILL.md, uma linha avisa: "a tabela completa está em tabela-precos.docx".</p></details>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Os três traços e o "name:" parecem código. São só marcações, como o assunto de um e-mail. Na aula 5 o Claude escreve isso por você; aqui basta saber ler.</p></div>
 </section>
-
 <section class="practice" data-mode="analise">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Ache os três problemas desta skill</h3>
-  <p class="pgoal">Pronto quando você tiver respondido as três perguntas e conferido no gabarito. Cerca de 7 minutos. Anote no papel ou no bloco de notas.</p>
-  <p class="psafe">É só leitura: nada muda no seu Claude. Se errar uma, releia o passo correspondente da aula e tente de novo.</p>
-  <p>A estagiária do Raul criou a skill abaixo. O Claude quase nunca a abre, e quando abre os e-mails saem secos.</p>
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Ache os três problemas desta skill</h3>
+<p class="pgoal">Pronto quando você tiver respondido as três perguntas e conferido no gabarito. Cerca de 7 minutos. Anote no papel ou no bloco de notas.</p>
+<p class="psafe">É só leitura: nada muda no seu Claude. Se errar uma, releia o passo correspondente da aula e tente de novo.</p>
+<p>A estagiária do Raul criou a skill abaixo. O Claude quase nunca a abre, e quando abre os e-mails saem secos.</p>
 <p><b>Pasta:</b> email-andamento</p>
 <pre>---
 name: email
@@ -628,38 +607,37 @@ description: E-mails.
 ---
 
 ESCREVA SEMPRE DE FORMA PROFISSIONAL. NUNCA USE TERMOS DIFÍCEIS. SEJA BREVE.</pre>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>O que está errado no cabeçalho? Há dois problemas.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Como você reescreveria a linha das instruções?</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Que parte está faltando no fim? Confira tudo no gabarito.</span></label></li>
-  </ol>
-  <details class="gabarito"><summary>Ver gabarito</summary>
-    <p><b>1.</b> O nome "email" não é o nome da pasta (email-andamento). E a descrição "E-mails." não diz o que faz nem quando usar, por isso a skill quase nunca abre.<br><b>2.</b> Algo como: "Escreva em linguagem simples, sem termos jurídicos, em até 8 linhas: o cliente lê no celular e quer saber o que muda para ele."<br><b>3.</b> Um exemplo de e-mail bom, com o pedido e a resposta, para o Claude ver o tom que o escritório usa.</p>
-  </details>
-  <p class="pdone">Você acabou de ler uma skill por dentro e apontar o que cada parte faz e o que faltava.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>O que está errado no cabeçalho? Há dois problemas.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Como você reescreveria a linha das instruções?</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Que parte está faltando no fim? Confira tudo no gabarito.</span></label></li>
+</ol>
+<details class="gabarito"><summary>Ver gabarito</summary>
+<p><b>1.</b> O nome "email" não é o nome da pasta (email-andamento). E a descrição "E-mails." não diz o que faz nem quando usar, por isso a skill quase nunca abre.<br/><b>2.</b> Algo como: "Escreva em linguagem simples, sem termos jurídicos, em até 8 linhas: o cliente lê no celular e quer saber o que muda para ele."<br/><b>3.</b> Um exemplo de e-mail bom, com o pedido e a resposta, para o Claude ver o tom que o escritório usa.</p>
+</details>
+<p class="pdone">Você acabou de ler uma skill por dentro e apontar o que cada parte faz e o que faltava.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>As partes do SKILL.md</h3>
-    <ol>
-      <li><span><b>Cabeçalho</b>nome igual ao da pasta e a descrição.</span></li>
-      <li><span><b>Instruções</b>passos curtos, cada regra com o seu motivo.</span></li>
-      <li><span><b>Exemplo</b>um pedido real e a resposta que você aceitaria.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe ler uma skill e dizer para que serve cada parte.</p>
-    <p class="na-action">Separe hoje um exemplo real da sua tarefa: um pedido e a resposta que você considera boa. Guarde nas Notas, junto da descrição da aula 2.</p>
-    <p class="na-hook">Na próxima aula: o Claude escreve a sua skill com você, numa conversa, sem abrir editor de texto.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>As partes do SKILL.md</h3>
+<ol>
+<li><span><b>Cabeçalho</b>nome igual ao da pasta e a descrição.</span></li>
+<li><span><b>Instruções</b>passos curtos, cada regra com o seu motivo.</span></li>
+<li><span><b>Exemplo</b>um pedido real e a resposta que você aceitaria.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe ler uma skill e dizer para que serve cada parte.</p>
+<p class="na-action">Separe hoje um exemplo real da sua tarefa: um pedido e a resposta que você considera boa. Guarde nas Notas, junto da descrição da aula 2.</p>
+<p class="na-hook">Na próxima aula: o Claude escreve a sua skill com você, numa conversa, sem abrir editor de texto.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#aula-3">← aula anterior</a><a class="next" href="#aula-5">próxima aula →</a></nav>
 <p class="aula-pe">Aula 4 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-4">
+<script id="cards-4" type="application/json">
 [
   {"front":"Qual é o único arquivo obrigatório dentro da pasta de uma skill?","back":"O SKILL.md. Modelos e tabelas são opcionais e ficam na mesma pasta."},
   {"front":"Sua skill tem \"NUNCA ESQUEÇA O PRAZO\" e o Claude passou a falar de prazo em tudo. O que você muda?","back":"Troca a ordem em maiúsculas por uma frase com o motivo, dizendo quando o prazo importa. Os modelos atuais exageram regras gritadas."},
@@ -667,86 +645,82 @@ ESCREVA SEMPRE DE FORMA PROFISSIONAL. NUNCA USE TERMOS DIFÍCEIS. SEJA BREVE.</p
 ]
 </script>
 </section>
-<section class="view" id="v-aula-5" data-aula="5" data-tempo="16min">
+<section class="view" data-aula="5" data-tempo="16min" id="v-aula-5">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 5 de 8</p>
-  <h1>Crie a sua <em>conversando</em> com o Claude</h1>
-  <figure class="cena"><img src="assets/img/aula-5.webp" width="1280" height="720" alt="Um advogado recostado na cadeira do escritório conversa com o notebook, gesticulando com calma, enquanto a estagiária anota ao fundo, entre estantes de livros jurídicos."></figure>
-  <p class="promise">Você consegue sair de uma conversa com o arquivo ZIP da sua primeira skill, pronto para enviar.</p>
-  <p class="why">Escrever o SKILL.md à mão exige editor de texto, nome de arquivo certo e cuidado com os traços do cabeçalho. Você não precisa disso. O Claude entrevista você, escreve a skill e entrega a pasta compactada.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Peça ao Claude para usar a skill <b>skill-creator</b> e conte a sua tarefa.</li>
-      <li>Responda às perguntas dele com casos reais, não com "o normal".</li>
-      <li>Revise o texto e peça a pasta num arquivo <b>ZIP</b>.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 5 de 8</p>
+<h1>Crie a sua <em>conversando</em> com o Claude</h1>
+<figure class="cena"><img alt="Um advogado recostado na cadeira do escritório conversa com o notebook, gesticulando com calma, enquanto a estagiária anota ao fundo, entre estantes de livros jurídicos." height="720" src="assets/img/aula-5.webp" width="1280"/></figure>
+<p class="promise">Você consegue sair de uma conversa com o arquivo ZIP da sua primeira skill, pronto para enviar.</p>
+<p class="why">Escrever o SKILL.md à mão exige editor de texto, nome de arquivo certo e cuidado com os traços do cabeçalho. Você não precisa disso. O Claude entrevista você, escreve a skill e entrega a pasta compactada.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Peça ao Claude para usar a skill <b>skill-creator</b> e conte a sua tarefa.</li>
+<li>Responda às perguntas dele com casos reais, não com "o normal".</li>
+<li>Revise o texto e peça a pasta num arquivo <b>ZIP</b>.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">1</span>Comece pelo pedido certo</h2>
-  <p>A Anthropic deixa pronta uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> que ensina o Claude a criar skills: a <span class="gterm" data-def="uma skill pronta da Anthropic que conduz a criação de uma skill nova com você: faz perguntas, escreve o SKILL.md e sugere testes." data-gl="skill-creator">skill-creator</span>. Você pede para usá-la, conta a tarefa e entrega o que já tem.</p>
-  <p>Antes de escrever, ela pergunta. É uma entrevista curta sobre o seu jeito de fazer a tarefa.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul abriu uma conversa nova e colou o pedido abaixo. Recebeu três perguntas antes de qualquer texto.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Use a skill skill-creator para criar comigo uma skill.
+<h2><span class="n">1</span>Comece pelo pedido certo</h2>
+<p>A Anthropic deixa pronta uma <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> que ensina o Claude a criar skills: a <span class="gterm" data-def="uma skill pronta da Anthropic que conduz a criação de uma skill nova com você: faz perguntas, escreve o SKILL.md e sugere testes." data-gl="skill-creator">skill-creator</span>. Você pede para usá-la, conta a tarefa e entrega o que já tem.</p>
+<p>Antes de escrever, ela pergunta. É uma entrevista curta sobre o seu jeito de fazer a tarefa.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul abriu uma conversa nova e colou o pedido abaixo. Recebeu três perguntas antes de qualquer texto.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Use a skill skill-creator para criar comigo uma skill.
 Tarefa: montar parecer trabalhista no formato do escritório.
 Descrição que eu já escrevi: "Monta parecer trabalhista no formato do escritório…"
 Exemplo de parecer bom: [parecer colado aqui]</p>
-        <p class="msg ia ok"><span class="quem">Claude</span>Vamos lá. Antes de escrever, três perguntas:
+<p class="msg ia ok"><span class="quem">Claude</span>Vamos lá. Antes de escrever, três perguntas:
 1. Quais são as partes do parecer, nesta ordem?
 2. Ele vai para o cliente ou para outro advogado?
 3. O que nunca pode aparecer no texto?</p>
-      </div>
-      <p class="tela-nota bom">Ele não inventou o formato: perguntou. As respostas viram as instruções da skill.</p>
-    </div>
-  </figure>
+</div>
+<p class="tela-nota bom">Ele não inventou o formato: perguntou. As respostas viram as instruções da skill.</p>
+</div>
+</figure>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">2</span>Responda com casos reais</h2>
-  <p>A qualidade da skill depende das suas respostas. "O normal" vira uma instrução vaga, e o Claude preenche o resto com o jeito mais comum. Um caso real vira uma regra que ele consegue seguir.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora criou a skill de orçamento. O Claude perguntou: "e quando o cliente não diz o porte do pet?". Veja as duas respostas possíveis.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Resposta vaga</span><p><b>Ela responde:</b> "Aí você vê."</p><p><b>Na skill:</b> "Use o bom senso quanto ao porte." O Claude chuta o porte e erra o preço.</p></div>
-      <div class="depois"><span class="rot">Caso real</span><p><b>Ela responde:</b> "Pergunte antes de dar o preço. Pequeno vai até 10 kg, médio até 25, grande acima disso."</p><p><b>Na skill:</b> uma regra clara, que vale para qualquer cliente.</p></div>
-    </div>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>A lista de perguntas às vezes vem longa. Responda o que sabe e escreva: "no resto, escolha o mais simples e me diga o que escolheu". Você revisa depois.</p></div>
+<h2><span class="n">2</span>Responda com casos reais</h2>
+<p>A qualidade da skill depende das suas respostas. "O normal" vira uma instrução vaga, e o Claude preenche o resto com o jeito mais comum. Um caso real vira uma regra que ele consegue seguir.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora criou a skill de orçamento. O Claude perguntou: "e quando o cliente não diz o porte do pet?". Veja as duas respostas possíveis.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Resposta vaga</span><p><b>Ela responde:</b> "Aí você vê."</p><p><b>Na skill:</b> "Use o bom senso quanto ao porte." O Claude chuta o porte e erra o preço.</p></div>
+<div class="depois"><span class="rot">Caso real</span><p><b>Ela responde:</b> "Pergunte antes de dar o preço. Pequeno vai até 10 kg, médio até 25, grande acima disso."</p><p><b>Na skill:</b> uma regra clara, que vale para qualquer cliente.</p></div>
+</div>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>A lista de perguntas às vezes vem longa. Responda o que sabe e escreva: "no resto, escolha o mais simples e me diga o que escolheu". Você revisa depois.</p></div>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">3</span>Revise o texto e peça o ZIP</h2>
-  <p>Quando termina, o Claude mostra os arquivos da skill ao lado da conversa. Leia o SKILL.md e confira três coisas: o nome no topo é igual ao nome da pasta da skill, a sua <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span> no cabeçalho e um exemplo no fim.</p>
-  <p>Quer mudar um trecho? Peça na conversa, como faria com uma pessoa. Depois, peça a pasta inteira num <span class="gterm" data-def="um arquivo que guarda uma pasta inteira compactada, com tudo o que tem dentro. É assim que a skill viaja até o app do Claude." data-gl="arquivo-zip">arquivo ZIP</span>.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul pediu uma troca de palavra e, em seguida, o arquivo para baixar.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Na parte de prazos, troque "prazo" por "data-limite", que é como o escritório fala.</p>
-        <p class="msg ia ok"><span class="quem">Claude</span>Feito. Troquei nas três ocorrências do SKILL.md.</p>
-        <p class="msg eu"><span class="quem">Você</span>Está bom. Junte a pasta da skill num arquivo ZIP para eu baixar.</p>
-        <p class="msg ia ok"><span class="quem">Claude</span>Pronto: parecer-trabalhista.zip, com o SKILL.md e o modelo de parecer dentro. Clique no arquivo para baixar.</p>
-      </div>
-      <p class="tela-nota bom">Ajuste pedido em uma linha, e a pasta saiu compactada sem ele abrir nenhum programa.</p>
-    </div>
-      </figure>
-  <details class="mais"><summary>E se a skill-creator não aparecer na sua lista?</summary><p>Procure em Personalizar › Skills e ligue a chave dela. Se não estiver lá, faça o pedido mesmo assim, sem citar o nome: "me ajude a criar uma skill, fazendo perguntas antes de escrever". O Claude conduz a entrevista do mesmo jeito.</p></details>
+<h2><span class="n">3</span>Revise o texto e peça o ZIP</h2>
+<p>Quando termina, o Claude mostra os arquivos da skill ao lado da conversa. Leia o SKILL.md e confira três coisas. O nome no topo é igual ao da pasta. A sua <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span> está no cabeçalho. E há um exemplo no fim.</p>
+<p>Quer mudar um trecho? Peça na conversa, como faria com uma pessoa. Depois, peça a pasta inteira num <span class="gterm" data-def="um arquivo que guarda uma pasta inteira compactada, com tudo o que tem dentro. É assim que a skill viaja até o app do Claude." data-gl="arquivo-zip">arquivo ZIP</span>.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul pediu uma troca de palavra e, em seguida, o arquivo para baixar.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Na parte de prazos, troque "prazo" por "data-limite", que é como o escritório fala.</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Feito. Troquei nas três ocorrências do SKILL.md.</p>
+<p class="msg eu"><span class="quem">Você</span>Está bom. Junte a pasta da skill num arquivo ZIP para eu baixar.</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Pronto: parecer-trabalhista.zip, com o SKILL.md e o modelo de parecer dentro. Clique no arquivo para baixar.</p>
+</div>
+<p class="tela-nota bom">Ajuste pedido em uma linha, e a pasta saiu compactada sem ele abrir nenhum programa.</p>
+</div>
+</figure>
+<details class="mais"><summary>E se a skill-creator não aparecer na sua lista?</summary><p>Procure em Personalizar › Skills e ligue a chave dela. Se não estiver lá, faça o pedido mesmo assim, sem citar o nome: "me ajude a criar uma skill, fazendo perguntas antes de escrever". O Claude conduz a entrevista do mesmo jeito.</p></details>
 </section>
-
 <section class="practice" data-mode="prompt">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Saia da conversa com o ZIP da sua skill</h3>
-  <p class="pgoal">Pronto quando o arquivo ZIP da sua skill estiver salvo no seu computador. Cerca de 12 minutos, no computador.</p>
-  <p class="psafe">Criar a skill não liga nada: ela só passa a valer quando você enviar, na aula 6. Não fez as aulas anteriores? Deixe os campos em branco; o Claude pergunta a descrição e o exemplo. Se o resultado sair estranho, peça para refazer a parte que incomodou.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Use a skill skill-creator para criar comigo uma skill.
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Saia da conversa com o ZIP da sua skill</h3>
+<p class="pgoal">Pronto quando o arquivo ZIP da sua skill estiver salvo no seu computador. Cerca de 12 minutos, no computador.</p>
+<p class="psafe">Criar a skill não liga nada: ela só passa a valer quando você enviar, na aula 6. Não fez as aulas anteriores? Deixe os campos em branco; o Claude pergunta a descrição e o exemplo. Se o resultado sair estranho, peça para refazer a parte que incomodou.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Use a skill skill-creator para criar comigo uma skill.
 Tarefa: &lt;a tarefa que se repete, da aula 1&gt;
 Descrição que já escrevi: &lt;a frase da aula 2&gt;
 Um exemplo real de pedido e de resposta boa:
@@ -755,38 +729,37 @@ Um exemplo real de pedido e de resposta boa:
 Faça suas perguntas antes de escrever.
 Instruções curtas, cada regra com o motivo.
 No fim, junte a pasta da skill num arquivo ZIP para eu baixar.</pre></div>
-  <details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
-    <p>Tarefa: <b>responder orçamento de banho e tosa</b>.<br>Descrição: "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."<br>Exemplo: cliente pergunta "quanto fica a tosa do meu shih-tzu?" e a resposta boa é "Oi! Shih-tzu é porte pequeno: banho e tosa fica R$ 80. Quer agendar?". Ela colou também a tabela de preços da loja.</p>
-  </details>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Numa conversa nova, cole o molde com a sua tarefa, a descrição e um exemplo real.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Responda às perguntas com casos do seu trabalho. Leia o SKILL.md: nome, descrição sua, exemplo no fim.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Baixe o ZIP. O navegador guarda na pasta de arquivos baixados: arraste o arquivo de lá para a pasta Documentos e anote o nome dele para a aula 6.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de criar a sua primeira skill, sem abrir editor de texto, e tem o arquivo pronto para enviar.</p>
+<details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
+<p>Tarefa: <b>responder orçamento de banho e tosa</b>.<br/>Descrição: "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."<br/>Exemplo: cliente pergunta "quanto fica a tosa do meu shih-tzu?" e a resposta boa é "Oi! Shih-tzu é porte pequeno: banho e tosa fica R$ 80. Quer agendar?". Ela colou também a tabela de preços da loja.</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Numa conversa nova, cole o molde com a sua tarefa, a descrição e um exemplo real.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Responda às perguntas com casos do seu trabalho. Leia o SKILL.md: nome, descrição sua, exemplo no fim.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Baixe o ZIP. O navegador guarda na pasta de arquivos baixados: arraste o arquivo de lá para a pasta Documentos e anote o nome dele para a aula 6.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de criar a sua primeira skill, sem abrir editor de texto, e tem o arquivo pronto para enviar.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Criar conversando</h3>
-    <ol>
-      <li><span><b>Peça a skill-creator</b>com a tarefa, a descrição e um exemplo real.</span></li>
-      <li><span><b>Responda com casos</b>regra clara no lugar de "o normal".</span></li>
-      <li><span><b>Revise e compacte</b>confira as três partes e baixe o ZIP.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe criar uma skill numa conversa com o Claude.</p>
-    <p class="na-action">Hoje, releia o SKILL.md da sua skill e procure uma regra sem o porquê. Peça ao Claude, na mesma conversa, para reescrever só ela.</p>
-    <p class="na-hook">Na próxima aula: o ZIP está no seu computador. Você vai entregá-lo ao app e ver o Claude usar a sua skill.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Criar conversando</h3>
+<ol>
+<li><span><b>Peça a skill-creator</b>com a tarefa, a descrição e um exemplo real.</span></li>
+<li><span><b>Responda com casos</b>regra clara no lugar de "o normal".</span></li>
+<li><span><b>Revise e compacte</b>confira as três partes e baixe o ZIP.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe criar uma skill numa conversa com o Claude.</p>
+<p class="na-action">Hoje, releia o SKILL.md da sua skill e procure uma regra sem o porquê. Peça ao Claude, na mesma conversa, para reescrever só ela.</p>
+<p class="na-hook">Na próxima aula: o ZIP está no seu computador. Você vai entregá-lo ao app e ver o Claude usar a sua skill.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#aula-4">← aula anterior</a><a class="next" href="#aula-6">próxima aula →</a></nav>
 <p class="aula-pe">Aula 5 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-5">
+<script id="cards-5" type="application/json">
 [
   {"front":"O Claude perguntou como você trata um cliente atrasado e você respondeu \"do jeito normal\". O que provavelmente vai aparecer na skill?","back":"Uma instrução vaga, que o Claude completa com o jeito mais comum. Um caso real vira uma regra que ele consegue seguir."},
   {"front":"A skill-creator não aparece na sua lista. Você ainda consegue criar a skill conversando?","back":"Sim. Peça para criar uma skill fazendo perguntas antes de escrever; o Claude conduz a entrevista do mesmo jeito."},
@@ -794,121 +767,116 @@ No fim, junte a pasta da skill num arquivo ZIP para eu baixar.</pre></div>
 ]
 </script>
 </section>
-<section class="view" id="v-aula-6" data-aula="6" data-tempo="14min">
+<section class="view" data-aula="6" data-tempo="14min" id="v-aula-6">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 6 de 8</p>
-  <h1>Envie e ligue a <em>sua skill</em></h1>
-  <figure class="cena"><img src="assets/img/aula-6.webp" width="1280" height="720" alt="A dona de um pet shop entrega um envelope fechado por cima do balcão da loja, com o notebook aberto ao lado e uma caixa de transporte de gato no chão."></figure>
-  <p class="promise">Você consegue enviar o ZIP, ligar a skill e ver o Claude usá-la num pedido seu.</p>
-  <p class="why">O arquivo pronto parado na pasta Documentos não ajuda ninguém. São poucos cliques até ele entrar na lista do app. Depois, um pedido comum mostra se a skill está trabalhando.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Personalizar › Skills › <b>+</b> › Criar skill › Enviar uma skill.</li>
-      <li>A skill entra na lista com a chave ligada. Só você a vê.</li>
-      <li>Teste com um pedido comum e confira o <b>raciocínio</b>.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 6 de 8</p>
+<h1>Envie e ligue a <em>sua skill</em></h1>
+<figure class="cena"><img alt="A dona de um pet shop entrega um envelope fechado por cima do balcão da loja, com o notebook aberto ao lado e uma caixa de transporte de gato no chão." height="720" src="assets/img/aula-6.webp" width="1280"/></figure>
+<p class="promise">Você consegue enviar o ZIP, ligar a skill e ver o Claude usá-la num pedido seu.</p>
+<p class="why">O arquivo pronto parado na pasta Documentos não ajuda ninguém. São poucos cliques até ele entrar na lista do app. Depois, um pedido comum mostra se a skill está trabalhando.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Personalizar › Skills › <b>+</b> › Criar skill › Enviar uma skill.</li>
+<li>A skill entra na lista com a chave ligada. Só você a vê.</li>
+<li>Teste com um pedido comum e confira o <b>raciocínio</b>.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">1</span>Quatro passos até a lista</h2>
-  <p>A sua <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> entra pelo mesmo lugar onde você viu as prontas na aula 3. Não fez a aula 3? Antes de tudo, clique no seu nome no rodapé do menu lateral, entre em Configurações › Capacidades e ligue a chave "Execução de código e criação de arquivos".</p>
-  <p>Tenha em mãos o <span class="gterm" data-def="um arquivo que guarda uma pasta inteira compactada, com tudo o que tem dentro. É assim que a skill viaja até o app do Claude." data-gl="arquivo-zip">arquivo ZIP</span> da aula 5. Se ele ainda está na pasta de arquivos baixados, arraste para Documentos. Pulou a aula 5? Use o <a href="assets/exemplo/orcamento-banho-tosa.zip" download>ZIP de exemplo da Débora</a> para treinar o envio.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora fez o envio no computador da loja, entre um banho e outro. Levou menos de dois minutos.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude · Personalizar › Skills</span></div>
-      <div class="janela-body">
-        <div class="item botao"><span class="pin">1</span> +</div>
-        <div class="item doc dentro"><span class="pin">2</span> Criar skill</div>
-        <div class="item doc dentro"><span class="pin">3</span> Enviar uma skill</div>
-        <div class="item pasta dentro"><span class="pin">4</span> Documentos › orcamento-banho-tosa.zip</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>Em Personalizar › Skills, clique no botão +.</span></li>
-      <li><span class="pin">2</span><span>Escolha Criar skill (em inglês, Create skill).</span></li>
-      <li><span class="pin">3</span><span>Escolha Enviar uma skill e procure o arquivo no computador.</span></li>
-      <li><span class="pin">4</span><span>Selecione o ZIP na pasta Documentos e confirme.</span></li>
-    </ol>
-    <figcaption>Os nomes dos botões podem mudar entre versões do app. O caminho começa sempre em Personalizar › Skills.</figcaption>
-  </figure>
+<h2><span class="n">1</span>Quatro passos até a lista</h2>
+<p>A sua <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> entra pelo mesmo lugar onde você viu as prontas na aula 3. Não fez a aula 3? Antes de tudo, clique no seu nome no rodapé do menu lateral, entre em Configurações › Capacidades e ligue a chave "Execução de código e criação de arquivos".</p>
+<p>Tenha em mãos o <span class="gterm" data-def="um arquivo que guarda uma pasta inteira compactada, com tudo o que tem dentro. É assim que a skill viaja até o app do Claude." data-gl="arquivo-zip">arquivo ZIP</span> da aula 5. Se ele ainda está na pasta de arquivos baixados, arraste para Documentos. Pulou a aula 5? Use o <a download="" href="assets/exemplo/orcamento-banho-tosa.zip">ZIP de exemplo da Débora</a> para treinar o envio.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora fez o envio no computador da loja, entre um banho e outro. Levou menos de dois minutos.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude · Personalizar › Skills</span></div>
+<div class="janela-body">
+<div class="item botao"><span class="pin">1</span> +</div>
+<div class="item doc dentro"><span class="pin">2</span> Criar skill</div>
+<div class="item doc dentro"><span class="pin">3</span> Enviar uma skill</div>
+<div class="item pasta dentro"><span class="pin">4</span> Documentos › orcamento-banho-tosa.zip</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>Em Personalizar › Skills, clique no botão +.</span></li>
+<li><span class="pin">2</span><span>Escolha Criar skill (em inglês, Create skill).</span></li>
+<li><span class="pin">3</span><span>Escolha Enviar uma skill e procure o arquivo no computador.</span></li>
+<li><span class="pin">4</span><span>Selecione o ZIP na pasta Documentos e confirme.</span></li>
+</ol>
+<figcaption>Os nomes dos botões podem mudar entre versões do app. O caminho começa sempre em Personalizar › Skills.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">2</span>Confira se ela entrou</h2>
-  <p>Deu certo quando a skill aparece na lista com o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span> dela, e a chave ligada. Só você a vê. Em conta de empresa, outras pessoas só a recebem se você compartilhar.</p>
-  <p>O erro mais comum no envio é o arquivo errado: um ZIP sem o SKILL.md dentro, ou o próprio SKILL.md solto.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul errou na primeira vez. Veja os dois cartões.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Arquivo errado</span><p><b>Enviou:</b> o modelo-parecer.docx, que estava ao lado do ZIP na pasta.</p><p><b>Resultado:</b> o app recusou, avisando que falta o SKILL.md.</p></div>
-      <div class="depois"><span class="rot">Arquivo certo</span><p><b>Enviou:</b> parecer-trabalhista.zip, que a conversa da aula 5 entregou.</p><p><b>Resultado:</b> a skill apareceu na lista, com a descrição dele e a chave ligada.</p></div>
-    </div>
-    <figcaption>Na dúvida, envie o arquivo que termina em .zip e tem o nome da skill.</figcaption>
-  </figure>
+<h2><span class="n">2</span>Confira se ela entrou</h2>
+<p>Deu certo quando a skill aparece na lista com o nome e a <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span> dela, e a chave ligada. Só você a vê. Em conta de empresa, outras pessoas só a recebem se você compartilhar.</p>
+<p>O erro mais comum no envio é o arquivo errado: um ZIP sem o SKILL.md dentro, ou o próprio SKILL.md solto.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul errou na primeira vez. Veja os dois cartões.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Arquivo errado</span><p><b>Enviou:</b> o modelo-parecer.docx, que estava ao lado do ZIP na pasta.</p><p><b>Resultado:</b> o app recusou, avisando que falta o SKILL.md.</p></div>
+<div class="depois"><span class="rot">Arquivo certo</span><p><b>Enviou:</b> parecer-trabalhista.zip, que a conversa da aula 5 entregou.</p><p><b>Resultado:</b> a skill apareceu na lista, com a descrição dele e a chave ligada.</p></div>
+</div>
+<figcaption>Na dúvida, envie o arquivo que termina em .zip e tem o nome da skill.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">3</span>Faça um pedido comum e confira</h2>
-  <p>Agora não chame a skill pelo nome. Faça o pedido como faria num dia de trabalho. Se a descrição está boa, o Claude reconhece a tarefa e abre a skill sozinho.</p>
-  <p>Depois, abra o <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span>: ele fica recolhido numa linha logo acima da resposta. Toque nele e procure o nome da skill.</p>
-  <p>Há uma segunda prova, sem abrir nada: a resposta usa algo que só a skill tem, como o preço da sua tabela. Se o bloco não aparecer, pergunte na conversa: "você usou alguma skill nesta resposta? Qual?".</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora colou a mensagem de um cliente novo, sem dizer mais nada.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Responde esse cliente: "oi, quanto fica banho no meu labrador?"</p>
-        <p class="msg ia"><span class="quem">Raciocínio (aberto)</span>É um pedido de orçamento de banho. Lendo a skill orcamento-banho-tosa…</p>
-        <p class="msg ia ok"><span class="quem">Claude</span>Oi! Labrador é porte grande: o banho fica R$ 90. Quer agendar? Me diga o melhor dia.</p>
-      </div>
-      <p class="tela-nota bom">O preço veio da tabela da skill (porte grande: banho R$ 90), e o fechamento com pergunta veio das instruções dela.</p>
-    </div>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Às vezes a skill não entra no primeiro pedido. Confira nesta ordem: a chave dela está ligada; a descrição fala do que você pediu. Para testar, peça explícito: "use a minha skill orcamento-banho-tosa". Se assim funcionar, o ajuste é na descrição, assunto da aula 8.</p></div>
+<h2><span class="n">3</span>Faça um pedido comum e confira</h2>
+<p>Agora não chame a skill pelo nome. Faça o pedido como faria num dia de trabalho. Se a descrição está boa, o Claude reconhece a tarefa e abre a skill sozinho.</p>
+<p>Depois, abra o <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span>: ele fica recolhido numa linha logo acima da resposta. Toque nele e procure o nome da skill.</p>
+<p>Há uma segunda prova, sem abrir nada: a resposta usa algo que só a skill tem, como o preço da sua tabela. Se o bloco não aparecer, pergunte na conversa: "você usou alguma skill nesta resposta? Qual?".</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora colou a mensagem de um cliente novo, sem dizer mais nada.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Responde esse cliente: "oi, quanto fica banho no meu labrador?"</p>
+<p class="msg ia"><span class="quem">Raciocínio (aberto)</span>É um pedido de orçamento de banho. Lendo a skill orcamento-banho-tosa…</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Oi! Labrador é porte grande: o banho fica R$ 90. Quer agendar? Me diga o melhor dia.</p>
+</div>
+<p class="tela-nota bom">O preço veio da tabela da skill (porte grande: banho R$ 90), e o fechamento com pergunta veio das instruções dela.</p>
+</div>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Às vezes a skill não entra no primeiro pedido. Confira nesta ordem: a chave dela está ligada; a descrição fala do que você pediu. Para testar, peça explícito: "use a minha skill orcamento-banho-tosa". Se assim funcionar, o ajuste é na descrição, assunto da aula 8.</p></div>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Envie, ligue e teste a sua skill</h3>
-  <p class="pgoal">Pronto quando o raciocínio citar a sua skill, ou a resposta usar algo que só ela tem, num pedido em que você não disse o nome dela. Cerca de 8 minutos, no computador.</p>
-  <p class="psafe">A skill fica só na sua conta. Para desfazer, desligue a chave dela, ou abra a skill, clique nos três pontinhos (…) e escolha Excluir. Se o envio der erro, veja o cartão Arquivo errado no passo 2.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">&lt;um pedido comum da sua tarefa, escrito como você sempre escreve, sem citar a skill&gt;</pre></div>
-  <details class="mais"><summary>Veja o pedido de teste do Raul</summary>
-    <p>"Preciso do parecer do caso da Marta: demitida sem justa causa depois de oito anos, sem receber as férias vencidas. Documentos colados abaixo." O raciocínio citou a skill parecer-trabalhista, e o texto veio nas cinco partes do escritório.</p>
-  </details>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Em Personalizar › Skills, clique em + › Criar skill › Enviar uma skill e escolha o seu ZIP.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Confira na lista: o nome, a descrição e a chave ligada.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Numa conversa nova, faça o pedido sem citar a skill. Abra o raciocínio e procure o nome dela.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de colocar a sua própria skill para trabalhar no Claude.</p>
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Envie, ligue e teste a sua skill</h3>
+<p class="pgoal">Pronto quando o raciocínio citar a sua skill, ou a resposta usar algo que só ela tem, num pedido em que você não disse o nome dela. Cerca de 8 minutos, no computador.</p>
+<p class="psafe">A skill fica só na sua conta. Para desfazer, desligue a chave dela, ou abra a skill, clique nos três pontinhos (…) e escolha Excluir. Se o envio der erro, veja o cartão Arquivo errado no passo 2.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">&lt;um pedido comum da sua tarefa, escrito como você sempre escreve, sem citar a skill&gt;</pre></div>
+<details class="mais"><summary>Veja o pedido de teste do Raul</summary>
+<p>"Preciso do parecer do caso da Marta: demitida sem justa causa depois de oito anos, sem receber as férias vencidas. Documentos colados abaixo." O raciocínio citou a skill parecer-trabalhista, e o texto veio nas cinco partes do escritório.</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Em Personalizar › Skills, clique em + › Criar skill › Enviar uma skill e escolha o seu ZIP.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Confira na lista: o nome, a descrição e a chave ligada.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Numa conversa nova, faça o pedido sem citar a skill. Abra o raciocínio e procure o nome dela.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de colocar a sua própria skill para trabalhar no Claude.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Enviar e ligar</h3>
-    <ol>
-      <li><span><b>O caminho</b>Personalizar › Skills › + › Criar skill › Enviar uma skill.</span></li>
-      <li><span><b>O arquivo</b>o ZIP com o nome da skill, nunca o SKILL.md solto.</span></li>
-      <li><span><b>O teste</b>pedido comum, sem o nome da skill, e o raciocínio aberto.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já tem uma skill sua ligada e funcionando no Claude.</p>
-    <p class="na-action">Na próxima vez que a tarefa aparecer de verdade, deixe a skill fazer e anote uma coisa que saiu boa e uma que você teve de corrigir.</p>
-    <p class="na-hook">Na próxima aula: funcionou uma vez. Você vai descobrir se funciona sempre, e se é melhor do que sem ela.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Enviar e ligar</h3>
+<ol>
+<li><span><b>O caminho</b>Personalizar › Skills › + › Criar skill › Enviar uma skill.</span></li>
+<li><span><b>O arquivo</b>o ZIP com o nome da skill, nunca o SKILL.md solto.</span></li>
+<li><span><b>O teste</b>pedido comum, sem o nome da skill, e o raciocínio aberto.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já tem uma skill sua ligada e funcionando no Claude.</p>
+<p class="na-action">Na próxima vez que a tarefa aparecer de verdade, deixe a skill fazer e anote uma coisa que saiu boa e uma que você teve de corrigir.</p>
+<p class="na-hook">Na próxima aula: funcionou uma vez. Você vai descobrir se funciona sempre, e se é melhor do que sem ela.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#aula-5">← aula anterior</a><a class="next" href="#aula-7">próxima aula →</a></nav>
 <p class="aula-pe">Aula 6 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-6">
+<script id="cards-6" type="application/json">
 [
   {"front":"O app recusou o seu envio dizendo que falta o SKILL.md. O que você provavelmente enviou?","back":"Um arquivo que não é o ZIP da skill, como um documento solto. Envie o .zip com o nome da skill, que traz o SKILL.md dentro."},
   {"front":"Por que testar com um pedido comum, sem citar o nome da skill?","back":"Porque no dia a dia você não vai citar. O teste mostra se a descrição basta para o Claude reconhecer a tarefa sozinho."},
@@ -916,99 +884,95 @@ No fim, junte a pasta da skill num arquivo ZIP para eu baixar.</pre></div>
 ]
 </script>
 </section>
-<section class="view" id="v-aula-7" data-aula="7" data-tempo="16min">
+<section class="view" data-aula="7" data-tempo="16min" id="v-aula-7">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 7 de 8</p>
-  <h1>Teste a skill <em>com e sem</em> ela</h1>
-  <figure class="cena"><img src="assets/img/aula-7.webp" width="1280" height="720" alt="A dona de um pet shop compara duas folhas impressas, uma em cada mão, na área de tosa, com um cachorro esperando na mesa e uma tabela desenhada à mão num bloco sobre o balcão."></figure>
-  <p class="promise">Você consegue testar a sua skill com 4 pedidos e anotar onde ela acerta e onde falha.</p>
-  <p class="why">Um teste que deu certo mostra que a skill abre. Não mostra se ela abre sempre, nem se o resultado é melhor do que sem ela. Quatro pedidos bem escolhidos respondem as duas perguntas.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Teste <b>dois pedidos que devem</b> abrir a skill, escritos de jeitos diferentes.</li>
-      <li>Teste <b>um que não deve</b>: parecido, mas de outro assunto.</li>
-      <li>Repita um pedido com a skill desligada e compare.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 7 de 8</p>
+<h1>Teste a skill <em>com e sem</em> ela</h1>
+<figure class="cena"><img alt="A dona de um pet shop compara duas folhas impressas, uma em cada mão, na área de tosa, com um cachorro esperando na mesa e uma tabela desenhada à mão num bloco sobre o balcão." height="720" src="assets/img/aula-7.webp" width="1280"/></figure>
+<p class="promise">Você consegue testar a sua skill com 4 pedidos e anotar onde ela acerta e onde falha.</p>
+<p class="why">Um teste que deu certo mostra que a skill abre. Não mostra se ela abre sempre, nem se o resultado é melhor do que sem ela. Quatro pedidos bem escolhidos respondem as duas perguntas.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Teste <b>dois pedidos que devem</b> abrir a skill, escritos de jeitos diferentes.</li>
+<li>Teste <b>um que não deve</b>: parecido, mas de outro assunto.</li>
+<li>Repita um pedido com a skill desligada e compare.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">1</span>Peça do jeito que você pede de verdade</h2>
-  <p>Na pressa, ninguém escreve o pedido igual duas vezes. A sua <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> precisa abrir nos dois jeitos. Teste uma frase completa e uma abreviada, como sai no celular.</p>
-  <p>Como saber se abriu? Toque no <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span>, logo acima da resposta, e procure o nome da skill. Ou veja se a resposta usa algo que só a skill tem, como o preço da tabela. Se o bloco não aparecer, pergunte: "você usou alguma skill nesta resposta? Qual?".</p>
-  <p>Se um dos jeitos falha, o problema quase sempre está na <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>: faltam as palavras daquele jeito de pedir.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora testou duas mensagens reais de clientes. A segunda veio do jeito que muita gente escreve no WhatsApp.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-caso" data-rotulo="Frase completa">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Responde esse cliente: "Bom dia, qual o valor do banho e tosa para um poodle médio?"</p>
-          <p class="msg ia ok"><span class="quem">Claude</span>Bom dia! Para poodle médio, banho e tosa fica R$ 95. Quer agendar? Me diga o melhor dia.</p>
-        </div>
-        <p class="tela-nota bom">A skill abriu: preço da tabela e pergunta no fim.</p>
-      </div>
-      <div class="tela-caso" data-rotulo="Frase abreviada">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Responde: "qto fica pra dar um trato no bichinho?"</p>
-          <p class="msg ia falha"><span class="quem">Claude</span>Oi! O valor depende do porte e do tipo de pelo do seu pet. Pode me contar a raça?</p>
-        </div>
-        <p class="tela-nota ruim">A skill não abriu: a resposta não usa o tom nem a tabela da loja. "Dar um trato" não aparece na descrição dela.</p>
-      </div>
-    </div>
-    <figcaption><b>Toque nos dois botões</b>. A falha vira uma anotação: acrescentar "trato" à descrição.</figcaption>
-  </figure>
+<h2><span class="n">1</span>Peça do jeito que você pede de verdade</h2>
+<p>Na pressa, ninguém escreve o pedido igual duas vezes. A sua <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> precisa abrir nos dois jeitos. Teste uma frase completa e uma abreviada, como sai no celular.</p>
+<p>Como saber se abriu? Toque no <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span>, logo acima da resposta, e procure o nome da skill. Ou veja se a resposta usa algo que só a skill tem, como o preço da tabela. Se o bloco não aparecer, pergunte: "você usou alguma skill nesta resposta? Qual?".</p>
+<p>Se um dos jeitos falha, o problema quase sempre está na <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>: faltam as palavras daquele jeito de pedir.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora testou duas mensagens reais de clientes. A segunda veio do jeito que muita gente escreve no WhatsApp.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-caso" data-rotulo="Frase completa">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Responde esse cliente: "Bom dia, qual o valor do banho e tosa para um poodle médio?"</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Bom dia! Para poodle médio, banho e tosa fica R$ 95. Quer agendar? Me diga o melhor dia.</p>
+</div>
+<p class="tela-nota bom">A skill abriu: preço da tabela e pergunta no fim.</p>
+</div>
+<div class="tela-caso" data-rotulo="Frase abreviada">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Responde: "qto fica pra dar um trato no bichinho?"</p>
+<p class="msg ia falha"><span class="quem">Claude</span>Oi! O valor depende do porte e do tipo de pelo do seu pet. Pode me contar a raça?</p>
+</div>
+<p class="tela-nota ruim">A skill não abriu: a resposta não usa o tom nem a tabela da loja. "Dar um trato" não aparece na descrição dela.</p>
+</div>
+</div>
+<figcaption><b>Toque nos dois botões</b>. A falha vira uma anotação: acrescentar "trato" à descrição.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">2</span>Um pedido parecido que não é dela</h2>
-  <p>O teste ao contrário também importa. Faça um pedido do mesmo mundo, mas de outra tarefa. A skill deve ficar fechada.</p>
-  <p>Se ela abrir sem dever, a descrição está larga demais e vai atrapalhar pedidos que não são dela.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul pediu um e-mail curto ao cliente. A skill de parecer não deveria entrar. Veja o que aconteceu, e como ficou depois da correção que a aula 8 ensina.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-caso" data-rotulo="Abriu sem dever">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Escreva um e-mail curto à cliente avisando que a audiência mudou para [nova data].</p>
-          <p class="msg ia falha"><span class="quem">Claude</span>1. Fatos: a audiência foi redesignada. 2. Pedidos: … 3. Prazos: …</p>
-        </div>
-        <p class="tela-nota ruim">A descrição dizia "Use para qualquer documento do escritório". O aviso virou um parecer em partes.</p>
-      </div>
-      <div class="tela-caso" data-rotulo="Ficou fechada">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Escreva um e-mail curto à cliente avisando que a audiência mudou para [nova data].</p>
-          <p class="msg ia ok"><span class="quem">Claude</span>Olá, Marta. A sua audiência mudou para [nova data]. Nada muda no seu processo; confirmo o horário assim que o fórum publicar.</p>
-        </div>
-        <p class="tela-nota bom">Depois da correção da aula 8, a descrição passou a dizer "use quando eu pedir parecer ou análise de caso". A skill ficou de fora, como devia.</p>
-      </div>
-    </div>
-    <figcaption>A data fica entre colchetes porque não estava no pedido: o Raul completa.</figcaption>
-  </figure>
+<h2><span class="n">2</span>Um pedido parecido que não é dela</h2>
+<p>O teste ao contrário também importa. Faça um pedido do mesmo mundo, mas de outra tarefa. A skill deve ficar fechada.</p>
+<p>Se ela abrir sem dever, a descrição está larga demais e vai atrapalhar pedidos que não são dela.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul pediu um e-mail curto ao cliente. A skill de parecer não deveria entrar. Veja o que aconteceu, e como ficou depois da correção que a aula 8 ensina.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-caso" data-rotulo="Abriu sem dever">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Escreva um e-mail curto à cliente avisando que a audiência mudou para [nova data].</p>
+<p class="msg ia falha"><span class="quem">Claude</span>1. Fatos: a audiência foi redesignada. 2. Pedidos: … 3. Prazos: …</p>
+</div>
+<p class="tela-nota ruim">A descrição dizia "Use para qualquer documento do escritório". O aviso virou um parecer em partes.</p>
+</div>
+<div class="tela-caso" data-rotulo="Ficou fechada">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Escreva um e-mail curto à cliente avisando que a audiência mudou para [nova data].</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Olá, Marta. A sua audiência mudou para [nova data]. Nada muda no seu processo; confirmo o horário assim que o fórum publicar.</p>
+</div>
+<p class="tela-nota bom">Depois da correção da aula 8, a descrição passou a dizer "use quando eu pedir parecer ou análise de caso". A skill ficou de fora, como devia.</p>
+</div>
+</div>
+<figcaption>A data fica entre colchetes porque não estava no pedido: o Raul completa.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="tarefa">
-  <h2><span class="n">3</span>Compare com a skill desligada</h2>
-  <p>Falta saber se a skill melhora o resultado. Desligue a chave dela em Personalizar › Skills, abra uma conversa nova e repita um dos pedidos. Depois, ligue de novo.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora repetiu o pedido do poodle médio com a skill desligada.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Sem a skill</span><p><b>Resposta:</b> "O valor varia conforme a região e o porte. Recomendo consultar o pet shop."</p><p>Ela teria de reescrever o preço e o tom.</p></div>
-      <div class="depois"><span class="rot">Com a skill</span><p><b>Resposta:</b> "Para poodle médio, banho e tosa fica R$ 95. Quer agendar?"</p><p>Pronta para mandar ao cliente.</p></div>
-      <p class="saldo"><b>Saldo:</b> de uma resposta inteira reescrita para nenhuma correção.</p>
-    </div>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Desligar a skill dá medo de perder o trabalho. Desligar não apaga nada: é a mesma chave que você ligou na aula 6. Terminado o teste, ligue de novo e confira se ela voltou para a lista com a chave acesa.</p></div>
+<h2><span class="n">3</span>Compare com a skill desligada</h2>
+<p>Falta saber se a skill melhora o resultado. Desligue a chave dela em Personalizar › Skills, abra uma conversa nova e repita um dos pedidos. Depois, ligue de novo.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">A Débora repetiu o pedido do poodle médio com a skill desligada.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Sem a skill</span><p><b>Resposta:</b> "O valor varia conforme a região e o porte. Recomendo consultar o pet shop."</p><p>Ela teria de reescrever o preço e o tom.</p></div>
+<div class="depois"><span class="rot">Com a skill</span><p><b>Resposta:</b> "Para poodle médio, banho e tosa fica R$ 95. Quer agendar?"</p><p>Pronta para mandar ao cliente.</p></div>
+<p class="saldo"><b>Saldo:</b> de uma resposta inteira reescrita para nenhuma correção.</p>
+</div>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Desligar a skill dá medo de perder o trabalho. Desligar não apaga nada: é a mesma chave que você ligou na aula 6. Terminado o teste, ligue de novo e confira se ela voltou para a lista com a chave acesa.</p></div>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Rode os quatro testes e anote</h3>
-  <p class="pgoal">Pronto quando as suas anotações dos quatro pedidos estiverem preenchidas. Cerca de 12 minutos, no computador. Anote no papel ou no bloco de notas.</p>
-  <p class="psafe">Os testes não mudam a skill. Use uma conversa nova para cada pedido, para um não influenciar o outro. Não fez a aula 6? Faça os testes com a skill pronta de Word, como no exemplo do Word logo abaixo.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Pedido 1, do jeito completo: &lt;escreva aqui&gt;
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Rode os quatro testes e anote</h3>
+<p class="pgoal">Pronto quando as suas anotações dos quatro pedidos estiverem preenchidas. Cerca de 12 minutos, no computador. Anote no papel ou no bloco de notas.</p>
+<p class="psafe">Os testes não mudam a skill. Use uma conversa nova para cada pedido, para um não influenciar o outro. Não fez a aula 6? Faça os testes com a skill pronta de Word, como no exemplo do Word logo abaixo.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Pedido 1, do jeito completo: &lt;escreva aqui&gt;
 Devia abrir: sim. Abriu? ___ Resposta boa? ___
 
 Pedido 2, o mesmo abreviado: &lt;escreva aqui&gt;
@@ -1019,41 +983,40 @@ Devia abrir: não. Abriu? ___
 
 Pedido 4, o pedido 1 com a skill desligada.
 Ficou melhor ou pior que o pedido 1? ___</pre></div>
-  <details class="mais"><summary>Veja a tabela preenchida pelo Raul</summary>
-    <p><b>Pedido 1</b> "Preciso do parecer do caso da Marta…": abriu, resposta boa.<br><b>Pedido 2</b> "parecer marta férias": abriu, resposta boa.<br><b>Pedido 3</b> "e-mail avisando a audiência": abriu sem dever, virou parecer.<br><b>Pedido 4</b> pedido 1 sem a skill: pior, fora do formato do escritório.<br>Anotação dele: a descrição está larga; corrigir na aula 8.</p>
-  </details>
-  <details class="mais"><summary>Veja os quatro pedidos para quem usa a skill de Word</summary>
-    <p><b>Pedido 1:</b> "Monte um documento Word com a lista de tarefas da semana: [suas tarefas]."<br><b>Pedido 2:</b> "faz um doc com minhas tarefas da semana".<br><b>Pedido 3:</b> "Resuma este parágrafo em duas linhas: [texto]". Não pede arquivo, então a skill não deve abrir.<br><b>Pedido 4:</b> o pedido 1 com a skill de Word desligada. Veja se o arquivo veio pior ou se nem veio arquivo.</p>
-  </details>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Copie o molde e escreva os quatro pedidos com casos do seu trabalho.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Rode os pedidos 1, 2 e 3, cada um numa conversa nova, e confira o raciocínio.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Desligue a skill, rode o pedido 4, ligue de novo e preencha as colunas.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de medir a sua skill: sabe onde ela acerta, onde falha e quanto ajuda.</p>
+<details class="mais"><summary>Veja a tabela preenchida pelo Raul</summary>
+<p><b>Pedido 1</b> "Preciso do parecer do caso da Marta…": abriu, resposta boa.<br/><b>Pedido 2</b> "parecer marta férias": abriu, resposta boa.<br/><b>Pedido 3</b> "e-mail avisando a audiência": abriu sem dever, virou parecer.<br/><b>Pedido 4</b> pedido 1 sem a skill: pior, fora do formato do escritório.<br/>Anotação dele: a descrição está larga; corrigir na aula 8.</p>
+</details>
+<details class="mais"><summary>Veja os quatro pedidos para quem usa a skill de Word</summary>
+<p><b>Pedido 1:</b> "Monte um documento Word com a lista de tarefas da semana: [suas tarefas]."<br/><b>Pedido 2:</b> "faz um doc com minhas tarefas da semana".<br/><b>Pedido 3:</b> "Resuma este parágrafo em duas linhas: [texto]". Não pede arquivo, então a skill não deve abrir.<br/><b>Pedido 4:</b> o pedido 1 com a skill de Word desligada. Veja se o arquivo veio pior ou se nem veio arquivo.</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Copie o molde e escreva os quatro pedidos com casos do seu trabalho.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Rode os pedidos 1, 2 e 3, cada um numa conversa nova, e confira o raciocínio.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Desligue a skill, rode o pedido 4, ligue de novo e preencha as colunas.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de medir a sua skill: sabe onde ela acerta, onde falha e quanto ajuda.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Quatro testes</h3>
-    <ol>
-      <li><span><b>Dois jeitos de pedir</b>completo e abreviado; os dois devem abrir.</span></li>
-      <li><span><b>Um vizinho</b>pedido parecido de outra tarefa; deve ficar fechada.</span></li>
-      <li><span><b>Sem a skill</b>desligue, repita, compare e ligue de novo.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe testar uma skill e dizer, com anotação, se ela vale a pena.</p>
-    <p class="na-action">Guarde a tabela de hoje. Nos próximos dias, cada vez que a skill falhar num pedido real, acrescente uma linha.</p>
-    <p class="na-hook">Na próxima aula: com as falhas anotadas, você vai corrigir a skill e enviar a versão nova.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Quatro testes</h3>
+<ol>
+<li><span><b>Dois jeitos de pedir</b>completo e abreviado; os dois devem abrir.</span></li>
+<li><span><b>Um vizinho</b>pedido parecido de outra tarefa; deve ficar fechada.</span></li>
+<li><span><b>Sem a skill</b>desligue, repita, compare e ligue de novo.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe testar uma skill e dizer, com anotação, se ela vale a pena.</p>
+<p class="na-action">Guarde a tabela de hoje. Nos próximos dias, cada vez que a skill falhar num pedido real, acrescente uma linha.</p>
+<p class="na-hook">Na próxima aula: com as falhas anotadas, você vai corrigir a skill e enviar a versão nova.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#aula-6">← aula anterior</a><a class="next" href="#aula-8">próxima aula →</a></nav>
 <p class="aula-pe">Aula 7 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-7">
+<script id="cards-7" type="application/json">
 [
   {"front":"A skill abre quando você escreve a frase completa, mas não na versão abreviada. O que você ajusta?","back":"A descrição: acrescenta as palavras que você usa no jeito abreviado, para o Claude reconhecer os dois."},
   {"front":"Sua skill de parecer abriu num pedido de e-mail simples. O que isso diz sobre a descrição?","back":"Que está larga demais. Ela precisa dizer com mais precisão quando usar, para ficar fechada nas outras tarefas."},
@@ -1061,84 +1024,80 @@ Ficou melhor ou pior que o pedido 1? ___</pre></div>
 ]
 </script>
 </section>
-<section class="view" id="v-aula-8" data-aula="8" data-tempo="16min">
+<section class="view" data-aula="8" data-tempo="16min" id="v-aula-8">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 8 de 8</p>
-  <h1>Corrija, mantenha e <em>saiba quando parar</em></h1>
-  <figure class="cena"><img src="assets/img/aula-8.webp" width="1280" height="720" alt="Um advogado risca uma linha de uma folha impressa com caneta vermelha e escreve a correção acima dela, com o notebook aberto ao lado, no fim da tarde."></figure>
-  <p class="promise">Você consegue corrigir uma falha da sua skill, enviar a versão nova e decidir o que não vira skill.</p>
-  <p class="why">Toda skill falha em algum pedido. Quem desiste nessa hora perde o trabalho feito. A correção costuma ser uma frase, e saber onde mexer evita refazer tudo do zero.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Não abriu, ou abriu sem dever? Corrija a <b>descrição</b>.</li>
-      <li>Abriu e respondeu errado? Corrija as <b>instruções</b> ou o <b>exemplo</b>.</li>
-      <li>Regra de toda conversa, assunto de um cliente ou dado que muda não viram skill.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 8 de 8</p>
+<h1>Corrija, mantenha e <em>saiba quando parar</em></h1>
+<figure class="cena"><img alt="Um advogado risca uma linha de uma folha impressa com caneta vermelha e escreve a correção acima dela, com o notebook aberto ao lado, no fim da tarde." height="720" src="assets/img/aula-8.webp" width="1280"/></figure>
+<p class="promise">Você consegue corrigir uma falha da sua skill, enviar a versão nova e decidir o que não vira skill.</p>
+<p class="why">Toda skill falha em algum pedido. Quem desiste nessa hora perde o trabalho feito. A correção costuma ser uma frase, e saber onde mexer evita refazer tudo do zero.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Não abriu, ou abriu sem dever? Corrija a <b>descrição</b>.</li>
+<li>Abriu e respondeu errado? Corrija as <b>instruções</b> ou o <b>exemplo</b>.</li>
+<li>Regra de toda conversa, assunto de um cliente ou dado que muda não viram skill.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">1</span>Cada falha tem o seu lugar de correção</h2>
-  <p>As anotações da aula 7 dizem onde mexer. Se a <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> não abriu, ou abriu onde não devia, o problema está na <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>. Se abriu e a resposta saiu errada, o problema está nas instruções ou no exemplo.</p>
-  <p>Mude uma coisa por vez e teste de novo. Assim você sabe o que resolveu.</p>
-  <p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">Na aula 7, o pedido "qto fica pra dar um trato no bichinho?" não abriu a skill da Débora. Ela mexeu só na descrição.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Antes</span><p><b>Descrição:</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."</p><p><b>Resultado:</b> o pedido abreviado não abria a skill.</p></div>
-      <div class="depois"><span class="rot">Depois</span><p><b>Descrição:</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço, valor ou quanto fica banho, tosa ou um trato no pet."</p><p><b>Resultado:</b> os dois jeitos de pedir abrem a skill.</p></div>
-      <p class="saldo"><b>Saldo:</b> uma linha mudada, 167 caracteres, dentro do limite de 200.</p>
-    </div>
-  </figure>
+<h2><span class="n">1</span>Cada falha tem o seu lugar de correção</h2>
+<p>As anotações da aula 7 dizem onde mexer. Se a <span class="gterm" data-def="uma pasta com instruções escritas por você, que o Claude guarda e abre sozinho quando o pedido combina. Funciona como uma receita: você escreve uma vez e ele segue sempre." data-gl="skill">skill</span> não abriu, ou abriu onde não devia, o problema está na <span class="gterm" data-def="a frase curta no topo de uma skill que diz o que ela faz e quando usar. Junto com o nome, é só o que o Claude lê antes de decidir se abre a skill." data-gl="descricao">descrição</span>. Se abriu e a resposta saiu errada, o problema está nas instruções ou no exemplo.</p>
+<p>Mude uma coisa por vez e teste de novo. Assim você sabe o que resolveu.</p>
+<p data-ex="dona de pet shop" data-exlbl="Na prática · Dona de pet shop">Na aula 7, o pedido "qto fica pra dar um trato no bichinho?" não abriu a skill da Débora. Ela mexeu só na descrição.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Antes</span><p><b>Descrição:</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço de banho, tosa ou pacote."</p><p><b>Resultado:</b> o pedido abreviado não abria a skill.</p></div>
+<div class="depois"><span class="rot">Depois</span><p><b>Descrição:</b> "Responde pedidos de orçamento de banho e tosa com a tabela e o tom da loja. Use quando um cliente perguntar preço, valor ou quanto fica banho, tosa ou um trato no pet."</p><p><b>Resultado:</b> os dois jeitos de pedir abrem a skill.</p></div>
+<p class="saldo"><b>Saldo:</b> uma linha mudada, 167 caracteres, dentro do limite de 200.</p>
+</div>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">2</span>Peça a correção e troque a versão</h2>
-  <p>Você não precisa reescrever a skill. Volte à conversa em que ela nasceu, na aula 5: ela está na lista de conversas recentes do menu lateral. Não achou? Abra uma conversa nova e anexe o ZIP da skill, que está em Documentos, pelo botão de clipe. Conte a falha e peça só a mudança necessária, com o ZIP novo no fim.</p>
-  <p>Para trocar a versão, guarde primeiro o ZIP novo em Documentos; o antigo continua lá. Só então abra a skill em Personalizar › Skills, clique nos três pontinhos (…), escolha Excluir e envie o ZIP novo pelo caminho da aula 6.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O teste do Raul mostrou que a skill de parecer abria num e-mail simples. Ele voltou à conversa da aula 5.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>No teste, a skill parecer-trabalhista abriu num pedido de e-mail simples à cliente. Ajuste só a descrição, para valer apenas para parecer e análise de caso. Mostre o que mudou e me entregue o ZIP novo.</p>
-        <p class="msg ia ok"><span class="quem">Claude</span>Mudei só a parte "quando usar": saiu "qualquer documento do escritório" e entrou "quando você pedir parecer ou análise de caso trabalhista". O restante ficou igual. Aqui está o parecer-trabalhista.zip atualizado.</p>
-      </div>
-      <p class="tela-nota bom">Pedido de uma falha só, com o lugar da correção dito. A resposta mostra o que mudou e mais nada.</p>
-    </div>
-      </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Excluir a versão antiga parece arriscado. O ZIP novo já está no seu computador, e o antigo também, na pasta Documentos. Se a versão nova sair pior, exclua e envie o antigo de volta.</p></div>
+<h2><span class="n">2</span>Peça a correção e troque a versão</h2>
+<p>Você não precisa reescrever a skill. Volte à conversa em que ela nasceu, na aula 5: ela está na lista de conversas recentes do menu lateral. Não achou? Abra uma conversa nova e anexe o ZIP da skill, que está em Documentos, pelo botão de clipe. Conte a falha e peça só a mudança necessária, com o ZIP novo no fim.</p>
+<p>Para trocar a versão, guarde primeiro o ZIP novo em Documentos; o antigo continua lá. Só então abra a skill em Personalizar › Skills, clique nos três pontinhos (…), escolha Excluir e envie o ZIP novo pelo caminho da aula 6.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O teste do Raul mostrou que a skill de parecer abria num e-mail simples. Ele voltou à conversa da aula 5.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Claude</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>No teste, a skill parecer-trabalhista abriu num pedido de e-mail simples à cliente. Ajuste só a descrição, para valer apenas para parecer e análise de caso. Mostre o que mudou e me entregue o ZIP novo.</p>
+<p class="msg ia ok"><span class="quem">Claude</span>Mudei só a parte "quando usar": saiu "qualquer documento do escritório" e entrou "quando você pedir parecer ou análise de caso trabalhista". O restante ficou igual. Aqui está o parecer-trabalhista.zip atualizado.</p>
+</div>
+<p class="tela-nota bom">Pedido de uma falha só, com o lugar da correção dito. A resposta mostra o que mudou e mais nada.</p>
+</div>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Excluir a versão antiga parece arriscado. O ZIP novo já está no seu computador, e o antigo também, na pasta Documentos. Se a versão nova sair pior, exclua e envie o antigo de volta.</p></div>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">3</span>O que não vira skill</h2>
-  <p>Depois da primeira, dá vontade de transformar tudo em skill. Três coisas têm lugar melhor no app. A regra de toda conversa vai nas <span class="gterm" data-def="um campo do app do Claude onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado, sem precisar de skill." data-gl="preferencias-pessoais">preferências pessoais</span>. O assunto de um cliente, com documentos e histórico, vai num <span class="gterm" data-def="um espaço do app do Claude que junta conversas e documentos de um mesmo assunto, com instruções que valem só ali dentro." data-gl="projeto">projeto</span>. O dado que muda o tempo todo vem por um <span class="gterm" data-def="uma ligação do Claude com outro serviço, como a agenda ou o e-mail, para ele ler dados atualizados na hora." data-gl="conector">conector</span>.</p>
-  <p>E uma skill por tarefa. Várias pequenas funcionam melhor que uma enorme que tenta fazer tudo.</p>
-  <p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul organizou o que tinha no escritório nos dois cartões abaixo.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="bom"><span class="rot">Vira skill</span><p>Parecer trabalhista. E-mail de andamento ao cliente. Checagem de documentos da primeira consulta.</p></div>
-      <div class="neutro"><span class="rot">Vai para outro lugar</span><p><b>Preferências:</b> "escreva em português formal". <b>Projeto:</b> o caso da metalúrgica, com 40 documentos. <b>Conector:</b> a agenda de audiências.</p></div>
-    </div>
-    <figcaption>Nenhum cartão está errado: o <b>Vira skill</b> guarda tarefas que se repetem do mesmo jeito, e o outro aponta o lugar de cada coisa.</figcaption>
-  </figure>
-  <div class="quiz" data-answer="c">
-    <p class="qk">Teste-se</p>
-    <p class="q">A Débora quer que o Claude consulte os horários livres do dia ao responder clientes. O que resolve?</p>
-    <button class="opt" data-k="a" data-fb="Os horários mudam a cada agendamento; numa receita fixa, ficariam velhos no mesmo dia.">Uma skill com a lista de horários livres</button>
-    <button class="opt" data-k="b" data-fb="As preferências valem para toda conversa, mas também guardam texto fixo, não a agenda do dia.">Os horários escritos nas preferências</button>
-    <button class="opt" data-k="c" data-fb="Isso. Dado que muda o tempo todo vem por um conector, que lê a agenda na hora.">Um conector ligado à agenda da loja</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<h2><span class="n">3</span>O que não vira skill</h2>
+<p>Depois da primeira, dá vontade de transformar tudo em skill. Três coisas têm lugar melhor no app. A regra de toda conversa vai nas <span class="gterm" data-def="um campo do app do Claude onde você escreve o que vale para todas as conversas, como o idioma ou o seu jeito de tratar as pessoas. Fica sempre ligado, sem precisar de skill." data-gl="preferencias-pessoais">preferências pessoais</span>. O assunto de um cliente, com documentos e histórico, vai num <span class="gterm" data-def="um espaço do app do Claude que junta conversas e documentos de um mesmo assunto, com instruções que valem só ali dentro." data-gl="projeto">projeto</span>. O dado que muda o tempo todo vem por um <span class="gterm" data-def="uma ligação do Claude com outro serviço, como a agenda ou o e-mail, para ele ler dados atualizados na hora." data-gl="conector">conector</span>.</p>
+<p>E uma skill por tarefa. Várias pequenas funcionam melhor que uma enorme que tenta fazer tudo.</p>
+<p data-ex="advogado" data-exlbl="Na prática · Advogado">O Raul organizou o que tinha no escritório nos dois cartões abaixo.</p>
+<figure class="largo">
+<div class="lado">
+<div class="bom"><span class="rot">Vira skill</span><p>Parecer trabalhista. E-mail de andamento ao cliente. Checagem de documentos da primeira consulta.</p></div>
+<div class="neutro"><span class="rot">Vai para outro lugar</span><p><b>Preferências:</b> "escreva em português formal". <b>Projeto:</b> o caso da metalúrgica, com 40 documentos. <b>Conector:</b> a agenda de audiências.</p></div>
+</div>
+<figcaption>Nenhum cartão está errado: o <b>Vira skill</b> guarda tarefas que se repetem do mesmo jeito, e o outro aponta o lugar de cada coisa.</figcaption>
+</figure>
+<div class="quiz" data-answer="c">
+<p class="qk">Teste-se</p>
+<p class="q">A Débora quer que o Claude consulte os horários livres do dia ao responder clientes. O que resolve?</p>
+<button class="opt" data-fb="Os horários mudam a cada agendamento; numa receita fixa, ficariam velhos no mesmo dia." data-k="a">Uma skill com a lista de horários livres</button>
+<button class="opt" data-fb="As preferências valem para toda conversa, mas também guardam texto fixo, não a agenda do dia." data-k="b">Os horários escritos nas preferências</button>
+<button class="opt" data-fb="Isso. Dado que muda o tempo todo vem por um conector, que lê a agenda na hora." data-k="c">Um conector ligado à agenda da loja</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="practice" data-mode="prompt">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Corrija uma falha e envie a versão nova</h3>
-  <p class="pgoal">Pronto quando o pedido que falhou na aula 7 passar com a versão nova: a skill aparece no <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span> e a resposta segue as suas regras. Cerca de 12 minutos, no computador.</p>
-  <p class="psafe">Guarde o ZIP antigo até a versão nova passar no teste. Não fez a aula 7? Use qualquer pedido em que a skill não respondeu como você queria.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">No teste, a minha skill &lt;nome da skill&gt; falhou assim:
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Corrija uma falha e envie a versão nova</h3>
+<p class="pgoal">Pronto quando o pedido que falhou na aula 7 passar com a versão nova: a skill aparece no <span class="gterm" data-def="o bloco recolhido que aparece logo acima da resposta, com os passos que o Claude seguiu. Toque nele para abrir: quando uma skill entra, o nome dela ou o arquivo SKILL.md aparece ali." data-gl="raciocinio">raciocínio</span> e a resposta segue as suas regras. Cerca de 12 minutos, no computador.</p>
+<p class="psafe">Guarde o ZIP antigo até a versão nova passar no teste. Não fez a aula 7? Use qualquer pedido em que a skill não respondeu como você queria.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">No teste, a minha skill &lt;nome da skill&gt; falhou assim:
 Pedido: &lt;o pedido&gt;
 O que aconteceu: &lt;não abriu / abriu sem dever / abriu e respondeu errado&gt;
 
@@ -1146,38 +1105,37 @@ Corrija só o necessário:
 - se não abriu ou abriu sem dever, ajuste a descrição (até 200 caracteres);
 - se abriu e respondeu errado, ajuste as instruções ou o exemplo, com o motivo.
 Mostre o que mudou e me entregue o ZIP novo.</pre></div>
-  <details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
-    <p>No teste, a minha skill <b>orcamento-banho-tosa</b> falhou assim: pedido "qto fica pra dar um trato no bichinho?"; o que aconteceu: não abriu. A correção veio só na descrição, como no cartão Depois do passo 1.</p>
-  </details>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Abra a conversa da aula 5, nas conversas recentes, ou uma nova com o ZIP da skill anexado. Cole o molde preenchido.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Confira que só mudou o necessário e baixe o ZIP novo.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Exclua a versão antiga, envie a nova e rode de novo o pedido que falhou.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de consertar uma skill sua e colocar a versão nova para trabalhar.</p>
+<details class="mais"><summary>Veja o molde preenchido pela Débora</summary>
+<p>No teste, a minha skill <b>orcamento-banho-tosa</b> falhou assim: pedido "qto fica pra dar um trato no bichinho?"; o que aconteceu: não abriu. A correção veio só na descrição, como no cartão Depois do passo 1.</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Abra a conversa da aula 5, nas conversas recentes, ou uma nova com o ZIP da skill anexado. Cole o molde preenchido.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Confira que só mudou o necessário e baixe o ZIP novo.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Exclua a versão antiga, envie a nova e rode de novo o pedido que falhou.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de consertar uma skill sua e colocar a versão nova para trabalhar.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Manter a skill</h3>
-    <ol>
-      <li><span><b>Onde corrigir</b>abrir é descrição; responder é instrução ou exemplo.</span></li>
-      <li><span><b>Como trocar</b>ZIP novo, exclui a antiga, envia, testa de novo.</span></li>
-      <li><span><b>Quando parar</b>preferências, projeto e conector têm lugar próprio.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe criar, testar e manter uma skill sua, do começo ao fim.</p>
-    <p class="na-action">Abra a lista da aula 1 e escolha a segunda tarefa que se repete. Escreva a descrição dela hoje, em até 200 caracteres.</p>
-    <p class="na-hook">Fim do curso. A segunda skill sai mais rápido: você já sabe o caminho inteiro.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Manter a skill</h3>
+<ol>
+<li><span><b>Onde corrigir</b>abrir é descrição; responder é instrução ou exemplo.</span></li>
+<li><span><b>Como trocar</b>ZIP novo, exclui a antiga, envia, testa de novo.</span></li>
+<li><span><b>Quando parar</b>preferências, projeto e conector têm lugar próprio.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe criar, testar e manter uma skill sua, do começo ao fim.</p>
+<p class="na-action">Abra a lista da aula 1 e escolha a segunda tarefa que se repete. Escreva a descrição dela hoje, em até 200 caracteres.</p>
+<p class="na-hook">Fim do curso. A segunda skill sai mais rápido: você já sabe o caminho inteiro.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#aula-7">← aula anterior</a><a class="next" href="#trilha">voltar à trilha →</a></nav>
 <p class="aula-pe">Aula 8 · Skills v6 · INEMA.CLUB</p>
 </div>
-<script type="application/json" id="cards-8">
+<script id="cards-8" type="application/json">
 [
   {"front":"Sua skill abriu no pedido certo, mas errou o formato da resposta. Você mexe na descrição?","back":"Não. A descrição só decide se ela abre. Formato errado se corrige nas instruções ou no exemplo."},
   {"front":"Qual a diferença entre um projeto e uma skill no app do Claude?","back":"O projeto junta conversas e documentos de um assunto, como um cliente. A skill guarda o jeito de fazer uma tarefa que se repete em qualquer assunto."},
@@ -1186,7 +1144,6 @@ Mostre o que mudou e me entregue o ZIP novo.</pre></div>
 ]
 </script>
 </section>
-
 <script src="assets/curso.js"></script>
 </body>
 </html>

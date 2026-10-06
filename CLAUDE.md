@@ -14,3 +14,4 @@ Item 6 de `~/projetos/wifi/ANALISE-SKILLS-2026-10-06.md`. Currículo, Passo 0 e 
 When I correct you, or you catch yourself making a mistake: before continuing, add the lesson as a one-line rule under ## Lessons, so it never happens again.
 
 ## Lessons
+- Depois de `traduzir-curso.py`, rode `tools/pos-traducao.sh` (o tradutor não põe `../` no link do ZIP de exemplo nem troca o link do skills-craft por idioma).
