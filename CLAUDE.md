@@ -5,7 +5,7 @@ Item 6 de `~/projetos/wifi/ANALISE-SKILLS-2026-10-06.md`. Currículo, Passo 0 e 
 
 - Personagens: Raul (advogado trabalhista) e Débora (dona de pet shop). Tabela de preços da Débora fixa em todas as aulas: pequeno banho 60 / banho e tosa 80; médio 70 / 95; grande 90 / 130.
 - Fatos do app só os de `context/curriculo.md` (central de ajuda oficial, 06/10/2026). Menu: Configurações › Capacidades; Personalizar › Skills › + › Criar skill › Enviar uma skill. Descrição até 200 caracteres. Sem citar fontes externas.
-- Edite `aulas/aula-N.html`; `curso.html` é montado (`montar-curso.py`). Ordem: montar → traduzir (`traduzir-curso.py . en es`, Codex pela assinatura). Portão: `auditar-curso.cjs` (todas ≥9/10, PT/EN/ES) + `testar-motor.cjs` (26/26).
+- Edite `aulas/aula-N.html`; `curso.html` é montado (`montar-curso.py`). Ordem: montar → traduzir (`traduzir-curso.py . en es`, tradutor central `inema-traduz` — INEMA_TRADUCAO_* em ~/.config/inema/modelos.env; hoje Sonnet 5.5 pela assinatura). Portão: `auditar-curso.cjs` (todas ≥9/10, PT/EN/ES) + `testar-motor.cjs` (26/26).
 - Cenas: `context/cenas.tsv` + `gerar-cena.py` (Codex pela assinatura). Olhar cada imagem antes de aceitar.
 - Conta git: `inematds <inematds@gmail.com>`. Publicar = push; Pages na raiz (main).
 
